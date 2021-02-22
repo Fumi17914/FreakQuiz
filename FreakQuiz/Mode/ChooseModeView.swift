@@ -16,36 +16,31 @@ struct ChooseModeView: View {
             
             VStack {
                 Spacer()
-                Text("CHOOSE MODE").font(Font.custom("PixelEmulator", size: 35))
-                    .foregroundColor(.yellow)
+                Text("CHOOSE MODE")
+                    .font(Font.custom("PixelEmulator", size: 35))
+                    .foregroundColor(.white)
                 
                 Spacer()
+                
                 
                 Button(action: {}, label: {
                     Image("easyMode")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                    
-                       
-                        
                 })
-
-                Spacer()
                 
                 Button(action: {}, label: {
                     Image("difficultMode")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        
-                        
                 })
-                
+                 
                 Spacer()
                 
                 Image("textLogo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .padding(65)
+                    .padding(40)
             }
         }
     }

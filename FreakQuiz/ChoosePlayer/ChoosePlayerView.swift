@@ -17,96 +17,97 @@ struct ChoosePlayerView: View {
             VStack {
                 Spacer()
 
-                Text("CHOOSE PLAYER").font(Font.custom("PixelEmulator", size: 35))
-                    .foregroundColor(.yellow)
+                Text("CHOOSE PLAYER")
+                    .font(Font.custom("PixelEmulator", size: 35))
+                    .foregroundColor(.white)
                                 
                 VStack {
                     HStack{
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Batman")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Superman")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Spider-Man")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                     }.padding()
                     
                     HStack{
                         Spacer()
 
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Adventuress")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Meredith Grey")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
                         
                     }.padding()
                     
                     HStack{
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Wolverine")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Deadpool")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Santa Claus")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
 
                     }.padding()
                     
                     HStack {
                         Spacer()
 
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Indiana Jones")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                             Image("Diablo")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                        })
+                        }
                         
                         Spacer()
 
@@ -114,11 +115,11 @@ struct ChoosePlayerView: View {
                     
                     Spacer()
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         Image("redButton")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                    }).padding(20)
+                    }.padding(30)
                 }
                 
             }

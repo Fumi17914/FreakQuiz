@@ -35,7 +35,7 @@ struct SplashView: View {
                     Image("textLogo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(50)
+                        .padding(40)
                 }
             }
     }
