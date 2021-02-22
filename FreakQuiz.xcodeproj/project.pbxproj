@@ -13,6 +13,12 @@
 		D8B6C91525E3BB7A00324227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B6C91425E3BB7A00324227 /* Preview Assets.xcassets */; };
 		D8B6C91725E3BB7A00324227 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C91625E3BB7A00324227 /* Persistence.swift */; };
 		D8B6C91A25E3BB7A00324227 /* FreakQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C91825E3BB7A00324227 /* FreakQuiz.xcdatamodeld */; };
+		D8B6C93225E3CA9700324227 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93125E3CA9700324227 /* UIViewExtensions.swift */; };
+		D8B6C93625E3CAC100324227 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93525E3CAC100324227 /* Game.swift */; };
+		D8B6C93A25E3CAEC00324227 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93925E3CAEC00324227 /* GameData.swift */; };
+		D8B6C93D25E3CB0200324227 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93C25E3CB0200324227 /* Player.swift */; };
+		D8B6C94025E3CB2100324227 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93F25E3CB2100324227 /* Question.swift */; };
+		D8B6C94325E3CB3F00324227 /* sampleData.json in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C94225E3CB3F00324227 /* sampleData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		D8B6C91625E3BB7A00324227 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D8B6C91925E3BB7A00324227 /* FreakQuiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FreakQuiz.xcdatamodel; sourceTree = "<group>"; };
 		D8B6C91B25E3BB7A00324227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B6C93125E3CA9700324227 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		D8B6C93525E3CAC100324227 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D8B6C93925E3CAEC00324227 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		D8B6C93C25E3CB0200324227 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D8B6C93F25E3CB2100324227 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D8B6C94225E3CB3F00324227 /* sampleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 		D8B6C92225E3BC6700324227 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D8B6C93125E3CA9700324227 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,6 +126,11 @@
 		D8B6C92625E3BC9400324227 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8B6C93525E3CAC100324227 /* Game.swift */,
+				D8B6C93925E3CAEC00324227 /* GameData.swift */,
+				D8B6C93C25E3CB0200324227 /* Player.swift */,
+				D8B6C93F25E3CB2100324227 /* Question.swift */,
+				D8B6C94225E3CB3F00324227 /* sampleData.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,9 +275,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B6C91A25E3BB7A00324227 /* FreakQuiz.xcdatamodeld in Sources */,
+				D8B6C93625E3CAC100324227 /* Game.swift in Sources */,
+				D8B6C93225E3CA9700324227 /* UIViewExtensions.swift in Sources */,
+				D8B6C94025E3CB2100324227 /* Question.swift in Sources */,
 				D8B6C91725E3BB7A00324227 /* Persistence.swift in Sources */,
+				D8B6C93D25E3CB0200324227 /* Player.swift in Sources */,
+				D8B6C93A25E3CAEC00324227 /* GameData.swift in Sources */,
 				D8B6C91025E3BB7800324227 /* ContentView.swift in Sources */,
 				D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */,
+				D8B6C94325E3CB3F00324227 /* sampleData.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
