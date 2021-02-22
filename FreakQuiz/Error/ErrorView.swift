@@ -42,9 +42,6 @@ struct ErrorView: View {
                     .aspectRatio(contentMode: .fit)
                     .padding(65)
                 
-                
-                Spacer()
-                
                 Button(action: {}) {
                     Image("penanceEasy")
                         .resizable()

@@ -15,6 +15,7 @@ struct QuestionView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                Spacer()
                 Text("BATMAN")
                     .font(Font.custom("PixelEmulator", size: 35))
                     .foregroundColor(.white)

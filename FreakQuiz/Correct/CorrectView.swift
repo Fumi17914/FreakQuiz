@@ -24,6 +24,7 @@ struct CorrectView: View {
                     Text("CORRECT")
                         .font(Font.custom("PixelEmulator", size: 35))
                         .foregroundColor(.yellow)
+                        .multilineTextAlignment(.center)
                     
                     Spacer()
                     Button(action: {}) {

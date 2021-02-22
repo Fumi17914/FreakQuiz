@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct ChoosePlayerView: View {
+    
+    @State private var batmanState = false
+    @State private var supermanState = false
+    @State private var spidermanState = false
+    @State private var adventuressState = false
+    @State private var meredithGreyState = false
+    @State private var wolverineState = false
+    @State private var deadpoolState = false
+    @State private var santaClausState = false
+    @State private var indianaJonesState = false
+    @State private var devilState = false
+    
     var body: some View {
         ZStack {
             Image("Background")
@@ -17,13 +29,13 @@ struct ChoosePlayerView: View {
             VStack {
                 Spacer()
 
-                Text("CHOOSE PLAYER")
-                    .font(Font.custom("PixelEmulator", size: 35))
+                Text("ELIGE JUGADOR")
+                    .font(Font.custom("PixelEmulator", size: 30))
                     .foregroundColor(.white)
                                 
                 VStack {
                     HStack{
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Button(action: {}) {
                             Image("Batman")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)

@@ -18,8 +18,8 @@ struct PlayerReadyView: View {
                 
                 Spacer()
                 
-                Text("ARE YOU READY ?")
-                    .font(Font.custom("PixelEmulator", size: 35))
+                Text("TE TOCA")
+                    .font(Font.custom("PixelEmulator", size: 30))
                     .foregroundColor(.white)
                 Spacer()
                                 

@@ -19,6 +19,7 @@
 		D8689AF925E40F9600201574 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AF825E40F9600201574 /* ErrorView.swift */; };
 		D8689AFC25E4135300201574 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFB25E4135300201574 /* TestView.swift */; };
 		D8689AFF25E414FD00201574 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFE25E414FD00201574 /* ScoreView.swift */; };
+		D8689B0225E4191E00201574 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8689B0125E4191E00201574 /* Launch Screen.storyboard */; };
 		D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */; };
 		D8B6C91025E3BB7800324227 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90F25E3BB7800324227 /* SplashView.swift */; };
 		D8B6C91225E3BB7A00324227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B6C91125E3BB7A00324227 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		D8689AF825E40F9600201574 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		D8689AFB25E4135300201574 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D8689AFE25E414FD00201574 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		D8689B0125E4191E00201574 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D8B6C90A25E3BB7800324227 /* FreakQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreakQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakQuizApp.swift; sourceTree = "<group>"; };
 		D8B6C90F25E3BB7800324227 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		D8B6C92825E3BCA800324227 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				D8689B0125E4191E00201574 /* Launch Screen.storyboard */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				D8689AEA25E3D8FF00201574 /* Pixel.ttf in Resources */,
 				D8689AE825E3D8FF00201574 /* Arcade.ttf in Resources */,
 				D8689AE725E3D8FF00201574 /* Kratos.otf in Resources */,
+				D8689B0225E4191E00201574 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

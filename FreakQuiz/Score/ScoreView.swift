@@ -16,7 +16,7 @@ struct ScoreView: View {
             
             VStack {
                 Text("SCORE")
-                    .font(Font.custom("PixelEmulator", size: 35))
+                    .font(Font.custom("PixelEmulator", size: 30))
                     .foregroundColor(.white)
                 
                 HStack{
