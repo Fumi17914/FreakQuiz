@@ -33,6 +33,13 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Kratos.otf</string>
+		<string>Arcade.ttf</string>
+		<string>Pixel.ttf</string>
+		<string>Mario.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
