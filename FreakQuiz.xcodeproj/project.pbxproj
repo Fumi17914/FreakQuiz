@@ -56,10 +56,22 @@
 		D8B6C90C25E3BB7800324227 /* FreakQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */,
-				D8B6C90F25E3BB7800324227 /* ContentView.swift */,
 				D8B6C91125E3BB7A00324227 /* Assets.xcassets */,
-				D8B6C91625E3BB7A00324227 /* Persistence.swift */,
+				D8B6C92225E3BC6700324227 /* Extensions */,
+				D8B6C92525E3BC8B00324227 /* Fonts */,
+				D8B6C92325E3BC6F00324227 /* App */,
+				D8B6C92625E3BC9400324227 /* Model */,
+				D8B6C92825E3BCA800324227 /* Launch */,
+				D8B6C92725E3BC9E00324227 /* Splash */,
+				D8B6C92925E3BCB000324227 /* Mode */,
+				D8B6C92A25E3BCB500324227 /* ChoosePlayer */,
+				D8B6C92B25E3BCBB00324227 /* PlayerReady */,
+				D8B6C92C25E3BCC300324227 /* Question */,
+				D8B6C92D25E3BCCB00324227 /* Correct */,
+				D8B6C92E25E3BCD900324227 /* Error */,
+				D8B6C92F25E3BCDF00324227 /* Test */,
+				D8B6C93025E3BCE400324227 /* Score */,
+				D8B6C90F25E3BB7800324227 /* ContentView.swift */,
 				D8B6C91B25E3BB7A00324227 /* Info.plist */,
 				D8B6C91825E3BB7A00324227 /* FreakQuiz.xcdatamodeld */,
 				D8B6C91325E3BB7A00324227 /* Preview Content */,
@@ -73,6 +85,106 @@
 				D8B6C91425E3BB7A00324227 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8B6C92225E3BC6700324227 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D8B6C92325E3BC6F00324227 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6C91625E3BB7A00324227 /* Persistence.swift */,
+				D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D8B6C92525E3BC8B00324227 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D8B6C92625E3BC9400324227 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8B6C92725E3BC9E00324227 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D8B6C92825E3BCA800324227 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		D8B6C92925E3BCB000324227 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		D8B6C92A25E3BCB500324227 /* ChoosePlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChoosePlayer;
+			sourceTree = "<group>";
+		};
+		D8B6C92B25E3BCBB00324227 /* PlayerReady */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerReady;
+			sourceTree = "<group>";
+		};
+		D8B6C92C25E3BCC300324227 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		D8B6C92D25E3BCCB00324227 /* Correct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Correct;
+			sourceTree = "<group>";
+		};
+		D8B6C92E25E3BCD900324227 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		D8B6C92F25E3BCDF00324227 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		D8B6C93025E3BCE400324227 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Score;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
