@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */; };
+		D8B6C91025E3BB7800324227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90F25E3BB7800324227 /* ContentView.swift */; };
+		D8B6C91225E3BB7A00324227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B6C91125E3BB7A00324227 /* Assets.xcassets */; };
+		D8B6C91525E3BB7A00324227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B6C91425E3BB7A00324227 /* Preview Assets.xcassets */; };
+		D8B6C91725E3BB7A00324227 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C91625E3BB7A00324227 /* Persistence.swift */; };
+		D8B6C91A25E3BB7A00324227 /* FreakQuiz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C91825E3BB7A00324227 /* FreakQuiz.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8B6C90A25E3BB7800324227 /* FreakQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreakQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakQuizApp.swift; sourceTree = "<group>"; };
+		D8B6C90F25E3BB7800324227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8B6C91125E3BB7A00324227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8B6C91425E3BB7A00324227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8B6C91625E3BB7A00324227 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D8B6C91925E3BB7A00324227 /* FreakQuiz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FreakQuiz.xcdatamodel; sourceTree = "<group>"; };
+		D8B6C91B25E3BB7A00324227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8B6C90725E3BB7800324227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8B6C90125E3BB7800324227 = {
+			isa = PBXGroup;
+			children = (
+				D8B6C90C25E3BB7800324227 /* FreakQuiz */,
+				D8B6C90B25E3BB7800324227 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8B6C90B25E3BB7800324227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6C90A25E3BB7800324227 /* FreakQuiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8B6C90C25E3BB7800324227 /* FreakQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */,
+				D8B6C90F25E3BB7800324227 /* ContentView.swift */,
+				D8B6C91125E3BB7A00324227 /* Assets.xcassets */,
+				D8B6C91625E3BB7A00324227 /* Persistence.swift */,
+				D8B6C91B25E3BB7A00324227 /* Info.plist */,
+				D8B6C91825E3BB7A00324227 /* FreakQuiz.xcdatamodeld */,
+				D8B6C91325E3BB7A00324227 /* Preview Content */,
+			);
+			path = FreakQuiz;
+			sourceTree = "<group>";
+		};
+		D8B6C91325E3BB7A00324227 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6C91425E3BB7A00324227 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8B6C90925E3BB7800324227 /* FreakQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8B6C91E25E3BB7A00324227 /* Build configuration list for PBXNativeTarget "FreakQuiz" */;
+			buildPhases = (
+				D8B6C90625E3BB7800324227 /* Sources */,
+				D8B6C90725E3BB7800324227 /* Frameworks */,
+				D8B6C90825E3BB7800324227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreakQuiz;
+			productName = FreakQuiz;
+			productReference = D8B6C90A25E3BB7800324227 /* FreakQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8B6C90225E3BB7800324227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D8B6C90925E3BB7800324227 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = D8B6C90525E3BB7800324227 /* Build configuration list for PBXProject "FreakQuiz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8B6C90125E3BB7800324227;
+			productRefGroup = D8B6C90B25E3BB7800324227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8B6C90925E3BB7800324227 /* FreakQuiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8B6C90825E3BB7800324227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B6C91525E3BB7A00324227 /* Preview Assets.xcassets in Resources */,
+				D8B6C91225E3BB7A00324227 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8B6C90625E3BB7800324227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B6C91A25E3BB7A00324227 /* FreakQuiz.xcdatamodeld in Sources */,
+				D8B6C91725E3BB7A00324227 /* Persistence.swift in Sources */,
+				D8B6C91025E3BB7800324227 /* ContentView.swift in Sources */,
+				D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8B6C91C25E3BB7A00324227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8B6C91D25E3BB7A00324227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8B6C91F25E3BB7A00324227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FreakQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = VSQW9S6FN9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FreakQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josefumanal.FreakQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8B6C92025E3BB7A00324227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FreakQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = VSQW9S6FN9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FreakQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josefumanal.FreakQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8B6C90525E3BB7800324227 /* Build configuration list for PBXProject "FreakQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8B6C91C25E3BB7A00324227 /* Debug */,
+				D8B6C91D25E3BB7A00324227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8B6C91E25E3BB7A00324227 /* Build configuration list for PBXNativeTarget "FreakQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8B6C91F25E3BB7A00324227 /* Debug */,
+				D8B6C92025E3BB7A00324227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8B6C91825E3BB7A00324227 /* FreakQuiz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8B6C91925E3BB7A00324227 /* FreakQuiz.xcdatamodel */,
+			);
+			currentVersion = D8B6C91925E3BB7A00324227 /* FreakQuiz.xcdatamodel */;
+			path = FreakQuiz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8B6C90225E3BB7800324227 /* Project object */;
+}
