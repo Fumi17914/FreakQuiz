@@ -9,39 +9,49 @@ import SwiftUI
 
 struct ChooseModeView: View {
     var body: some View {
-        ZStack{
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Spacer()
-                
-                Text("ELIGE MODO")
-                    .font(Font.custom("PixelEmulator", size: 30))
-                    .foregroundColor(.white)
-                
-                Spacer()
-                
-                Button(action: {Game.shared.mode = .easy}) {
-                    Image("easyMode")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                }
-                
-                Button(action: {Game.shared.mode = .hard}) {
-                    Image("difficultMode")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                }
-                 
-                Spacer()
-                
-                Image("textLogo")
+        NavigationView{
+            ZStack{
+                Image("Background")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding(40)
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    Spacer()
+                    
+                    Text("ELIGE MODO")
+                        .font(Font.custom("PixelEmulator", size: 30))
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: ChoosePlayerView()){
+                        Image("easyMode")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        
+                    }.onTapGesture {
+                        Game.shared.mode = .easy
+                    }
+                    
+                    NavigationLink(destination: ChoosePlayerView()){
+                        Image("difficultMode")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        
+                    }.onTapGesture {
+                        Game.shared.mode = .hard
+                    }
+    
+                    Spacer()
+                    
+                    Image("textLogo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(40)
+                }
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

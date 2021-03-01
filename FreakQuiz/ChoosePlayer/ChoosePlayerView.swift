@@ -21,120 +21,124 @@ struct ChoosePlayerView: View {
     @State private var devilState = false
     
     var body: some View {
-        ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Spacer()
-
-                Text("ELIGE JUGADOR")
-                    .font(Font.custom("PixelEmulator", size: 30))
-                    .foregroundColor(.white)
-                                
-                VStack {
-                    HStack{
-                        Button(action: {}) {
-                            Image("Batman")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Superman")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Spider-Man")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                    }.padding()
-                    
-                    HStack{
-                        Spacer()
-
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Adventuress")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Meredith Grey")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-                        
-                    }.padding()
-                    
-                    HStack{
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Wolverine")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Deadpool")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Santa Claus")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-
-                    }.padding()
-                    
-                    HStack {
-                        Spacer()
-
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Indiana Jones")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("Diablo")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                        
-                        Spacer()
-
-                    }.padding()
-                    
-                    Spacer()
-                    
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        Image("redButton")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                    }.padding(30)
-                }
+        NavigationView {
+            ZStack {
+                Image("Background")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
                 
+                VStack {
+                    Spacer()
+
+                    Text("ELIGE JUGADOR")
+                        .font(Font.custom("PixelEmulator", size: 30))
+                        .foregroundColor(.white)
+                                    
+                    VStack {
+                        HStack{
+                            Button(action: {}) {
+                                Image("Batman")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Superman")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Spider-Man")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                        }.padding()
+                        
+                        HStack{
+                            Spacer()
+
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Adventuress")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Meredith Grey")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+                            
+                        }.padding()
+                        
+                        HStack{
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Wolverine")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Deadpool")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Santa Claus")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+
+                        }.padding()
+                        
+                        HStack {
+                            Spacer()
+
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Indiana Jones")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                Image("Diablo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            Spacer()
+
+                        }.padding()
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: PlayerReadyView()) {
+                                Image("redButton")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(25)
+                        }
+                    }
+                }
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

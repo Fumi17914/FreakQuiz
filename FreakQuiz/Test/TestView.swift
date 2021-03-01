@@ -9,55 +9,58 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                HStack{
-                    
-                    Spacer()
-                    Spacer()
-                 
-                    Text("TEST")
-                        .font(Font.custom("PixelEmulator", size: 35))
-                        .foregroundColor(.yellow)
-                    
-                    Spacer()
-                    Button(action: {}) {
-                        Image("star")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(minWidth: 10, idealWidth: 50, maxWidth: 50, minHeight: 50, idealHeight: 50, maxHeight: 50, alignment: .topLeading)
-                        
-                    }.padding()
-                }
-                
-                Spacer()
-          
-
-                Text("quédate en ropa interior y haz 10 flexiones")
-                    .font(Font.custom("PixelEmulator", size: 25))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                Spacer()
-
-                
-                Image("zoidberg")
+        NavigationView{
+            ZStack {
+                Image("Background")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(minWidth: 10, idealWidth: 250, maxWidth: 300, minHeight: 200, idealHeight: 200, maxHeight: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .edgesIgnoringSafeArea(.all)
                 
-                Button(action: {}) {
-                    Image("continueEasy")
+                VStack {
+                    HStack{
+                        
+                        Spacer()
+                        Spacer()
+                     
+                        Text("TEST")
+                            .font(Font.custom("PixelEmulator", size: 35))
+                            .foregroundColor(.yellow)
+                        
+                        Spacer()
+                        NavigationLink (destination: ScoreView()) {
+                            Image("star")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 60, height: 60, alignment: .center)
+                        }
+                    }
+                    
+                    Spacer()
+              
+
+                    Text("quédate en ropa interior y haz 10 flexiones")
+                        .font(Font.custom("PixelEmulator", size: 25))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                    Spacer()
+
+                    
+                    Image("zoidberg")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding()
+                        .frame(minWidth: 10, idealWidth: 250, maxWidth: 300, minHeight: 200, idealHeight: 200, maxHeight: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    Button(action: {}) {
+                        Image("continueEasy")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding()
+                    }
                 }
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

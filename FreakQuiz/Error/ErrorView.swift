@@ -9,46 +9,50 @@ import SwiftUI
 
 struct ErrorView: View {
     var body: some View {
-        ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                
-                Spacer()
-                
-                Text("ERROR")
-                    .font(Font.custom("PixelEmulator", size: 35))
-                    .foregroundColor(.red)
-                
-                Spacer()
-                Spacer()
-                
-                Text("LA RESPUESTA ERA:")
-                    .font(Font.custom("PixelEmulator", size: 17))
-                    .foregroundColor(.white)
-                
-                Spacer()
-                
-                Text("Answer")
-                    .font(Font.custom("PixelEmulator", size: 30))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding()
-
-                                
-                Image("luigi")
+        NavigationView{
+            ZStack {
+                Image("Background")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding(65)
-                
-                Button(action: {}) {
-                    Image("penanceEasy")
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    
+                    Spacer()
+                    
+                    Text("ERROR")
+                        .font(Font.custom("PixelEmulator", size: 35))
+                        .foregroundColor(.red)
+                    
+                    Spacer()
+                    Spacer()
+                    
+                    Text("LA RESPUESTA ERA:")
+                        .font(Font.custom("PixelEmulator", size: 17))
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                    
+                    Text("Answer")
+                        .font(Font.custom("PixelEmulator", size: 30))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                    
+                    Image("luigi")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding()
+                        .padding(65)
+                    
+                    NavigationLink(destination: TestView()) {
+                        Image("penanceEasy")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding()
+                    }
                 }
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

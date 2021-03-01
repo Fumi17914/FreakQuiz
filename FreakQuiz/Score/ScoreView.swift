@@ -9,49 +9,53 @@ import SwiftUI
 
 struct ScoreView: View {
     var body: some View {
-        ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Text("SCORE")
-                    .font(Font.custom("PixelEmulator", size: 30))
-                    .foregroundColor(.white)
+        NavigationView {
+            ZStack {
+                Image("Background")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
                 
-                HStack{
-                    Spacer()
-                    Image("lakitu")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(minWidth: 50, idealWidth: 70, maxWidth: 120, minHeight: 100, idealHeight: 150, maxHeight: 120, alignment: .topLeading)
-                        .offset(x: -20)
-                }
-                
-                List {
-                    Group{
-                        Text("Batman")
-                        Text("Superman")
+                VStack {
+                    Text("SCORE")
+                        .font(Font.custom("PixelEmulator", size: 30))
+                        .foregroundColor(.white)
+                    
+                    HStack{
+                        Spacer()
+                        Image("lakitu")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(minWidth: 50, idealWidth: 70, maxWidth: 120, minHeight: 100, idealHeight: 150, maxHeight: 120, alignment: .topLeading)
+                            .offset(x: -20)
                     }
                     
-                }
-                .font(.title)
-                .listRowBackground(Color.clear)
-                .padding()
+                    List {
+                        Group{
+                            Text("Batman")
+                            Text("Superman")
+                        }
+                        
+                    }
+                    .font(.title)
+                    .listRowBackground(Color.clear)
+                    .padding()
 
-                
-                Spacer()
-                
-                Button(action: {}){
-                    Image("continueEasy")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding()
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: PlayerReadyView()) {
+                        Image("continueEasy")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding()
+                    }
                 }
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+
         }
     }
-    
 }
 
 struct ScoreView_Previews: PreviewProvider {

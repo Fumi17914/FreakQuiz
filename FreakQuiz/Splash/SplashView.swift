@@ -9,10 +9,9 @@ import SwiftUI
 import CoreData
 
 struct SplashView: View {
-   
-    @State private var isPressed = false
-    
+       
     var body: some View {
+        NavigationView {
             ZStack{
                 Image("Background")
                     .resizable()
@@ -22,14 +21,16 @@ struct SplashView: View {
                     Image("logo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        
+                    
                     Spacer()
-                    Button(action: {isPressed = true}, label: {
-                        Image("play")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding(60)
-                            .scaleEffect(isPressed ? 1.3 : 1.0)
-                    })
+                    
+                    NavigationLink(destination: ChooseModeView()) {
+                            Image("play")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding()
+                    }
                     
                     Spacer()
                     Image("textLogo")
@@ -38,6 +39,9 @@ struct SplashView: View {
                         .padding(40)
                 }
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+        }
     }
 }
 
