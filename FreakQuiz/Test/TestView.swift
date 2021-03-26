@@ -24,6 +24,7 @@ struct TestView: View {
                         Text("TEST")
                             .font(Font.custom("PixelEmulator", size: 35))
                             .foregroundColor(.yellow)
+                            .padding(40)
                         
                         Spacer()
                         NavigationLink (destination: ScoreView()) {
@@ -61,6 +62,8 @@ struct TestView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top, .bottom])
+
         }
     }
 }

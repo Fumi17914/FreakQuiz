@@ -52,6 +52,8 @@ struct ChooseModeView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top])
+
         }
     }
 }

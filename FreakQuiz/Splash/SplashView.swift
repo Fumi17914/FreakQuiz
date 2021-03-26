@@ -21,6 +21,7 @@ struct SplashView: View {
                     Image("logo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .padding(25)
                         
                     
                     Spacer()
@@ -41,6 +42,8 @@ struct SplashView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top, .bottom])
+
         }
     }
 }

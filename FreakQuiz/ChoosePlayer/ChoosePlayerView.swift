@@ -33,6 +33,7 @@ struct ChoosePlayerView: View {
                     Text("ELIGE JUGADOR")
                         .font(Font.custom("PixelEmulator", size: 30))
                         .foregroundColor(.white)
+                        .padding(40)
                                     
                     VStack {
                         HStack{
@@ -139,6 +140,8 @@ struct ChoosePlayerView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top])
+
         }
     }
 }

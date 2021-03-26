@@ -53,6 +53,7 @@ struct ScoreView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top, .bottom])
 
         }
     }

@@ -24,6 +24,7 @@ struct CorrectView: View {
                         Text("CORRECT")
                             .font(Font.custom("PixelEmulator", size: 35))
                             .foregroundColor(.yellow)
+                            .padding(40)
                             
                         Spacer()
                         
@@ -61,6 +62,8 @@ struct CorrectView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top, .bottom])
+
         }
     }
 }

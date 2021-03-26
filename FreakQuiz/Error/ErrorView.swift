@@ -53,6 +53,8 @@ struct ErrorView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top, .bottom])
+
         }
     }
 }
