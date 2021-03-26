@@ -60,11 +60,12 @@ struct CorrectView: View {
                     }
                 }
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea([.top, .bottom])
+            .edgesIgnoringSafeArea(.all)
 
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("")
     }
 }
 

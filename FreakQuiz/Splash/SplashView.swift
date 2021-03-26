@@ -40,11 +40,12 @@ struct SplashView: View {
                         .padding(40)
                 }
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea([.top, .bottom])
+            .edgesIgnoringSafeArea(.all)
 
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("")
     }
 }
 

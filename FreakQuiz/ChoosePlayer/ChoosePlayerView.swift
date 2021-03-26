@@ -138,11 +138,11 @@ struct ChoosePlayerView: View {
                     }
                 }
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea([.top])
-
+            .edgesIgnoringSafeArea(.all)
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("")
     }
 }
 

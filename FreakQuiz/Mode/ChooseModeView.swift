@@ -50,11 +50,11 @@ struct ChooseModeView: View {
                         .padding(40)
                 }
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea([.top])
-
+            .edgesIgnoringSafeArea(.all)
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("")
     }
 }
 
