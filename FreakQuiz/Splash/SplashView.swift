@@ -41,7 +41,6 @@ struct SplashView: View {
                 }
             }
             .edgesIgnoringSafeArea(.all)
-
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

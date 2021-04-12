@@ -16,14 +16,12 @@ struct PlayerReadyView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    
                     Spacer()
                     Text("ARE YOU READY?")
                         .font(Font.custom("PixelEmulator", size: 30))
                         .foregroundColor(.white)
-                    
                     Spacer()
-                                    
+                                        
                     Image("Batman")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -47,13 +45,14 @@ struct PlayerReadyView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
-                            .offset(x:5)
+                            .offset(x:5, y:30)
                     }
-                    
                     Spacer()
+                    
                 }
             }
             .edgesIgnoringSafeArea(.all)
+
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

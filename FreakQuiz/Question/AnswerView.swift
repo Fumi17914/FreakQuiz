@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct CardContent: View {
     public var body: some View {
         
@@ -39,7 +40,7 @@ struct SlideOverView<Content> : View where Content : View {
 struct CardView: ViewModifier {
     @State private var dragging = false
     @GestureState private var dragTracker: CGSize = CGSize.zero
-    @State private var position: CGFloat = UIScreen.main.bounds.height - 250
+    @State private var position: CGFloat = UIScreen.main.bounds.height - 100
     
     func body(content: Content) -> some View {
         ZStack(alignment: .top) {
@@ -53,12 +54,11 @@ struct CardView: ViewModifier {
             .frame(minWidth: UIScreen.main.bounds.width)
             .scaleEffect(x: 1, y: 1, anchor: .center)
             .background(Color.yellow)
-            .opacity(0.8)
             .cornerRadius(30)
         }
         .offset(y:  max(0, position + self.dragTracker.height))
         .animation(dragging ? nil : {
-            Animation.interpolatingSpring(stiffness: 250.0, damping: 40.0, initialVelocity: 5.0)
+            Animation.interpolatingSpring(stiffness: 250.0, damping: 30.0, initialVelocity: 5.0)
         }())
         .gesture(DragGesture()
                     .updating($dragTracker) { drag, state, transaction in state = drag.translation }
