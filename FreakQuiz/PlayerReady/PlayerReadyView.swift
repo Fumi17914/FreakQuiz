@@ -18,8 +18,7 @@ struct PlayerReadyView: View {
                 VStack {
                     
                     Spacer()
-                    
-                    Text("TE TOCA")
+                    Text("ARE YOU READY?")
                         .font(Font.custom("PixelEmulator", size: 30))
                         .foregroundColor(.white)
                     
@@ -28,22 +27,30 @@ struct PlayerReadyView: View {
                     Image("Batman")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(65)
+                        .padding(50)
                     
                     
-                    Text("Batman")
-                        .font(Font.custom("PixelEmulator", size: 35))
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: 235, height: 80, alignment: .center)
                         .foregroundColor(.yellow)
+                        .opacity(0.8)
+                        .textCase(.uppercase)
+                        .overlay(Text("BATMAN")
+                                    .font(Font.custom("PixelEmulator", size: 33))
+                                    .foregroundColor(.white))
+                        .offset(y: -45)
                     
-                    Spacer()
                     Spacer()
                     
                     NavigationLink(destination: QuestionView()) {
-                        Image("continueEasy")
+                        Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
+                            .offset(x:5)
                     }
+                    
+                    Spacer()
                 }
             }
             .edgesIgnoringSafeArea(.all)

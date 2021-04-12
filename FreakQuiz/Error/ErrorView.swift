@@ -49,6 +49,8 @@ struct ErrorView: View {
                             .aspectRatio(contentMode: .fit)
                             .padding()
                     }
+                    
+                    Spacer()
                 }
             }
             .edgesIgnoringSafeArea(.all)

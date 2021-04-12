@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "difficultAnswerImage.png",
+      "filename" : "Sonic.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "difficultAnswerImage-1.png",
+      "filename" : "Sonic-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "difficultAnswerImage-2.png",
+      "filename" : "Sonic-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

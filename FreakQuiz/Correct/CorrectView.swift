@@ -17,23 +17,15 @@ struct CorrectView: View {
                 
                 VStack {
                     HStack{
-                           
-                        Spacer()
-                        Spacer()
                         
                         Text("CORRECT")
                             .font(Font.custom("PixelEmulator", size: 35))
                             .foregroundColor(.yellow)
                             .padding(40)
                             
-                        Spacer()
                         
-                        NavigationLink(destination: ScoreView()) {
-                            Image("star")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
+                
+                        
                     }.padding()
                     
                     Spacer()
@@ -58,10 +50,13 @@ struct CorrectView: View {
                             .aspectRatio(contentMode: .fit)
                             .padding()
                     }
+                    
+                    Spacer()
+                    Spacer()
+
                 }
             }
             .edgesIgnoringSafeArea(.all)
-
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

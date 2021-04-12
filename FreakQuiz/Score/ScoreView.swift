@@ -16,33 +16,28 @@ struct ScoreView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Text("SCORE")
-                        .font(Font.custom("PixelEmulator", size: 30))
-                        .foregroundColor(.white)
                     
                     HStack{
                         Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        
+                        Text("SCORE")
+                            .font(Font.custom("PixelEmulator", size: 35))
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+
                         Image("lakitu")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(minWidth: 50, idealWidth: 70, maxWidth: 120, minHeight: 100, idealHeight: 150, maxHeight: 120, alignment: .topLeading)
-                            .offset(x: -20)
-                    }
-                    
-                    List {
-                        Group{
-                            Text("Batman")
-                            Text("Superman")
-                        }
-                        
-                    }
-                    .font(.title)
-                    .listRowBackground(Color.clear)
-                    .padding()
-
-                    
+                            .frame(minWidth: 50, idealWidth: 70, maxWidth: 100, minHeight: 100, idealHeight: 100, maxHeight: 100, alignment: .topLeading)
+                            .offset(y: 100)
+                    }.padding()
+                 
                     Spacer()
-                    
+
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("continueEasy")
                             .resizable()
@@ -52,7 +47,6 @@ struct ScoreView: View {
                 }
             }
             .edgesIgnoringSafeArea(.all)
-
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

@@ -25,6 +25,11 @@ class Game {
     var questionsHard: [Question] {
         return questions?.filter{ $0.mode == .hard} ?? []
     }
+    
+    var questionsFast: [Question] {
+        return questions?.filter{ $0.mode == .fast} ?? []
+
+    }
    
     // MARK: Prueba a realizar al azar
     var test: String {
@@ -54,9 +59,14 @@ class Game {
             
         } else if Game.shared.mode == .hard {
             return Game.shared.questionsHard.randomElement()?.question
+            
+        } else if Game.shared.mode == .fast {
+            return Game.shared.questionsFast.randomElement()?.question
+
         }
         
-        return "No se han encontrado preguntas"
+        
+        return "No questions found"
     }
     
     // MARK: Configurar color de las views según modo

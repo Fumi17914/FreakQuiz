@@ -17,5 +17,6 @@ struct Question: Codable {
     enum Mode: Int, Codable {
         case easy
         case hard
+        case fast
     }
 }

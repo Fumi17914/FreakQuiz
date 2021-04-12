@@ -17,12 +17,11 @@ struct ChooseModeView: View {
                 
                 VStack {
                     Spacer()
-                    
-                    Text("ELIGE MODO")
+                                        
+                    Text("Choose mode")
                         .font(Font.custom("PixelEmulator", size: 30))
                         .foregroundColor(.white)
                     
-                    Spacer()
                     
                     NavigationLink(destination: ChoosePlayerView()){
                         Image("easyMode")
@@ -41,13 +40,15 @@ struct ChooseModeView: View {
                     }.onTapGesture {
                         Game.shared.mode = .hard
                     }
-    
-                    Spacer()
                     
-                    Image("textLogo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding(40)
+                    NavigationLink(destination: ChoosePlayerView()){
+                        Image("sonicMode")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        
+                    }.onTapGesture {
+                        Game.shared.mode = .fast
+                    }
                 }
             }
             .edgesIgnoringSafeArea(.all)

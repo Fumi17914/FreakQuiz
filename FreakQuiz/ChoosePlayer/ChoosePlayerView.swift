@@ -30,7 +30,7 @@ struct ChoosePlayerView: View {
                 VStack {
                     Spacer()
 
-                    Text("ELIGE JUGADOR")
+                    Text("CHOOSE PLAYERS")
                         .font(Font.custom("PixelEmulator", size: 30))
                         .foregroundColor(.white)
                         .padding(40)

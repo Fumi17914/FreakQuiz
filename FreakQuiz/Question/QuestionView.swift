@@ -17,12 +17,16 @@ struct QuestionView: View {
                 
                 VStack {
                     Spacer()
-                    Text("BATMAN")
-                        .font(Font.custom("PixelEmulator", size: 35))
-                        .foregroundColor(.white)
-                    
-                    Spacer()
-                    
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: 235, height: 80, alignment: .center)
+                        .foregroundColor(.yellow)
+                        .opacity(0.8)
+                        .textCase(.uppercase)
+                        .overlay(Text("BATMAN")
+                                    .font(Font.custom("PixelEmulator", size: 33))
+                                    .foregroundColor(.white))
+
+                                        
                     Text("¿cómo se llama el fenómeno que revive los muertos y les da más fuerza en the legend of zelda breath of the wild? ")
                         .font(Font.custom("PixelEmulator", size: 20))
                         .foregroundColor(.white)
@@ -33,41 +37,9 @@ struct QuestionView: View {
                     Spacer()
                     
                     VStack {
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("easyAnswerImage")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            
-                        }
-
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("easyAnswerImage")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            
-                        }
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Image("easyAnswerImage")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                               
-                        }
-                        
-                        Button(action: {}) {
-                            Image("easyAnswerImage")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                            
-                        }
                     }
                     
-                    Spacer()
-                    
-                    Text("15")
-                        .font(Font.custom("PixelEmulator", size: 35))
-                        .foregroundColor(.white)
-                    
+
                 }
             }
             .edgesIgnoringSafeArea(.all)
