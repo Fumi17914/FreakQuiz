@@ -20,7 +20,7 @@
 		D8689AFC25E4135300201574 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFB25E4135300201574 /* TestView.swift */; };
 		D8689AFF25E414FD00201574 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFE25E414FD00201574 /* ScoreView.swift */; };
 		D8689B0225E4191E00201574 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8689B0125E4191E00201574 /* Launch Screen.storyboard */; };
-		D8B666D72624CDCE00946618 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B666D62624CDCE00946618 /* AnswerView.swift */; };
+		D8B666D72624CDCE00946618 /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B666D62624CDCE00946618 /* CardContent.swift */; };
 		D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */; };
 		D8B6C91025E3BB7800324227 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90F25E3BB7800324227 /* SplashView.swift */; };
 		D8B6C91225E3BB7A00324227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B6C91125E3BB7A00324227 /* Assets.xcassets */; };
@@ -49,7 +49,7 @@
 		D8689AFB25E4135300201574 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D8689AFE25E414FD00201574 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		D8689B0125E4191E00201574 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		D8B666D62624CDCE00946618 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		D8B666D62624CDCE00946618 /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
 		D8B6C90A25E3BB7800324227 /* FreakQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreakQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakQuizApp.swift; sourceTree = "<group>"; };
 		D8B6C90F25E3BB7800324227 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				D8689AF225E403BE00201574 /* QuestionView.swift */,
-				D8B666D62624CDCE00946618 /* AnswerView.swift */,
+				D8B666D62624CDCE00946618 /* CardContent.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 				D8B6C94025E3CB2100324227 /* Question.swift in Sources */,
 				D8B6C91725E3BB7A00324227 /* Persistence.swift in Sources */,
 				D8689AFC25E4135300201574 /* TestView.swift in Sources */,
-				D8B666D72624CDCE00946618 /* AnswerView.swift in Sources */,
+				D8B666D72624CDCE00946618 /* CardContent.swift in Sources */,
 				D8B6C93D25E3CB0200324227 /* Player.swift in Sources */,
 				D8B6C93A25E3CAEC00324227 /* GameData.swift in Sources */,
 				D8689AFF25E414FD00201574 /* ScoreView.swift in Sources */,

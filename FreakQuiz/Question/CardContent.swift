@@ -1,5 +1,5 @@
 //
-//  AnswerView.swift
+//  CardContent.swift
 //  FreakQuiz
 //
 //  Created by Jose Fumanal Quintana on 12/4/21.
