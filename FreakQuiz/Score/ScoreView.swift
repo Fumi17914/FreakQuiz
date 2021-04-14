@@ -16,34 +16,25 @@ struct ScoreView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    Text("SCORE")
+                        .font(Font.custom("PixelEmulator", size: 35))
+                        .foregroundColor(.white)
                     
-                    HStack{
-                        Spacer()
-                        Spacer()
-                        Spacer()
-                        Spacer()
-                        
-                        Text("SCORE")
-                            .font(Font.custom("PixelEmulator", size: 35))
-                            .foregroundColor(.white)
-                        
-                        Spacer()
-
-                        Image("lakitu")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(minWidth: 50, idealWidth: 70, maxWidth: 100, minHeight: 100, idealHeight: 100, maxHeight: 100, alignment: .topLeading)
-                            .offset(y: 100)
-                    }.padding()
-                 
-                    Spacer()
-
-                    NavigationLink(destination: PlayerReadyView()) {
-                        Image("continueEasy")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding()
-                    }
+                    Image("lakitu")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(minWidth: 50, idealWidth: 70, maxWidth: 100, minHeight: 100, idealHeight: 100, maxHeight: 100, alignment: .topLeading)
+                    
+                }.padding()
+                
+                Spacer()
+                
+                NavigationLink(destination: PlayerReadyView()) {
+                    Image("continueEasy")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                    
                 }
             }
             .edgesIgnoringSafeArea(.all)

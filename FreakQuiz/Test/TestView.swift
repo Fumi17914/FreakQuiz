@@ -16,53 +16,28 @@ struct TestView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    HStack{
-                        
-                        Spacer()
-                        Spacer()
-                        
-                        Text("TEST")
-                            .font(Font.custom("PixelEmulator", size: 35))
-                            .foregroundColor(.yellow)
-                            .padding(40)
-                        
-                        Spacer()
-                        
-                        NavigationLink (destination: ScoreView()) {
-                            Image("star")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 60, height: 60, alignment: .center)
-                        }
-                        
-                    }
+                    
+                    Text("TEST")
+                        .font(Font.custom("PixelEmulator", size: 35))
+                        .foregroundColor(.yellow)
+                        .padding(50)
                     
                     Spacer()
                     
-                    
                     Text("quédate en ropa interior y haz 10 flexiones")
-                        .font(Font.custom("PixelEmulator", size: 25))
+                        .font(Font.custom("PixelEmulator", size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                    Spacer()
-                    
-                    
-                    Image("zoidberg")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(minWidth: 10, idealWidth: 250, maxWidth: 300, minHeight: 200, idealHeight: 200, maxHeight: 300, alignment: .center)
-                    
-                    Spacer()
                     
                     NavigationLink(destination: PlayerReadyView()) {
-                        Image("continueEasy")
+                        Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding()
-                    }
-                    
+                            .padding(20)
+                    }.offset(x: 5)
+                
                     Spacer()
                 }
             }

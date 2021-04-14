@@ -44,7 +44,7 @@ struct PlayerReadyView: View {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding()
+                            .padding(25)
                             .offset(x:5, y:30)
                     }
                     Spacer()

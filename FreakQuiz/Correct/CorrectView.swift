@@ -11,38 +11,24 @@ struct CorrectView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("Background")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+                Color.yellow.edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    HStack{
-                        
-                        Text("CORRECT")
-                            .font(Font.custom("PixelEmulator", size: 35))
-                            .foregroundColor(.yellow)
-                            .padding(40)
-                            
-                        
-                
-                        
-                    }.padding()
-                    
-                    Spacer()
-                    Spacer()
-                    
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: 235, height: 80, alignment: .center)
+                        .foregroundColor(.black)
+                        .overlay(Text("YEAAAH")
+                                    .font(Font.custom("PixelEmulator", size: 33))
+                                    .foregroundColor(.white))
+                        .multilineTextAlignment(.center)
                     Text("Answer")
                         .font(Font.custom("PixelEmulator", size: 25))
                         .foregroundColor(.white)
                                     
-                    Image("benderApplause")
+                    Image("marioWin")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(65)
-                    
-                    
-                    Spacer()
-                    Spacer()
                     
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("nextQuestionEasy")
@@ -50,13 +36,8 @@ struct CorrectView: View {
                             .aspectRatio(contentMode: .fit)
                             .padding()
                     }
-                    
-                    Spacer()
-                    Spacer()
-
                 }
             }
-            .edgesIgnoringSafeArea(.all)
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

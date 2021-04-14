@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "zoidberg.png",
+      "filename" : "unnamed.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "zoidberg-1.png",
+      "filename" : "unnamed-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "zoidberg-2.png",
+      "filename" : "unnamed-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
