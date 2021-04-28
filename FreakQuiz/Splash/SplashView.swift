@@ -9,7 +9,9 @@ import SwiftUI
 import CoreData
 
 struct SplashView: View {
-       
+    
+    let viewModel = LoadJson()
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -27,13 +29,16 @@ struct SplashView: View {
                     Spacer()
                     
                     NavigationLink(destination: ChooseModeView()) {
-                            Image("play")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .padding()
-                    }
+                        Image("play")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding()
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        viewModel.getJson()
+                    })
                     
-                    Spacer()
+                
+                Spacer()
                     Image("textLogo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)

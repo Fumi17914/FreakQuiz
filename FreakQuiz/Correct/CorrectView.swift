@@ -8,36 +8,67 @@
 import SwiftUI
 
 struct CorrectView: View {
+    
+    private func modeSelectedBackgroundColor() {
+        if Game.shared.mode == .easy {
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            ZStack {
-                Color.yellow.edgesIgnoringSafeArea(.all)
+            ZStack{
+                Image ("Background")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
                 
-                VStack {
+                VStack{
+                    Spacer()
+            
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
-                        .foregroundColor(.black)
+                        .foregroundColor(.yellow)
+                        .opacity(0.8)
+                        .textCase(.uppercase)
                         .overlay(Text("YEAAAH")
                                     .font(Font.custom("PixelEmulator", size: 33))
                                     .foregroundColor(.white))
-                        .multilineTextAlignment(.center)
-                    Text("Answer")
-                        .font(Font.custom("PixelEmulator", size: 25))
-                        .foregroundColor(.white)
-                                    
+                        .offset(y: 45)
+                    
+                    Spacer(minLength: 100)
+                    
                     Image("marioWin")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(65)
                     
                     NavigationLink(destination: PlayerReadyView()) {
-                        Image("nextQuestionEasy")
+                        Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding()
+                            .padding(25)
+                            .offset(x: 5, y: 35)
                     }
+
+                    
+                    HStack{
+                        NavigationLink(destination: ChoosePlayerView()) {
+                            Image("addYellow")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding(55)
+                        }
+                        
+                        NavigationLink(destination: ScoreView()) {
+                            Image("scoreYellow")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding(55)
+                        }
+                    }.offset(y: 35)
                 }
             }
+            .edgesIgnoringSafeArea(.top)
+
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

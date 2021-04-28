@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ChooseModeView: View {
+        
     var body: some View {
+    
         NavigationView{
             ZStack{
                 Image("Background")
@@ -28,27 +30,27 @@ struct ChooseModeView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                         
-                    }.onTapGesture {
+                    }.simultaneousGesture(TapGesture().onEnded{
                         Game.shared.mode = .easy
-                    }
+                    })
                     
                     NavigationLink(destination: ChoosePlayerView()){
                         Image("difficultMode")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                         
-                    }.onTapGesture {
+                    }.simultaneousGesture(TapGesture().onEnded{
                         Game.shared.mode = .hard
-                    }
+                    })
                     
                     NavigationLink(destination: ChoosePlayerView()){
                         Image("sonicMode")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                         
-                    }.onTapGesture {
+                    }.simultaneousGesture(TapGesture().onEnded{
                         Game.shared.mode = .fast
-                    }
+                    })
                 }
             }
             .edgesIgnoringSafeArea(.all)

@@ -16,13 +16,17 @@ struct TestView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    
-                    Text("TEST")
-                        .font(Font.custom("PixelEmulator", size: 35))
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: 235, height: 80, alignment: .center)
                         .foregroundColor(.yellow)
-                        .padding(50)
+                        .opacity(0.8)
+                        .overlay(Text("BATMAN")
+                                    .font(Font.custom("PixelEmulator", size: 33))
+                                    .foregroundColor(.white))
+                        .multilineTextAlignment(.center)
+                        .offset(y:50)
                     
-                    Spacer()
+                    Spacer(minLength: 30)
                     
                     Text("quédate en ropa interior y haz 10 flexiones")
                         .font(Font.custom("PixelEmulator", size: 30))
@@ -30,6 +34,8 @@ struct TestView: View {
                         .multilineTextAlignment(.center)
                     
                     Spacer()
+
+
                     
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
@@ -37,8 +43,23 @@ struct TestView: View {
                             .aspectRatio(contentMode: .fit)
                             .padding(20)
                     }.offset(x: 5)
+                    
+                    HStack{
+                        NavigationLink(destination: ChoosePlayerView()) {
+                            Image("addYellow")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding(55)
+                        }
+                        
+                        NavigationLink(destination: ScoreView()) {
+                            Image("scoreYellow")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .padding(55)
+                        }
+                    }
                 
-                    Spacer()
                 }
             }
             .edgesIgnoringSafeArea(.all)

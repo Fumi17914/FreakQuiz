@@ -16,6 +16,7 @@ struct QuestionView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    Spacer()
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
                         .foregroundColor(.yellow)
@@ -24,22 +25,23 @@ struct QuestionView: View {
                                     .font(Font.custom("PixelEmulator", size: 33))
                                     .foregroundColor(.white))
                         .multilineTextAlignment(.center)
-                                    
+                        .offset(y: -15)
                     Text("¿cómo se llama el fenómeno que revive los muertos y les da más fuerza en the legend of zelda breath of the wild?")
-                        .font(Font.custom("PixelEmulator", size: 25))
+                        .font(Font.custom("PixelEmulator", size: 23))
                         .foregroundColor(.white)
                         .padding()
                         .multilineTextAlignment(.center)
+                        .offset(y: -10)
                     
-                    Spacer()
+                    Spacer(minLength: 570)
+             
+
                     
-                }.offset(y:45)
+                }
+                                
                 CardContent()
-                
-                
             }
             .edgesIgnoringSafeArea(.all)
-            
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

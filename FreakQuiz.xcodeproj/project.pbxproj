@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D85D59122636F92A0020DBC4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D59112636F92A0020DBC4 /* CardView.swift */; };
+		D85D5915263709410020DBC4 /* LoadJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D5914263709410020DBC4 /* LoadJson.swift */; };
 		D8689AE125E3D36E00201574 /* ChooseModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AE025E3D36E00201574 /* ChooseModeView.swift */; };
 		D8689AE725E3D8FF00201574 /* Kratos.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8689AE325E3D8FE00201574 /* Kratos.otf */; };
 		D8689AE825E3D8FF00201574 /* Arcade.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8689AE425E3D8FE00201574 /* Arcade.ttf */; };
@@ -19,8 +21,6 @@
 		D8689AF925E40F9600201574 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AF825E40F9600201574 /* ErrorView.swift */; };
 		D8689AFC25E4135300201574 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFB25E4135300201574 /* TestView.swift */; };
 		D8689AFF25E414FD00201574 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFE25E414FD00201574 /* ScoreView.swift */; };
-		D8689B0225E4191E00201574 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8689B0125E4191E00201574 /* Launch Screen.storyboard */; };
-		D8B666D72624CDCE00946618 /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B666D62624CDCE00946618 /* CardContent.swift */; };
 		D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */; };
 		D8B6C91025E3BB7800324227 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90F25E3BB7800324227 /* SplashView.swift */; };
 		D8B6C91225E3BB7A00324227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B6C91125E3BB7A00324227 /* Assets.xcassets */; };
@@ -36,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D85D59112636F92A0020DBC4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D85D5914263709410020DBC4 /* LoadJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadJson.swift; sourceTree = "<group>"; };
 		D8689AE025E3D36E00201574 /* ChooseModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseModeView.swift; sourceTree = "<group>"; };
 		D8689AE325E3D8FE00201574 /* Kratos.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kratos.otf; sourceTree = "<group>"; };
 		D8689AE425E3D8FE00201574 /* Arcade.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arcade.ttf; sourceTree = "<group>"; };
@@ -48,8 +50,6 @@
 		D8689AF825E40F9600201574 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		D8689AFB25E4135300201574 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D8689AFE25E414FD00201574 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
-		D8689B0125E4191E00201574 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		D8B666D62624CDCE00946618 /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
 		D8B6C90A25E3BB7800324227 /* FreakQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreakQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakQuizApp.swift; sourceTree = "<group>"; };
 		D8B6C90F25E3BB7800324227 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 				D8B6C92525E3BC8B00324227 /* Fonts */,
 				D8B6C92325E3BC6F00324227 /* App */,
 				D8B6C92625E3BC9400324227 /* Model */,
-				D8B6C92825E3BCA800324227 /* Launch */,
 				D8B6C92725E3BC9E00324227 /* Splash */,
 				D8B6C92925E3BCB000324227 /* Mode */,
 				D8B6C92A25E3BCB500324227 /* ChoosePlayer */,
@@ -170,16 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				D8B6C90F25E3BB7800324227 /* SplashView.swift */,
+				D85D5914263709410020DBC4 /* LoadJson.swift */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		D8B6C92825E3BCA800324227 /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-				D8689B0125E4191E00201574 /* Launch Screen.storyboard */,
-			);
-			path = Launch;
 			sourceTree = "<group>";
 		};
 		D8B6C92925E3BCB000324227 /* Mode */ = {
@@ -210,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D8689AF225E403BE00201574 /* QuestionView.swift */,
-				D8B666D62624CDCE00946618 /* CardContent.swift */,
+				D85D59112636F92A0020DBC4 /* CardView.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -310,7 +302,6 @@
 				D8689AEA25E3D8FF00201574 /* Pixel.ttf in Resources */,
 				D8689AE825E3D8FF00201574 /* Arcade.ttf in Resources */,
 				D8689AE725E3D8FF00201574 /* Kratos.otf in Resources */,
-				D8689B0225E4191E00201574 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,11 +317,12 @@
 				D8689AED25E3DB8400201574 /* ChoosePlayerView.swift in Sources */,
 				D8B6C93625E3CAC100324227 /* Game.swift in Sources */,
 				D8689AF025E3E11500201574 /* PlayerReadyView.swift in Sources */,
+				D85D5915263709410020DBC4 /* LoadJson.swift in Sources */,
 				D8B6C93225E3CA9700324227 /* UIViewExtensions.swift in Sources */,
 				D8B6C94025E3CB2100324227 /* Question.swift in Sources */,
+				D85D59122636F92A0020DBC4 /* CardView.swift in Sources */,
 				D8B6C91725E3BB7A00324227 /* Persistence.swift in Sources */,
 				D8689AFC25E4135300201574 /* TestView.swift in Sources */,
-				D8B666D72624CDCE00946618 /* CardContent.swift in Sources */,
 				D8B6C93D25E3CB0200324227 /* Player.swift in Sources */,
 				D8B6C93A25E3CAEC00324227 /* GameData.swift in Sources */,
 				D8689AFF25E414FD00201574 /* ScoreView.swift in Sources */,

@@ -9,52 +9,55 @@ import SwiftUI
 
 struct ErrorView: View {
     var body: some View {
-        NavigationView{
-            ZStack {
-                Image("Background")
+        NavigationView {
+            ZStack{
+                Image ("Background")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
-                VStack {
+                
+                VStack{
+                    Spacer()
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: 235, height: 80, alignment: .center)
+                        .foregroundColor(.black)
+                        .opacity(0.8)
+                        .textCase(.uppercase)
+                        .overlay(Text("wroong")
+                                    .offset(x: 5)
+                                    .font(Font.custom("PixelEmulator", size: 33))
+                                    .foregroundColor(.white))
+                        .offset(y: 50)
                     
                     Spacer()
-                    
-                    Text("ERROR")
-                        .font(Font.custom("PixelEmulator", size: 35))
-                        .foregroundColor(.red)
-                    
                     Spacer()
-                    Spacer()
-                    
-                    Text("LA RESPUESTA ERA:")
-                        .font(Font.custom("PixelEmulator", size: 17))
+                    Text("ANSWER")
+                        .font(Font.custom("PixelEmulator", size: 25))
                         .foregroundColor(.white)
-                    
-                    Spacer()
-                    
-                    Text("Answer")
-                        .font(Font.custom("PixelEmulator", size: 30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
                         .padding()
+                        .multilineTextAlignment(.center)
                     
+                    Spacer()
                     
                     Image("luigi")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(65)
                     
-                    NavigationLink(destination: TestView()) {
-                        Image("penanceEasy")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding()
-                    }
-                    
                     Spacer()
+                    NavigationLink(destination: TestView()) {
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .frame(width: UIScreen.main.bounds.width - 50, height: 125, alignment: .center)
+                            .foregroundColor(.black)
+                            .overlay(Text("punishment")
+                                        .offset(x: 5)
+                                        .font(Font.custom("PixelEmulator", size: 33))
+                                        .foregroundColor(.white))
+                            .multilineTextAlignment(.center)
+                    }
                 }
             }
-            .edgesIgnoringSafeArea(.all)
-
+            .edgesIgnoringSafeArea(.top)
+            
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

@@ -31,7 +31,7 @@ struct ChoosePlayerView: View {
                     Spacer()
 
                     Text("CHOOSE PLAYERS")
-                        .font(Font.custom("PixelEmulator", size: 30))
+                        .font(Font.custom("PixelEmulator", size: 27))
                         .foregroundColor(.white)
                         .padding(40)
                                     
