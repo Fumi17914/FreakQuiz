@@ -16,7 +16,6 @@ struct ErrorView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack{
-                    Spacer()
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
                         .foregroundColor(.black)
@@ -28,20 +27,20 @@ struct ErrorView: View {
                                     .foregroundColor(.white))
                         .offset(y: 50)
                     
-                    Spacer()
-                    Spacer()
+                    Spacer(minLength: 50)
+    
                     Text("ANSWER")
                         .font(Font.custom("PixelEmulator", size: 25))
                         .foregroundColor(.white)
                         .padding()
                         .multilineTextAlignment(.center)
                     
-                    Spacer()
+                    Spacer(minLength: 20)
                     
                     Image("luigi")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(65)
+                        .frame(width: UIScreen.main.bounds.width - 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     Spacer()
                     NavigationLink(destination: TestView()) {
@@ -54,6 +53,9 @@ struct ErrorView: View {
                                         .foregroundColor(.white))
                             .multilineTextAlignment(.center)
                     }
+                    
+                    Spacer(minLength: 10)
+                    
                 }
             }
             .edgesIgnoringSafeArea(.top)

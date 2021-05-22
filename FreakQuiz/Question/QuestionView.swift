@@ -16,7 +16,7 @@ struct QuestionView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Spacer()
+                    Spacer(minLength: 50)
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
                         .foregroundColor(.yellow)
@@ -26,15 +26,14 @@ struct QuestionView: View {
                                     .foregroundColor(.white))
                         .multilineTextAlignment(.center)
                         .offset(y: -15)
-                    Text("¿cómo se llama el fenómeno que revive los muertos y les da más fuerza en the legend of zelda breath of the wild?")
+                    Text("¿cómo se llama el fenómeno que revive los muertos y les da más fuerza a los enemigos en the legend of zelda breath of the wild?")
                         .font(Font.custom("PixelEmulator", size: 23))
                         .foregroundColor(.white)
                         .padding()
                         .multilineTextAlignment(.center)
                         .offset(y: -10)
                     
-                    Spacer(minLength: 570)
-             
+                    Spacer(minLength: 150)
 
                     
                 }

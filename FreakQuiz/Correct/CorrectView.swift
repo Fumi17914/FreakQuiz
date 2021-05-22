@@ -34,12 +34,12 @@ struct CorrectView: View {
                                     .foregroundColor(.white))
                         .offset(y: 45)
                     
-                    Spacer(minLength: 100)
+                    Spacer(minLength: 150)
                     
                     Image("marioWin")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(65)
+                        .frame(width: UIScreen.main.bounds.width - 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")

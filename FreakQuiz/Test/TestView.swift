@@ -20,9 +20,11 @@ struct TestView: View {
                         .frame(width: 235, height: 80, alignment: .center)
                         .foregroundColor(.yellow)
                         .opacity(0.8)
-                        .overlay(Text("BATMAN")
+                        .overlay(Text("maaaal")
+                                    .offset(x:5)
                                     .font(Font.custom("PixelEmulator", size: 33))
                                     .foregroundColor(.white))
+    
                         .multilineTextAlignment(.center)
                         .offset(y:50)
                     

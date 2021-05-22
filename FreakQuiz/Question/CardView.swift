@@ -105,9 +105,9 @@ struct CardView: ViewModifier {
             .background(Color.yellow)
             .cornerRadius(15)
         }
-        .offset(y:  max(350, position + self.dragTracker.height))
+        .offset(y:  max(0, position + self.dragTracker.height))
         .animation(dragging ? nil : {
-            Animation.interpolatingSpring(stiffness: 250.0, damping: 40.0, initialVelocity: 5.0)
+            Animation.interpolatingSpring(stiffness: 100, damping: 40.0, initialVelocity: 5.0)
         }())
         .gesture(DragGesture()
                     .updating($dragTracker) { drag, state, transaction in state = drag.translation }
@@ -117,8 +117,8 @@ struct CardView: ViewModifier {
     
     private func onDragEnded(drag: DragGesture.Value) {
         dragging = false
-        let high = UIScreen.main.bounds.height - 100
-        let low: CGFloat = 100
+        let high = UIScreen.main.bounds.height - 50
+        let low: CGFloat = 150
         let dragDirection = drag.predictedEndLocation.y - drag.location.y
         //can also calculate drag offset to make it more rigid to shrink and expand
         if dragDirection > 0 {
