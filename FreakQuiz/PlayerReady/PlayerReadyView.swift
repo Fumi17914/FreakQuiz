@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PlayerReadyView: View {
+    
+    let randomPlayer = Game.shared.player.randomElement()
+    
     var body: some View {
         NavigationView{
             ZStack {
@@ -22,7 +25,7 @@ struct PlayerReadyView: View {
                         .foregroundColor(.white)
                     Spacer()
                                         
-                    Image("Batman")
+                    Image(randomPlayer ?? "player")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(50)
@@ -33,7 +36,7 @@ struct PlayerReadyView: View {
                         .foregroundColor(.yellow)
                         .opacity(0.8)
                         .textCase(.uppercase)
-                        .overlay(Text("BATMAN")
+                        .overlay(Text(randomPlayer ?? "player")
                                     .font(Font.custom("PixelEmulator", size: 33))
                                     .foregroundColor(.white))
                         .offset(y: -45)

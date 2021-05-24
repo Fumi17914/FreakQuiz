@@ -18,8 +18,8 @@ struct ChooseModeView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 ScrollView(.vertical) {
-                    VStack {
-                        Spacer(minLength: 40)
+                    VStack(spacing: 0) {
+                        Spacer(minLength: 50)
 
                         Text("Choose mode")
                             .font(Font.custom("PixelEmulator", size: 30))
@@ -61,8 +61,7 @@ struct ChooseModeView: View {
                             .padding(40)
                     }
                 }
-                
-               
+                .scaledToFit()
             }
             .edgesIgnoringSafeArea(.all)
             

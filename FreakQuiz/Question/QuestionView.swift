@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QuestionView: View {
+        
     var body: some View {
         NavigationView{
             ZStack {
@@ -21,7 +22,7 @@ struct QuestionView: View {
                         .frame(width: 235, height: 80, alignment: .center)
                         .foregroundColor(.yellow)
                         .opacity(0.8)
-                        .overlay(Text("BATMAN")
+                        .overlay(Text("player")
                                     .font(Font.custom("PixelEmulator", size: 33))
                                     .foregroundColor(.white))
                         .multilineTextAlignment(.center)
