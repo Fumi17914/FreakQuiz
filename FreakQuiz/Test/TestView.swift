@@ -28,17 +28,16 @@ struct TestView: View {
                         .multilineTextAlignment(.center)
                         .offset(y:50)
                     
-                    Spacer(minLength: 30)
+                    Spacer(minLength: 125)
                     
                     Text("quédate en ropa interior y haz 10 flexiones")
-                        .font(Font.custom("PixelEmulator", size: 30))
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/25))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
+                        .padding()
                     
                     Spacer()
 
-
-                    
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
                             .resizable()

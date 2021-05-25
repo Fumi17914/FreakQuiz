@@ -25,8 +25,6 @@ struct SplashView: View {
                         .aspectRatio(contentMode: .fit)
                         .padding(25)
                     
-                    
-                    
                     NavigationLink(destination: ChooseModeView()) {
                         Image("play")
                             .resizable()
@@ -36,14 +34,11 @@ struct SplashView: View {
                         viewModel.getJson()
                     })
                     
-                    
                     Image("textLogo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(40)
                 }
-                
-                
             }
             .edgesIgnoringSafeArea(.all)
         }

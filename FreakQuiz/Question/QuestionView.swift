@@ -28,15 +28,15 @@ struct QuestionView: View {
                         .multilineTextAlignment(.center)
                         .offset(y: -15)
                     Text("¿cómo se llama el fenómeno que revive los muertos y les da más fuerza a los enemigos en the legend of zelda breath of the wild?")
-                        .font(Font.custom("PixelEmulator", size: 23))
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                         .foregroundColor(.white)
                         .padding()
                         .multilineTextAlignment(.center)
                         .offset(y: -10)
                     
-                    Spacer(minLength: 150)
+                    Spacer(minLength: 0)
 
-                    
+
                 }
                                 
                 CardContent()

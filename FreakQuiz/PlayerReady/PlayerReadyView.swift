@@ -33,7 +33,7 @@ struct PlayerReadyView: View {
                     
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
-                        .foregroundColor(.yellow)
+                        .foregroundColor(Game.shared.colorMode)
                         .opacity(0.8)
                         .textCase(.uppercase)
                         .overlay(Text(randomPlayer ?? "player")

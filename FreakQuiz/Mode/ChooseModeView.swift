@@ -32,9 +32,10 @@ struct ChooseModeView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
-                        }.simultaneousGesture(TapGesture().onEnded{
+                        }.onTapGesture {
                             Game.shared.mode = .easy
-                        })
+                        }
+                        
                         Spacer()
 
                         NavigationLink(destination: ChoosePlayerView()){
@@ -42,18 +43,19 @@ struct ChooseModeView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
-                        }.simultaneousGesture(TapGesture().onEnded{
+                        }.onTapGesture {
                             Game.shared.mode = .hard
-                        })
+                        }
+
                         
                         NavigationLink(destination: ChoosePlayerView()){
                             Image("sonicMode")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
-                        }.simultaneousGesture(TapGesture().onEnded{
-                            Game.shared.mode = .hard
-                        })
+                        }.onTapGesture {
+                            Game.shared.mode = .fast
+                        }
                         
                         Image("textLogo")
                             .resizable()

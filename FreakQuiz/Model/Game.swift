@@ -5,7 +5,7 @@
 //  Created by Jose Fumanal Quintana on 22/2/21.
 //
 
-import UIKit
+import SwiftUI
 
 class Game {
     // MARK: - Properties
@@ -70,6 +70,16 @@ class Game {
     }
     
     // MARK: Configurar color de las views según modo
+    var colorMode: Color = .yellow
+    func modeSelectedBackgroundColor() {
+         if Game.shared.mode == .hard {
+            colorMode = .red
+        } else if Game.shared.mode == .fast {
+            colorMode = .blue
+        }
+    }
+
+    
     /*func configureBackgroundColor(button: UIButton) {
         switch Game.shared.mode {
         case .easy:

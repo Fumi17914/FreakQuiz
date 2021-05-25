@@ -50,7 +50,7 @@ struct CardView: ViewModifier {
                 content.padding(.top, 30)
                                 
                 VStack {
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectOrTestView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)
@@ -60,7 +60,7 @@ struct CardView: ViewModifier {
                             .multilineTextAlignment(.center)
                     }
                     
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectOrTestView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)
@@ -70,7 +70,7 @@ struct CardView: ViewModifier {
                             .multilineTextAlignment(.center)
                     }
                     
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectOrTestView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)
@@ -80,7 +80,7 @@ struct CardView: ViewModifier {
                             .multilineTextAlignment(.center)
                     }
                     
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectOrTestView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)
@@ -118,7 +118,7 @@ struct CardView: ViewModifier {
     private func onDragEnded(drag: DragGesture.Value) {
         dragging = false
         let high = UIScreen.main.bounds.height - 50
-        let low: CGFloat = 150
+        let low: CGFloat = UIScreen.main.bounds.height / 4
         let dragDirection = drag.predictedEndLocation.y - drag.location.y
         //can also calculate drag offset to make it more rigid to shrink and expand
         if dragDirection > 0 {

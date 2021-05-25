@@ -1,5 +1,5 @@
 //
-//  CorrectView.swift
+//  CorrectOrTestView.swift
 //  FreakQuiz
 //
 //  Created by Jose Fumanal Quintana on 22/2/21.
@@ -7,13 +7,8 @@
 
 import SwiftUI
 
-struct CorrectView: View {
-    
-    private func modeSelectedBackgroundColor() {
-        if Game.shared.mode == .easy {
-        }
-    }
-    
+struct CorrectOrTestView: View {
+        
     var body: some View {
         NavigationView {
             ZStack{
@@ -39,7 +34,7 @@ struct CorrectView: View {
                     Image("marioWin")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width - 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: UIScreen.main.bounds.width - 100, alignment: .center)
                     
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
@@ -76,8 +71,8 @@ struct CorrectView: View {
     }
 }
 
-struct CorrectView_Previews: PreviewProvider {
+struct CorrectOrTestView_Previews: PreviewProvider {
     static var previews: some View {
-        CorrectView()
+        CorrectOrTestView()
     }
 }

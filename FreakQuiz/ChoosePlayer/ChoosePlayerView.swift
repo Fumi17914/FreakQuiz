@@ -38,7 +38,6 @@ struct ChoosePlayerView: View {
 
     @State private var devilState = false
     @State private var devilOpacity: Double = 1
-
     
     var body: some View {
         NavigationView {
