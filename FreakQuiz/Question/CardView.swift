@@ -50,7 +50,7 @@ struct CardView: ViewModifier {
                 content.padding(.top, 30)
                                 
                 VStack {
-                    NavigationLink(destination: CorrectOrTestView()) {
+                    NavigationLink(destination: CorrectView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)
@@ -60,7 +60,7 @@ struct CardView: ViewModifier {
                             .multilineTextAlignment(.center)
                     }
                     
-                    NavigationLink(destination: CorrectOrTestView()) {
+                    NavigationLink(destination: CorrectView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)
@@ -70,7 +70,7 @@ struct CardView: ViewModifier {
                             .multilineTextAlignment(.center)
                     }
                     
-                    NavigationLink(destination: CorrectOrTestView()) {
+                    NavigationLink(destination: CorrectView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)
@@ -80,7 +80,7 @@ struct CardView: ViewModifier {
                             .multilineTextAlignment(.center)
                     }
                     
-                    NavigationLink(destination: CorrectOrTestView()) {
+                    NavigationLink(destination: CorrectView()) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
                             .foregroundColor(.white)

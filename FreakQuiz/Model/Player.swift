@@ -23,10 +23,10 @@ class Player {
     enum Characters: String {
         case Batman = "Batman"
         case Superman = "Superman"
-        case Lobezno = "Lobezno"
+        case Lobezno = "Wolverine"
         case Doctor = "Meredith Grey"
         case Girl = "Aventurera"
-        case Noel = "Papá Noel"
+        case Noel = "Santa Claus"
         case Indy = "Indiana Jones"
         case Spiderman = "Spider-Man"
         case Devil = "Diablo"

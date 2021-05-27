@@ -1,5 +1,5 @@
 //
-//  CorrectOrTestView.swift
+// CorrectView.swift
 //  FreakQuiz
 //
 //  Created by Jose Fumanal Quintana on 22/2/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CorrectOrTestView: View {
+struct CorrectView: View {
         
     var body: some View {
         NavigationView {
@@ -21,7 +21,7 @@ struct CorrectOrTestView: View {
             
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
-                        .foregroundColor(.yellow)
+                        .foregroundColor(.green)
                         .opacity(0.8)
                         .textCase(.uppercase)
                         .overlay(Text("YEAAAH")
@@ -30,11 +30,21 @@ struct CorrectOrTestView: View {
                         .offset(y: 45)
                     
                     Spacer(minLength: 150)
+                  
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/3, alignment: .center)
+                        .textCase(.uppercase)
+                        .overlay(Text("Quédate en ropa interior y haz 10 flexiones")
+                                    .font(Font.custom("PixelEmulator", size: 33))
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
+                                    .padding())
+                        .foregroundColor(.clear)
                     
-                    Image("marioWin")
+                    /*Image("marioWin")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width - 100, alignment: .center)
+                        .frame(width: UIScreen.main.bounds.width - 100, alignment: .center)*/
                     
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
@@ -60,9 +70,11 @@ struct CorrectOrTestView: View {
                                 .padding(55)
                         }
                     }.offset(y: 35)
+                    
+                    Spacer(minLength: 30)
                 }
             }
-            .edgesIgnoringSafeArea(.top)
+            .edgesIgnoringSafeArea(.all)
 
         }
         .navigationBarHidden(true)
@@ -71,8 +83,8 @@ struct CorrectOrTestView: View {
     }
 }
 
-struct CorrectOrTestView_Previews: PreviewProvider {
+struct CorrectView_Previews: PreviewProvider {
     static var previews: some View {
-        CorrectOrTestView()
+        CorrectView()
     }
 }

@@ -17,7 +17,7 @@
 		D8689AED25E3DB8400201574 /* ChoosePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AEC25E3DB8400201574 /* ChoosePlayerView.swift */; };
 		D8689AF025E3E11500201574 /* PlayerReadyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AEF25E3E11500201574 /* PlayerReadyView.swift */; };
 		D8689AF325E403BE00201574 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AF225E403BE00201574 /* QuestionView.swift */; };
-		D8689AF625E40DD300201574 /* CorrectOrTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AF525E40DD300201574 /* CorrectOrTestView.swift */; };
+		D8689AF625E40DD300201574 /* CorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AF525E40DD300201574 /* CorrectView.swift */; };
 		D8689AFC25E4135300201574 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFB25E4135300201574 /* TestView.swift */; };
 		D8689AFF25E414FD00201574 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFE25E414FD00201574 /* ScoreView.swift */; };
 		D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C90D25E3BB7800324227 /* FreakQuizApp.swift */; };
@@ -45,7 +45,7 @@
 		D8689AEC25E3DB8400201574 /* ChoosePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayerView.swift; sourceTree = "<group>"; };
 		D8689AEF25E3E11500201574 /* PlayerReadyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerReadyView.swift; sourceTree = "<group>"; };
 		D8689AF225E403BE00201574 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
-		D8689AF525E40DD300201574 /* CorrectOrTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectOrTestView.swift; sourceTree = "<group>"; };
+		D8689AF525E40DD300201574 /* CorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectView.swift; sourceTree = "<group>"; };
 		D8689AFB25E4135300201574 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D8689AFE25E414FD00201574 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		D8B6C90A25E3BB7800324227 /* FreakQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreakQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +104,7 @@
 				D8B6C92A25E3BCB500324227 /* ChoosePlayer */,
 				D8B6C92B25E3BCBB00324227 /* PlayerReady */,
 				D8B6C92C25E3BCC300324227 /* Question */,
-				D8B6C92D25E3BCCB00324227 /* CorrectOrTest */,
+				D8B6C92D25E3BCCB00324227 /* Correct */,
 				D8B6C92F25E3BCDF00324227 /* Test */,
 				D8B6C93025E3BCE400324227 /* Score */,
 				D8B6C91B25E3BB7A00324227 /* Info.plist */,
@@ -204,12 +204,12 @@
 			path = Question;
 			sourceTree = "<group>";
 		};
-		D8B6C92D25E3BCCB00324227 /* CorrectOrTest */ = {
+		D8B6C92D25E3BCCB00324227 /* Correct */ = {
 			isa = PBXGroup;
 			children = (
-				D8689AF525E40DD300201574 /* CorrectOrTestView.swift */,
+				D8689AF525E40DD300201574 /* CorrectView.swift */,
 			);
-			path = CorrectOrTest;
+			path = Correct;
 			sourceTree = "<group>";
 		};
 		D8B6C92F25E3BCDF00324227 /* Test */ = {
@@ -319,7 +319,7 @@
 				D8B6C91025E3BB7800324227 /* SplashView.swift in Sources */,
 				D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */,
 				D8B6C94325E3CB3F00324227 /* sampleData.json in Sources */,
-				D8689AF625E40DD300201574 /* CorrectOrTestView.swift in Sources */,
+				D8689AF625E40DD300201574 /* CorrectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

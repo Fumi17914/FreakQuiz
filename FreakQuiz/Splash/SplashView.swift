@@ -40,7 +40,7 @@ struct SplashView: View {
                         .padding(40)
                 }
             }
-            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.top)
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

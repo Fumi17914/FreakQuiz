@@ -9,41 +9,41 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        NavigationView{
-            ZStack {
-                Image("Background")
+        NavigationView {
+            ZStack{
+                Image ("Background")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 
-                VStack {
+                VStack{
+                    Spacer()
+            
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
-                        .foregroundColor(.yellow)
+                        .foregroundColor(.purple)
                         .opacity(0.8)
-                        .overlay(Text("maaaal")
-                                    .offset(x:5)
+                        .textCase(.uppercase)
+                        .overlay(Text("MAAAAL")
                                     .font(Font.custom("PixelEmulator", size: 33))
-                                    .foregroundColor(.white))
-    
-                        .multilineTextAlignment(.center)
-                        .offset(y:50)
+                                    .foregroundColor(.white)
+                                    .offset(x: 5))
+                        .offset(y: 45)
                     
-                    Spacer(minLength: 125)
+                    Spacer(minLength: 150)
                     
-                    Text("quédate en ropa interior y haz 10 flexiones")
-                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/25))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding()
+                    Image("marioWin")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: UIScreen.main.bounds.width - 100, alignment: .center)
                     
-                    Spacer()
-
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding(20)
-                    }.offset(x: 5)
+                            .padding(25)
+                            .offset(x: 5, y: 35)
+                    }
+
                     
                     HStack{
                         NavigationLink(destination: ChoosePlayerView()) {
@@ -59,12 +59,13 @@ struct TestView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding(55)
                         }
-                    }
-                
+                    }.offset(y: 35)
+                    
+                    Spacer(minLength: 30)
                 }
             }
             .edgesIgnoringSafeArea(.all)
-            
+
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

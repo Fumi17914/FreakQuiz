@@ -39,6 +39,14 @@ struct ChoosePlayerView: View {
     @State private var devilState = false
     @State private var devilOpacity: Double = 1
     
+    private func deletePlayer(playerToDelete: String) {
+        for (position, player) in Game.shared.player.enumerated() {
+            if player == playerToDelete {
+                Game.shared.player.remove(at: position)
+            }
+        }
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -50,7 +58,7 @@ struct ChoosePlayerView: View {
                     Spacer()
 
                     Text("CHOOSE PLAYERS")
-                        .font(Font.custom("PixelEmulator", size: 27))
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                         .foregroundColor(.white)
                         .padding(40)
                                     
@@ -58,19 +66,18 @@ struct ChoosePlayerView: View {
                         HStack{
                             
                             Button(action: {
-                                
                                 if !batmanState {
                                     batmanState = true
-                                    Game.shared.player.append("Batman")
+                                    Game.shared.player.append(Player.Characters.Batman.rawValue)
                                     batmanOpacity = 0.3
                                 } else {
                                     batmanState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Batman"}
+                                    deletePlayer(playerToDelete: Player.Characters.Batman.rawValue)
                                     batmanOpacity = 1.0
                                 }
                                 
                                 }) {
-                                Image("Batman")
+                                Image(Player.Characters.Batman.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(batmanOpacity)
@@ -81,16 +88,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !supermanState {
                                     supermanState = true
-                                    Game.shared.player.append("Superman")
+                                    Game.shared.player.append(Player.Characters.Superman.rawValue)
                                     supermanOpacity = 0.3
                                 } else {
                                     supermanState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Superman"}
+                                    deletePlayer(playerToDelete: Player.Characters.Superman.rawValue)
                                     supermanOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Superman")
+                                Image(Player.Characters.Superman.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(supermanOpacity)
@@ -102,16 +109,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !spidermanState {
                                     spidermanState = true
-                                    Game.shared.player.append("Spider-Man")
+                                    Game.shared.player.append(Player.Characters.Spiderman.rawValue)
                                     spidermanOpacity = 0.3
                                 } else {
                                     spidermanState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Spider-Man"}
+                                    deletePlayer(playerToDelete: Player.Characters.Spiderman.rawValue)
                                     spidermanOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Spider-Man")
+                                Image(Player.Characters.Spiderman.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(spidermanOpacity)
@@ -125,16 +132,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !adventuressState {
                                     adventuressState = true
-                                    Game.shared.player.append("Adventuress")
+                                    Game.shared.player.append(Player.Characters.Girl.rawValue)
                                     adventuressOpacity = 0.3
                                 } else {
                                     adventuressState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Adventuress"}
+                                    deletePlayer(playerToDelete: Player.Characters.Girl.rawValue)
                                     adventuressOpacity = 1.0
                                 }
 
                             }) {
-                                Image("Adventuress")
+                                Image(Player.Characters.Girl.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(adventuressOpacity)
@@ -146,16 +153,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !meredithGreyState {
                                     meredithGreyState = true
-                                    Game.shared.player.append("Meredith Grey")
+                                    Game.shared.player.append(Player.Characters.Doctor.rawValue)
                                     meredithOpacity = 0.3
                                 } else {
                                     meredithGreyState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Meredith Grey"}
+                                    deletePlayer(playerToDelete: Player.Characters.Doctor.rawValue)
                                     meredithOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Meredith Grey")
+                                Image(Player.Characters.Doctor.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(meredithOpacity)
@@ -170,16 +177,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !wolverineState {
                                     wolverineState = true
-                                    Game.shared.player.append("Wolverine")
+                                    Game.shared.player.append(Player.Characters.Lobezno.rawValue)
                                     wolverineOpacity = 0.3
                                 } else {
                                     wolverineState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Wolverine"}
+                                    deletePlayer(playerToDelete: Player.Characters.Lobezno.rawValue)
                                     wolverineOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Wolverine")
+                                Image(Player.Characters.Lobezno.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(wolverineOpacity)
@@ -191,16 +198,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !deadpoolState {
                                     deadpoolState = true
-                                    Game.shared.player.append("Deadpool")
+                                    Game.shared.player.append(Player.Characters.Deadpool.rawValue)
                                     deadpoolOpacity = 0.3
                                 } else {
                                     deadpoolState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Deadpool"}
+                                    deletePlayer(playerToDelete: Player.Characters.Deadpool.rawValue)
                                     deadpoolOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Deadpool")
+                                Image(Player.Characters.Deadpool.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(deadpoolOpacity)
@@ -212,16 +219,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !santaClausState {
                                     santaClausState = true
-                                    Game.shared.player.append("Santa Claus")
+                                    Game.shared.player.append(Player.Characters.Noel.rawValue)
                                     santaclausOpacity = 0.3
                                 } else {
                                     santaClausState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Santa Claus"}
+                                    deletePlayer(playerToDelete: Player.Characters.Noel.rawValue)
                                     santaclausOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Santa Claus")
+                                Image(Player.Characters.Noel.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(santaclausOpacity)
@@ -236,16 +243,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !indianaJonesState {
                                     indianaJonesState = true
-                                    Game.shared.player.append("Indiana Jones")
+                                    Game.shared.player.append(Player.Characters.Indy.rawValue)
                                     indianaJonesOpacity = 0.3
                                 } else {
                                     indianaJonesState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Indiana Jones"}
+                                    deletePlayer(playerToDelete: Player.Characters.Indy.rawValue)
                                     indianaJonesOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Indiana Jones")
+                                Image(Player.Characters.Indy.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(indianaJonesOpacity)
@@ -257,16 +264,16 @@ struct ChoosePlayerView: View {
                                 
                                 if !devilState {
                                     devilState = true
-                                    Game.shared.player.append("Diablo")
+                                    Game.shared.player.append(Player.Characters.Devil.rawValue)
                                     devilOpacity = 0.3
                                 } else {
                                     devilState = false
-                                    Game.shared.player = Game.shared.player.filter {$0 != "Diablo"}
+                                    deletePlayer(playerToDelete: Player.Characters.Devil.rawValue)
                                     devilOpacity = 1.0
                                 }
                                 
                             }) {
-                                Image("Diablo")
+                                Image(Player.Characters.Devil.rawValue)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .opacity(devilOpacity)
@@ -276,7 +283,7 @@ struct ChoosePlayerView: View {
 
                         }.padding()
                         
-                        Spacer()
+                        Spacer(minLength: 25)
                         
                         NavigationLink(destination: PlayerReadyView()) {
                                 Image("redButton")

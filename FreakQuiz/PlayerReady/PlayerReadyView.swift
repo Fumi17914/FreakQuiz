@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerReadyView: View {
     
-    let randomPlayer = Game.shared.player.randomElement()
+    var randomPlayer = Game.shared.player.randomElement()
     
     var body: some View {
         NavigationView{
@@ -33,12 +33,14 @@ struct PlayerReadyView: View {
                     
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
-                        .foregroundColor(Game.shared.colorMode)
+                        .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                         .opacity(0.8)
                         .textCase(.uppercase)
                         .overlay(Text(randomPlayer ?? "player")
-                                    .font(Font.custom("PixelEmulator", size: 33))
-                                    .foregroundColor(.white))
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/45))
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center))
+                                    
                         .offset(y: -45)
                     
                     Spacer()

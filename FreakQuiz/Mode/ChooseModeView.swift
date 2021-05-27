@@ -17,7 +17,7 @@ struct ChooseModeView: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 
-                ScrollView(.vertical) {
+                ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 0) {
                         Spacer(minLength: 50)
 
@@ -31,9 +31,6 @@ struct ChooseModeView: View {
                             Image("easyMode")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                            
-                        }.onTapGesture {
-                            Game.shared.mode = .easy
                         }
                         
                         Spacer()
@@ -46,7 +43,6 @@ struct ChooseModeView: View {
                         }.onTapGesture {
                             Game.shared.mode = .hard
                         }
-
                         
                         NavigationLink(destination: ChoosePlayerView()){
                             Image("sonicMode")
@@ -63,11 +59,8 @@ struct ChooseModeView: View {
                             .padding(40)
                     }
                 }
-                .scaledToFit()
+                .scaledToFill()
             }
-            .edgesIgnoringSafeArea(.all)
-            
-            
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
