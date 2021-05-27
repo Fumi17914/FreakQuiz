@@ -20,7 +20,7 @@ struct QuestionView: View {
                     Spacer(minLength: 50)
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: 235, height: 80, alignment: .center)
-                        .foregroundColor(.yellow)
+                        .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                         .opacity(0.8)
                         .overlay(Text("player")
                                     .font(Font.custom("PixelEmulator", size: 33))

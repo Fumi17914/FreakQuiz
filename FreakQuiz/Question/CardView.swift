@@ -102,7 +102,7 @@ struct CardView: ViewModifier {
             }
             .frame(minWidth: UIScreen.main.bounds.width)
             .scaleEffect(x: 1, y: 1, anchor: .center)
-            .background(Color.yellow)
+            .background(Game.shared.modeSelectedBackgroundColor())
             .cornerRadius(15)
         }
         .offset(y:  max(0, position + self.dragTracker.height))
