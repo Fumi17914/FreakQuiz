@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChooseModeView: View {
     
+    let viewModel = ChooseMode()
+    
     var body: some View {
         
         NavigationView{
@@ -27,7 +29,9 @@ struct ChooseModeView: View {
                         
                         Spacer(minLength: 25)
                         
-                        NavigationLink(destination: ChoosePlayerView()){
+                        NavigationLink(destination: ChoosePlayerView().onAppear {
+                            self.viewModel.easyMode()
+                        }){
                             Image("easyMode")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -35,22 +39,22 @@ struct ChooseModeView: View {
                         
                         Spacer()
 
-                        NavigationLink(destination: ChoosePlayerView()){
+                        NavigationLink(destination: ChoosePlayerView().onAppear {
+                            self.viewModel.hardMode()
+                        }){
                             Image("difficultMode")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
-                        }.onTapGesture {
-                            Game.shared.mode = .hard
                         }
                         
-                        NavigationLink(destination: ChoosePlayerView()){
+                        NavigationLink(destination: ChoosePlayerView().onAppear {
+                            self.viewModel.fastMode()
+                        }){
                             Image("sonicMode")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
-                        }.onTapGesture {
-                            Game.shared.mode = .fast
                         }
                         
                         Image("textLogo")
