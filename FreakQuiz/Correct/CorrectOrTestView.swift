@@ -18,30 +18,20 @@ struct CorrectOrTestView: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 
-                VStack{
-                    Spacer()
-                    RoundedRectangle(cornerRadius: 30)
-                        .frame(width: UIScreen.main.bounds.width/1, height: UIScreen.main.bounds.height/10, alignment: .center)
-                        .foregroundColor(.clear)
-                        .opacity(0.8)
-                        .textCase(.uppercase)
-                        .overlay(Text("YOU'VE FAILED!!")
-                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
-                                    .foregroundColor(.white))
-                        .offset(y: -20)
-                    
+                VStack{                                    
                     Spacer()
                     
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/3, alignment: .center)
                         .textCase(.uppercase)
                         .opacity(0.8)
-                        .overlay(Text("Quédate en ropa interior y haz 10 flexiones")
+                        .overlay(Text(Game.shared.test)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
                                     .padding())
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
+                        .offset(y: -55)
                     
                     Spacer()
                     
@@ -55,6 +45,7 @@ struct CorrectOrTestView: View {
                             .shadow(color: Game.shared.modeSelectedBackgroundColor(), radius: 4)
                     }.offset(y: 25)
                     
+
                     Spacer()
                     
                     NavigationLink(destination: PlayerReadyView()) {
@@ -62,7 +53,7 @@ struct CorrectOrTestView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(25)
-                    }.offset(x:5, y: 30)
+                    }.offset(x:5, y: 70)
                     
                     Spacer()
                     

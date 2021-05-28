@@ -16,19 +16,11 @@ struct ScoreView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    
-                    Spacer()
-
                     Text("SCORE")
                         .font(Font.custom("PixelEmulator", size: 35))
                         .foregroundColor(.white)
-                    
-                    Spacer()
-                    
-                    Image("lakitu")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding(55)
+                        .offset(y: 25)
+                                     
                     
                     Spacer()
 
@@ -37,6 +29,7 @@ struct ScoreView: View {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .offset(x: 5,y: -30)
                             .padding()
                         
                     }

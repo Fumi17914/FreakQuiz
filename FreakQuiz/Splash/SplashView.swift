@@ -25,13 +25,14 @@ struct SplashView: View {
                         .aspectRatio(contentMode: .fit)
                         .padding(25)
                     
-                    NavigationLink(destination: ChooseModeView().onAppear {
-                        self.viewModel.getJson()
-                    }) {
+                    NavigationLink(destination: ChooseModeView()){
                         Image("play")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
+                    }.onAppear {
+                        print("loadJson")
+                        viewModel.getJson()
                     }
                     
                     Image("textLogo")

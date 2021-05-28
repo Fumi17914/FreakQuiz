@@ -26,10 +26,10 @@ class Game {
         return questions?.filter{ $0.mode == .hard} ?? []
     }
     
-    var questionsFast: [Question] {
+    /*var questionsFast: [Question] {
         return questions?.filter{ $0.mode == .fast} ?? []
 
-    }
+    }*/
    
     // MARK: Prueba a realizar al azar
     var test: String {
@@ -60,10 +60,10 @@ class Game {
         } else if Game.shared.mode == .hard {
             return Game.shared.questionsHard.randomElement()?.question
             
-        } else if Game.shared.mode == .fast {
+        } /*else if Game.shared.mode == .fast {
             return Game.shared.questionsFast.randomElement()?.question
 
-        }
+        }*/
 
         return "No questions found"
     }

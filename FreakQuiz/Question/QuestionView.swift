@@ -9,6 +9,8 @@ import SwiftUI
 
 struct QuestionView: View {
     
+    var startTimer = ProgressBarView()
+    
     var body: some View {
         NavigationView{
             ZStack {
@@ -17,23 +19,26 @@ struct QuestionView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    RoundedRectangle(cornerRadius: 30)
-                        .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/3, alignment: .center)
-                        .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                        .opacity(0.7)
-                        .textCase(.uppercase)
-                        .overlay(  Text(Game.shared.randomQuestion ?? "¿cómo se llama el fenómeno que revive los muertos y les da más fuerza a los enemigos en the legend of zelda breath of the wild?")
-                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .multilineTextAlignment(.center))
-                        .offset(y: 70)
-                                      
-                    Spacer(minLength: 250)
                     
-                    
+                    VStack {
+                        RoundedRectangle(cornerRadius: 30)
+                            .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/3, alignment: .center)
+                            .foregroundColor(Game.shared.modeSelectedBackgroundColor())
+                            .opacity(0.7)
+                            .textCase(.uppercase)
+                            .overlay(Text(Game.shared.randomQuestion ?? "¿cómo se llama el fenómeno que revive los muertos y les da más fuerza a los enemigos en the legend of zelda breath of the wild?")
+                                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
+                                        .foregroundColor(.white)
+                                        .padding()
+                                        .multilineTextAlignment(.center))
+                            .offset(y: 70)
+                        ProgressBarView().onAppear {
+                            self.startTimer.startLoading()
+                        }.offset(y: 80)
+                    }
+                    Spacer()
                 }
-                
+
                 CardContent()
             }
             .edgesIgnoringSafeArea(.all)

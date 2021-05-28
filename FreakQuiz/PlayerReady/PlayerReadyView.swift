@@ -20,8 +20,8 @@ struct PlayerReadyView: View {
                 
                 VStack {
                     Spacer()
-                    Text("ARE YOU READY?")
-                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
+                    Text("es tu turno")
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                         .foregroundColor(.white)
                     Spacer()
                                         

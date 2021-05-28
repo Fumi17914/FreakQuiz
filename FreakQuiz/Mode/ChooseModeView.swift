@@ -20,11 +20,11 @@ struct ChooseModeView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 0) {
+                    VStack() {
                         Spacer(minLength: 50)
 
-                        Text("Choose mode")
-                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
+                        Text("Elije modo")
+                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                             .foregroundColor(.white)
                         
                         Spacer(minLength: 25)
@@ -35,6 +35,7 @@ struct ChooseModeView: View {
                             Image("easyMode")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
+                                .padding()
                         }
                         
                         Spacer()
