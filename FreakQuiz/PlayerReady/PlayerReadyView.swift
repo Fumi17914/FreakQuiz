@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerReadyView: View {
     
-    var randomPlayer = Game.shared.player.randomElement()
+    var randomPlayer = Game.shared.players.randomElement()
     
     var body: some View {
         NavigationView{
@@ -21,7 +21,7 @@ struct PlayerReadyView: View {
                 VStack {
                     Spacer()
                     Text("ARE YOU READY?")
-                        .font(Font.custom("PixelEmulator", size: 30))
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                         .foregroundColor(.white)
                     Spacer()
                                         
@@ -45,7 +45,9 @@ struct PlayerReadyView: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: QuestionView()) {
+                    NavigationLink(destination: QuestionView().onAppear {
+                        
+                    }) {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)

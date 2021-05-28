@@ -33,12 +33,12 @@ class Game {
    
     // MARK: Prueba a realizar al azar
     var test: String {
-        return tests?.randomElement() ?? ""
+        return tests?.randomElement() ?? "Do nothing"
     }
 
     // MARK: Lista de jugadores
-    var player: [String] = []
-    
+    var players: [String] = []
+        
     var scoreAndPlayers: [Player] = [Player(user: Player.Characters.Batman, score: 0),
                                      Player(user: Player.Characters.Superman, score: 0),
                                      Player(user: Player.Characters.Spiderman, score: 0),
@@ -64,8 +64,7 @@ class Game {
             return Game.shared.questionsFast.randomElement()?.question
 
         }
-        
-        
+
         return "No questions found"
     }
     
@@ -82,14 +81,5 @@ class Game {
         }
         return colorMode
     }
-    
-    /*func configureBackgroundColor(button: UIButton) {
-        switch Game.shared.mode {
-        case .easy:
-            button.backgroundColor = UIColor(named: "F7B500")
-        case .hard:
-            button.backgroundColor = UIColor(named: "EC3832")
-        }
-    }*/
 }
 

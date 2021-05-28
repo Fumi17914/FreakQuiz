@@ -24,7 +24,7 @@ struct ChooseModeView: View {
                         Spacer(minLength: 50)
 
                         Text("Choose mode")
-                            .font(Font.custom("PixelEmulator", size: 30))
+                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                             .foregroundColor(.white)
                         
                         Spacer(minLength: 25)

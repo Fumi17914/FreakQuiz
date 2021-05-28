@@ -43,5 +43,4 @@ class LoadJson {
             print(error.localizedDescription)
         }
     }
-
 }

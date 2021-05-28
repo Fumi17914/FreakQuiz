@@ -40,9 +40,9 @@ struct ChoosePlayerView: View {
     @State private var devilOpacity: Double = 1
     
     private func deletePlayer(playerToDelete: String) {
-        for (position, player) in Game.shared.player.enumerated() {
+        for (position, player) in Game.shared.players.enumerated() {
             if player == playerToDelete {
-                Game.shared.player.remove(at: position)
+                Game.shared.players.remove(at: position)
             }
         }
     }
@@ -62,13 +62,13 @@ struct ChoosePlayerView: View {
                         .foregroundColor(.white)
                         .padding(40)
                                     
-                    VStack {
+                    VStack{
                         HStack{
                             
                             Button(action: {
                                 if !batmanState {
                                     batmanState = true
-                                    Game.shared.player.append(Player.Characters.Batman.rawValue)
+                                    Game.shared.players.append(Player.Characters.Batman.rawValue)
                                     batmanOpacity = 0.3
                                 } else {
                                     batmanState = false
@@ -88,7 +88,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !supermanState {
                                     supermanState = true
-                                    Game.shared.player.append(Player.Characters.Superman.rawValue)
+                                    Game.shared.players.append(Player.Characters.Superman.rawValue)
                                     supermanOpacity = 0.3
                                 } else {
                                     supermanState = false
@@ -109,7 +109,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !spidermanState {
                                     spidermanState = true
-                                    Game.shared.player.append(Player.Characters.Spiderman.rawValue)
+                                    Game.shared.players.append(Player.Characters.Spiderman.rawValue)
                                     spidermanOpacity = 0.3
                                 } else {
                                     spidermanState = false
@@ -132,7 +132,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !adventuressState {
                                     adventuressState = true
-                                    Game.shared.player.append(Player.Characters.Girl.rawValue)
+                                    Game.shared.players.append(Player.Characters.Girl.rawValue)
                                     adventuressOpacity = 0.3
                                 } else {
                                     adventuressState = false
@@ -153,7 +153,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !meredithGreyState {
                                     meredithGreyState = true
-                                    Game.shared.player.append(Player.Characters.Doctor.rawValue)
+                                    Game.shared.players.append(Player.Characters.Doctor.rawValue)
                                     meredithOpacity = 0.3
                                 } else {
                                     meredithGreyState = false
@@ -177,7 +177,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !wolverineState {
                                     wolverineState = true
-                                    Game.shared.player.append(Player.Characters.Lobezno.rawValue)
+                                    Game.shared.players.append(Player.Characters.Lobezno.rawValue)
                                     wolverineOpacity = 0.3
                                 } else {
                                     wolverineState = false
@@ -198,7 +198,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !deadpoolState {
                                     deadpoolState = true
-                                    Game.shared.player.append(Player.Characters.Deadpool.rawValue)
+                                    Game.shared.players.append(Player.Characters.Deadpool.rawValue)
                                     deadpoolOpacity = 0.3
                                 } else {
                                     deadpoolState = false
@@ -219,7 +219,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !santaClausState {
                                     santaClausState = true
-                                    Game.shared.player.append(Player.Characters.Noel.rawValue)
+                                    Game.shared.players.append(Player.Characters.Noel.rawValue)
                                     santaclausOpacity = 0.3
                                 } else {
                                     santaClausState = false
@@ -243,7 +243,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !indianaJonesState {
                                     indianaJonesState = true
-                                    Game.shared.player.append(Player.Characters.Indy.rawValue)
+                                    Game.shared.players.append(Player.Characters.Indy.rawValue)
                                     indianaJonesOpacity = 0.3
                                 } else {
                                     indianaJonesState = false
@@ -264,7 +264,7 @@ struct ChoosePlayerView: View {
                                 
                                 if !devilState {
                                     devilState = true
-                                    Game.shared.player.append(Player.Characters.Devil.rawValue)
+                                    Game.shared.players.append(Player.Characters.Devil.rawValue)
                                     devilOpacity = 0.3
                                 } else {
                                     devilState = false

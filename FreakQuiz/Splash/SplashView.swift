@@ -25,14 +25,14 @@ struct SplashView: View {
                         .aspectRatio(contentMode: .fit)
                         .padding(25)
                     
-                    NavigationLink(destination: ChooseModeView()) {
+                    NavigationLink(destination: ChooseModeView().onAppear {
+                        self.viewModel.getJson()
+                    }) {
                         Image("play")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
-                    }.simultaneousGesture(TapGesture().onEnded{
-                        viewModel.getJson()
-                    })
+                    }
                     
                     Image("textLogo")
                         .resizable()

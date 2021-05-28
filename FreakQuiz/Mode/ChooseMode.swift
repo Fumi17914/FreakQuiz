@@ -10,19 +10,18 @@ import Foundation
 class ChooseMode {
     
     func easyMode() {
-        Game.shared.mode = .easy
         print("Easy Mode Selected")
+        Game.shared.mode = .easy
     }
     
     func hardMode() {
-        Game.shared.mode = .hard
         print("Hard Mode Selected")
-
+        Game.shared.mode = .hard
     }
     
     func fastMode() {
-        Game.shared.mode = .fast
         print("Fast Mode Selected")
+        Game.shared.mode = .fast
     }
     
 }

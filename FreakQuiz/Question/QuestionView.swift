@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionView: View {
-        
+    
     var body: some View {
         NavigationView{
             ZStack {
@@ -17,28 +17,23 @@ struct QuestionView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Spacer(minLength: 50)
                     RoundedRectangle(cornerRadius: 30)
-                        .frame(width: 235, height: 80, alignment: .center)
+                        .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/3, alignment: .center)
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                        .opacity(0.8)
-                        .overlay(Text("player")
-                                    .font(Font.custom("PixelEmulator", size: 33))
-                                    .foregroundColor(.white))
-                        .multilineTextAlignment(.center)
-                        .offset(y: -15)
-                    Text(Game.shared.questions?.randomElement()?.question ?? "¿cómo se llama el fenómeno que revive los muertos y les da más fuerza a los enemigos en the legend of zelda breath of the wild?")
-                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
-                        .foregroundColor(.white)
-                        .padding()
-                        .multilineTextAlignment(.center)
-                        .offset(y: -10)
+                        .opacity(0.7)
+                        .textCase(.uppercase)
+                        .overlay(  Text(Game.shared.randomQuestion ?? "¿cómo se llama el fenómeno que revive los muertos y les da más fuerza a los enemigos en the legend of zelda breath of the wild?")
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .multilineTextAlignment(.center))
+                        .offset(y: 70)
+                                      
+                    Spacer(minLength: 250)
                     
-                    Spacer(minLength: 0)
-
-
+                    
                 }
-                                
+                
                 CardContent()
             }
             .edgesIgnoringSafeArea(.all)
