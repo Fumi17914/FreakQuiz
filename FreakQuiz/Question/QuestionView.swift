@@ -11,6 +11,8 @@ struct QuestionView: View {
     
     var startTimer = ProgressBarView()
     
+    var viewModel = QuestionModel()
+    
     var body: some View {
         NavigationView{
             ZStack {
@@ -23,12 +25,12 @@ struct QuestionView: View {
                     VStack {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/3, alignment: .center)
-                            .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                            .opacity(0.7)
+                            .foregroundColor(.white)
+                            .opacity(1)
                             .textCase(.uppercase)
-                            .overlay(Text(Game.shared.randomQuestion ?? "¿cómo se llama el fenómeno que revive los muertos y les da más fuerza a los enemigos en the legend of zelda breath of the wild?")
+                            .overlay(Text(viewModel.getFinalQuestion() )
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
-                                        .foregroundColor(.white)
+                                        .foregroundColor(.black)
                                         .padding()
                                         .multilineTextAlignment(.center))
                             .offset(y: 70)

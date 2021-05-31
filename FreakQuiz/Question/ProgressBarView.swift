@@ -34,8 +34,8 @@ struct ProgressBarView: View {
                 .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                 .frame(width: 300*currentProgress, height: 20)
                 .background(
-                    NavigationLink(destination: CorrectOrTestView(),
-                                   isActive: $shouldNavigate) { CorrectOrTestView() }.hidden()
+                    NavigationLink(destination: TestView(),
+                                   isActive: $shouldNavigate) { TestView() }.hidden()
                 )
             
         }.onAppear {

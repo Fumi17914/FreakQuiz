@@ -1,5 +1,5 @@
 //
-//  CorrectOrTest.swift
+//  TestModel.swift
 //  FreakQuiz
 //
 //  Created by Jose Fumanal Quintana on 28/5/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CorrectOrTest {
+class TestModel {
     
     var scoreImage: String = "scoreYellow"
     

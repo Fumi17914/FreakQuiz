@@ -38,7 +38,7 @@ struct CardView: ViewModifier {
     @State private var dragging = false
     @GestureState private var dragTracker: CGSize = CGSize.zero
     @State private var position: CGFloat = UIScreen.main.bounds.height - 100
-    
+        
     func body(content: Content) -> some View {
         ZStack(alignment: .top) {
             ZStack(alignment: .top) {
@@ -48,47 +48,7 @@ struct CardView: ViewModifier {
                     .padding(10)
                 content.padding(.top, 30)
                                 
-                VStack {
-                    NavigationLink(destination: CorrectOrTestView()) {
-                        RoundedRectangle(cornerRadius: 30)
-                            .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
-                            .foregroundColor(.white)
-                            .overlay(Text("1")
-                                        .font(Font.custom("PixelEmulator", size: 18))
-                                        .foregroundColor(.black))
-                            .multilineTextAlignment(.center)
-                    }
-                    
-                    NavigationLink(destination: CorrectOrTestView()) {
-                        RoundedRectangle(cornerRadius: 30)
-                            .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
-                            .foregroundColor(.white)
-                            .overlay(Text("2")
-                                        .font(Font.custom("PixelEmulator", size: 18))
-                                        .foregroundColor(.black))
-                            .multilineTextAlignment(.center)
-                    }
-                    
-                    NavigationLink(destination: CorrectOrTestView()) {
-                        RoundedRectangle(cornerRadius: 30)
-                            .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
-                            .foregroundColor(.white)
-                            .overlay(Text("3")
-                                        .font(Font.custom("PixelEmulator", size: 18))
-                                        .foregroundColor(.black))
-                            .multilineTextAlignment(.center)
-                    }
-                    
-                    NavigationLink(destination: CorrectOrTestView()) {
-                        RoundedRectangle(cornerRadius: 30)
-                            .frame(width: UIScreen.main.bounds.width - 20, height: 80, alignment: .center)
-                            .foregroundColor(.white)
-                            .overlay(Text("4")
-                                        .font(Font.custom("PixelEmulator", size: 18))
-                                        .foregroundColor(.black))
-                            .multilineTextAlignment(.center)
-                    }
-                }.offset(y: 60)
+                AnswersView()
             }
             .frame(minWidth: UIScreen.main.bounds.width)
             .scaleEffect(x: 1, y: 1, anchor: .center)
@@ -108,7 +68,7 @@ struct CardView: ViewModifier {
     private func onDragEnded(drag: DragGesture.Value) {
         dragging = false
         let high = UIScreen.main.bounds.height - 50
-        let low: CGFloat = UIScreen.main.bounds.height / 2.1
+        let low: CGFloat = UIScreen.main.bounds.height / 2.4
         let dragDirection = drag.predictedEndLocation.y - drag.location.y
         //can also calculate drag offset to make it more rigid to shrink and expand
         if dragDirection > 0 {
