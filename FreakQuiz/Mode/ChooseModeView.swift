@@ -19,14 +19,15 @@ struct ChooseModeView: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack() {
-                        Spacer(minLength: 50)
-
-                        Text("Elije modo")
-                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                            .foregroundColor(.white)
-                        
+                
+                VStack() {
+                    Spacer(minLength: 50)
+                    
+                    Text("Elije modo")
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                        .foregroundColor(.white)
+                    
+                    ScrollView(.vertical, showsIndicators: false) {
                         Spacer(minLength: 25)
                         
                         NavigationLink(destination: ChoosePlayerView().onAppear {
@@ -58,14 +59,16 @@ struct ChooseModeView: View {
                             
                         }
                         
-                        NavigationLink(destination: EmptyView()) {
-                            EmptyView()
-                        }
                         
                         Image("textLogo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(40)
+                            .offset(y: -50)
+                        
+                        NavigationLink(destination: EmptyView()) {
+                            EmptyView()
+                        }
                     }
                 }
                 .scaledToFill()

@@ -19,10 +19,21 @@ struct CorrectView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack{
-                    Spacer(minLength: 125)
+                    Spacer(minLength: 60)
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
+                        .textCase(.uppercase)
+                        .opacity(0.8)
+                        .overlay(Text("correcto")
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                    .foregroundColor(.white)
+                                    .padding())
+                        .foregroundColor(.green)
+                    
+                    Spacer(minLength: 130)
                     
                     RoundedRectangle(cornerRadius: 30)
-                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/1.5, alignment: .center)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
                         .textCase(.uppercase)
                         .opacity(0.8)
                         .overlay(Image("correct")
@@ -31,10 +42,9 @@ struct CorrectView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .padding())
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                        .offset(y: -55)
-                    
-                    Spacer(minLength: 0)
-                    
+                        .offset(y: -45)
+                      
+                                
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
                             .resizable()

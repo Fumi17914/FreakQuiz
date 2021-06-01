@@ -18,11 +18,23 @@ struct TestView: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 
-                VStack{                                    
-                    Spacer(minLength: 125)
+                VStack{
+                    
+                    Spacer(minLength: 60)
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
+                        .textCase(.uppercase)
+                        .opacity(0.8)
+                        .overlay(Text("FALLASTE")
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                    .foregroundColor(.white)
+                                    .padding())
+                        .foregroundColor(.red)
+                    
+                    Spacer(minLength: 155)
                     
                     RoundedRectangle(cornerRadius: 30)
-                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/1.5, alignment: .center)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
                         .textCase(.uppercase)
                         .opacity(0.75)
                         .overlay(Text(viewModel.test.randomElement() ?? "no test")
@@ -33,20 +45,19 @@ struct TestView: View {
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                         .offset(y: -55)
                     
-                    Spacer(minLength: 0)
                     
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(25)
-                    }.offset(x:5, y: 10)
+                    }.offset(x:5)
                     
                     NavigationLink(destination: EmptyView()) {
                         EmptyView()
                     }
                     
-                    Spacer(minLength: 10)
+                    Spacer(minLength: 70)
                     
                 }
             }.edgesIgnoringSafeArea(.all)

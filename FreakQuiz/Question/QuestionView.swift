@@ -10,7 +10,6 @@ import SwiftUI
 struct QuestionView: View {
     
     var startTimer = ProgressBarView()
-    
     var viewModel = QuestionModel()
     
     var body: some View {
@@ -21,7 +20,6 @@ struct QuestionView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    
                     VStack {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/3, alignment: .center)
