@@ -28,7 +28,7 @@ struct QuestionView: View {
                             .foregroundColor(.white)
                             .opacity(1)
                             .textCase(.uppercase)
-                            .overlay(Text(viewModel.getFinalQuestion() )
+                            .overlay(Text(viewModel.getFinalQuestion())
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.black)
                                         .padding()
@@ -42,6 +42,10 @@ struct QuestionView: View {
                 }
 
                 CardContent()
+                
+                NavigationLink(destination: EmptyView()) {
+                    EmptyView()
+                }
             }
             .edgesIgnoringSafeArea(.all)
         }

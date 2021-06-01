@@ -22,7 +22,7 @@ struct CorrectView: View {
                     Spacer(minLength: 125)
                     
                     RoundedRectangle(cornerRadius: 30)
-                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/1.5, alignment: .center)
                         .textCase(.uppercase)
                         .opacity(0.8)
                         .overlay(Image("correct")
@@ -35,30 +35,18 @@ struct CorrectView: View {
                     
                     Spacer(minLength: 0)
                     
-                    HStack {
-                        Text("SCORE")
-                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            
-                        Spacer()
-                        NavigationLink(destination: ScoreView()) {
-                            Image(viewModel.scoreImageMode())
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 100, height: 100, alignment: .bottomTrailing)
-                        }
-                    }.padding(20)
-                    
-                    
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding(25)
-                    }.offset(x:5, y: 15)
+                            .padding(20)
+                    }.offset(x:5, y: 35)
                     
-                    Spacer()
+                    Spacer(minLength: 130)
+                    
+                    NavigationLink(destination: EmptyView()) {
+                        EmptyView()
+                    }
                     
                 }
             }.edgesIgnoringSafeArea(.all)

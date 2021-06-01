@@ -25,7 +25,7 @@ struct PlayerReadyView: View {
                         .foregroundColor(.white)
                     Spacer()
                                         
-                    Image(randomPlayer ?? "player")
+                    Image(randomPlayer ?? "Batman")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(50)
@@ -36,7 +36,7 @@ struct PlayerReadyView: View {
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                         .opacity(0.8)
                         .textCase(.uppercase)
-                        .overlay(Text(randomPlayer ?? "player")
+                        .overlay(Text(randomPlayer ?? "batman")
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/45))
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center))
@@ -45,14 +45,16 @@ struct PlayerReadyView: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: QuestionView().onAppear {
-                        
-                    }) {
+                    NavigationLink(destination: QuestionView()) {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(25)
                             .offset(x:5, y:30)
+                    }
+                    
+                    NavigationLink(destination: EmptyView()) {
+                        EmptyView()
                     }
                     Spacer()
                     

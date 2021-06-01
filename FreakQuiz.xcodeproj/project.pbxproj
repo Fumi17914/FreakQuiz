@@ -10,7 +10,6 @@
 		D846301126619DE000149807 /* QuestionsAndTestSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846301026619DE000149807 /* QuestionsAndTestSample.swift */; };
 		D84630152661A1E600149807 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84630142661A1E600149807 /* ProgressBarView.swift */; };
 		D85D59122636F92A0020DBC4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D59112636F92A0020DBC4 /* CardView.swift */; };
-		D85D5915263709410020DBC4 /* LoadJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D5914263709410020DBC4 /* LoadJson.swift */; };
 		D8689AE125E3D36E00201574 /* ChooseModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AE025E3D36E00201574 /* ChooseModeView.swift */; };
 		D8689AE725E3D8FF00201574 /* Kratos.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8689AE325E3D8FE00201574 /* Kratos.otf */; };
 		D8689AE825E3D8FF00201574 /* Arcade.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8689AE425E3D8FE00201574 /* Arcade.ttf */; };
@@ -37,14 +36,13 @@
 		D8B6C93D25E3CB0200324227 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93C25E3CB0200324227 /* Player.swift */; };
 		D8B6C94025E3CB2100324227 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93F25E3CB2100324227 /* Question.swift */; };
 		D8B6C94325E3CB3F00324227 /* sampleData.json in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C94225E3CB3F00324227 /* sampleData.json */; };
-		D8D84E0D2660383000EDDD43 /* ChooseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D84E0C2660383000EDDD43 /* ChooseMode.swift */; };
+		D8D84E0D2660383000EDDD43 /* ChooseModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D84E0C2660383000EDDD43 /* ChooseModeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D846301026619DE000149807 /* QuestionsAndTestSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsAndTestSample.swift; sourceTree = "<group>"; };
 		D84630142661A1E600149807 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		D85D59112636F92A0020DBC4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		D85D5914263709410020DBC4 /* LoadJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadJson.swift; sourceTree = "<group>"; };
 		D8689AE025E3D36E00201574 /* ChooseModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseModeView.swift; sourceTree = "<group>"; };
 		D8689AE325E3D8FE00201574 /* Kratos.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kratos.otf; sourceTree = "<group>"; };
 		D8689AE425E3D8FE00201574 /* Arcade.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arcade.ttf; sourceTree = "<group>"; };
@@ -73,7 +71,7 @@
 		D8B6C93C25E3CB0200324227 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D8B6C93F25E3CB2100324227 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D8B6C94225E3CB3F00324227 /* sampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
-		D8D84E0C2660383000EDDD43 /* ChooseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMode.swift; sourceTree = "<group>"; };
+		D8D84E0C2660383000EDDD43 /* ChooseModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseModeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				D8B6C90F25E3BB7800324227 /* SplashView.swift */,
-				D85D5914263709410020DBC4 /* LoadJson.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -196,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				D8689AE025E3D36E00201574 /* ChooseModeView.swift */,
-				D8D84E0C2660383000EDDD43 /* ChooseMode.swift */,
+				D8D84E0C2660383000EDDD43 /* ChooseModeModel.swift */,
 			);
 			path = Mode;
 			sourceTree = "<group>";
@@ -326,9 +323,8 @@
 				D86C7E412661528400CE9E9C /* TestModel.swift in Sources */,
 				D84630152661A1E600149807 /* ProgressBarView.swift in Sources */,
 				D8689AF025E3E11500201574 /* PlayerReadyView.swift in Sources */,
-				D8D84E0D2660383000EDDD43 /* ChooseMode.swift in Sources */,
+				D8D84E0D2660383000EDDD43 /* ChooseModeModel.swift in Sources */,
 				D846301126619DE000149807 /* QuestionsAndTestSample.swift in Sources */,
-				D85D5915263709410020DBC4 /* LoadJson.swift in Sources */,
 				D8B6C93225E3CA9700324227 /* UIViewExtensions.swift in Sources */,
 				D8B6C94025E3CB2100324227 /* Question.swift in Sources */,
 				D85D59122636F92A0020DBC4 /* CardView.swift in Sources */,

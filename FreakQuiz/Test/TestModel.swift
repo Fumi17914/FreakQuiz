@@ -10,6 +10,7 @@ import Foundation
 class TestModel {
     
     var scoreImage: String = "scoreYellow"
+    var addPlayer: String = "addYellow"
     
     func scoreImageMode() -> String {
         if Game.shared.mode == .hard {
@@ -21,4 +22,13 @@ class TestModel {
         return scoreImage
     }
     
+    func addPlayerImageMode() -> String {
+        if Game.shared.mode == .hard {
+            addPlayer = "addRed"
+        } else if Game.shared.mode == .fast {
+            addPlayer = "addBlue"
+        }
+        
+        return addPlayer
+    }
 }

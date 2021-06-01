@@ -33,6 +33,10 @@ struct ScoreView: View {
                             .padding()
                         
                     }
+                    
+                    NavigationLink(destination: EmptyView()) {
+                        EmptyView()
+                    }
 
                 }.padding()
                 

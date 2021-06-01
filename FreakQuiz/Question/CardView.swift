@@ -68,7 +68,7 @@ struct CardView: ViewModifier {
     private func onDragEnded(drag: DragGesture.Value) {
         dragging = false
         let high = UIScreen.main.bounds.height - 50
-        let low: CGFloat = UIScreen.main.bounds.height / 2.4
+        let low: CGFloat = UIScreen.main.bounds.height / 2.1
         let dragDirection = drag.predictedEndLocation.y - drag.location.y
         //can also calculate drag offset to make it more rigid to shrink and expand
         if dragDirection > 0 {

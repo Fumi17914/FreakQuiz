@@ -42,7 +42,11 @@ struct TestView: View {
                             .padding(25)
                     }.offset(x:5, y: 10)
                     
-                    Spacer()
+                    NavigationLink(destination: EmptyView()) {
+                        EmptyView()
+                    }
+                    
+                    Spacer(minLength: 10)
                     
                 }
             }.edgesIgnoringSafeArea(.all)

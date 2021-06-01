@@ -16,7 +16,7 @@ struct ProgressBarView: View {
         _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             withAnimation() {
                 if Game.shared.mode == .fast {
-                    self.currentProgress += 0.02
+                    self.currentProgress += 0.015
                 } else {
                     self.currentProgress += 0.01
                 }

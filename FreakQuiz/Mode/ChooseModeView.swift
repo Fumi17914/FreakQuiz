@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChooseModeView: View {
     
-    let viewModel = ChooseMode()
+    let viewModel = ChooseModeModel()
     
     var body: some View {
         
@@ -56,6 +56,10 @@ struct ChooseModeView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                             
+                        }
+                        
+                        NavigationLink(destination: EmptyView()) {
+                            EmptyView()
                         }
                         
                         Image("textLogo")

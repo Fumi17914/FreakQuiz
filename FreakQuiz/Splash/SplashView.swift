@@ -10,8 +10,6 @@ import CoreData
 
 struct SplashView: View {
     
-    let viewModel = LoadJson()
-    
     var body: some View {
         NavigationView {
             ZStack{
@@ -30,9 +28,6 @@ struct SplashView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
-                    }.onAppear {
-                        print("loadJson")
-                        viewModel.getJson()
                     }
                     
                     Image("textLogo")
