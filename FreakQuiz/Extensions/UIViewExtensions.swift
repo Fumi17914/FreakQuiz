@@ -32,7 +32,7 @@ extension UIViewController {
 
 // MARK: Configurar colores personalizados -> HEX
 
-extension UIColor {
+/*extension UIColor {
     convenience init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
@@ -55,4 +55,4 @@ extension UIColor {
                    alpha: 1.0
         )
     }
-}
+}*/

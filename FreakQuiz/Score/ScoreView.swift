@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct ScoreView: View {
+    
+    init() {
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
+    }
+    
+    let scoreModel = ScoreModel()
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -16,13 +24,37 @@ struct ScoreView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Text("SCORE")
-                        .font(Font.custom("PixelEmulator", size: 35))
-                        .foregroundColor(.white)
-                        .offset(y: 25)
-                                     
+                    Spacer(minLength: 50)
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
+                        .textCase(.uppercase)
+                        .opacity(1)
+                        .overlay(Text("Puntuaciones")
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                    .foregroundColor(.white)
+                                    .padding())
+                        .foregroundColor(.black)
+                    Spacer(minLength: 50)
                     
-                    Spacer()
+                    List(0..<scoreModel.getFinalPlayers().count) { player in
+                        
+                        Group {
+                            HStack {
+                                Image(scoreModel.getFinalPlayers()[player].user.rawValue)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 100, height: 100, alignment: .center)
+                                Spacer()
+                                Text("\(scoreModel.getFinalPlayers()[player].score)")
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
+                                    .foregroundColor(.black)
+                                    .padding()
+                                    .multilineTextAlignment(.center)
+                            }.listRowBackground(Color.clear)
+                        }
+                    }
+                    
+                    Spacer(minLength: 70)
 
                     
                     NavigationLink(destination: PlayerReadyView()) {

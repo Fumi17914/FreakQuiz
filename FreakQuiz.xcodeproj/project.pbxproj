@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83749C726678A7D00ECF98D /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83749C626678A7D00ECF98D /* ScoreModel.swift */; };
 		D846301126619DE000149807 /* QuestionsAndTestSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846301026619DE000149807 /* QuestionsAndTestSample.swift */; };
 		D84630152661A1E600149807 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84630142661A1E600149807 /* ProgressBarView.swift */; };
 		D85D59122636F92A0020DBC4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D59112636F92A0020DBC4 /* CardView.swift */; };
@@ -20,7 +21,7 @@
 		D8689AF325E403BE00201574 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AF225E403BE00201574 /* QuestionView.swift */; };
 		D8689AF625E40DD300201574 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AF525E40DD300201574 /* TestView.swift */; };
 		D8689AFF25E414FD00201574 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8689AFE25E414FD00201574 /* ScoreView.swift */; };
-		D86C7E412661528400CE9E9C /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7E402661528400CE9E9C /* TestModel.swift */; };
+		D86C7E412661528400CE9E9C /* CorrectAndTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7E402661528400CE9E9C /* CorrectAndTestModel.swift */; };
 		D88BC3012665548200DCBAB3 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88BC3002665548200DCBAB3 /* QuestionModel.swift */; };
 		D88BC30426655CFE00DCBAB3 /* CorrectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88BC30326655CFE00DCBAB3 /* CorrectView.swift */; };
 		D88BC306266577B800DCBAB3 /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88BC305266577B800DCBAB3 /* AnswersView.swift */; };
@@ -35,11 +36,11 @@
 		D8B6C93A25E3CAEC00324227 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93925E3CAEC00324227 /* GameData.swift */; };
 		D8B6C93D25E3CB0200324227 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93C25E3CB0200324227 /* Player.swift */; };
 		D8B6C94025E3CB2100324227 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93F25E3CB2100324227 /* Question.swift */; };
-		D8B6C94325E3CB3F00324227 /* sampleData.json in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C94225E3CB3F00324227 /* sampleData.json */; };
 		D8D84E0D2660383000EDDD43 /* ChooseModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D84E0C2660383000EDDD43 /* ChooseModeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D83749C626678A7D00ECF98D /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		D846301026619DE000149807 /* QuestionsAndTestSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsAndTestSample.swift; sourceTree = "<group>"; };
 		D84630142661A1E600149807 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		D85D59112636F92A0020DBC4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -53,7 +54,7 @@
 		D8689AF225E403BE00201574 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		D8689AF525E40DD300201574 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D8689AFE25E414FD00201574 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
-		D86C7E402661528400CE9E9C /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		D86C7E402661528400CE9E9C /* CorrectAndTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAndTestModel.swift; sourceTree = "<group>"; };
 		D88BC3002665548200DCBAB3 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		D88BC30326655CFE00DCBAB3 /* CorrectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectView.swift; sourceTree = "<group>"; };
 		D88BC305266577B800DCBAB3 /* AnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
@@ -85,12 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D88BC3022665550000DCBAB3 /* Correct */ = {
+		D83749C826678AF200ECF98D /* SecondaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				D84630142661A1E600149807 /* ProgressBarView.swift */,
+				D85D59112636F92A0020DBC4 /* CardView.swift */,
+				D88BC305266577B800DCBAB3 /* AnswersView.swift */,
+			);
+			path = SecondaryViews;
+			sourceTree = "<group>";
+		};
+		D88BC3022665550000DCBAB3 /* CorrectOrTest */ = {
 			isa = PBXGroup;
 			children = (
 				D88BC30326655CFE00DCBAB3 /* CorrectView.swift */,
+				D8689AF525E40DD300201574 /* TestView.swift */,
+				D86C7E402661528400CE9E9C /* CorrectAndTestModel.swift */,
 			);
-			path = Correct;
+			path = CorrectOrTest;
 			sourceTree = "<group>";
 		};
 		D8B6C90125E3BB7800324227 = {
@@ -122,8 +135,7 @@
 				D8B6C92A25E3BCB500324227 /* ChoosePlayer */,
 				D8B6C92B25E3BCBB00324227 /* PlayerReady */,
 				D8B6C92C25E3BCC300324227 /* Question */,
-				D88BC3022665550000DCBAB3 /* Correct */,
-				D8B6C92D25E3BCCB00324227 /* Test */,
+				D88BC3022665550000DCBAB3 /* CorrectOrTest */,
 				D8B6C93025E3BCE400324227 /* Score */,
 				D8B6C91B25E3BB7A00324227 /* Info.plist */,
 				D8B6C91825E3BB7A00324227 /* FreakQuiz.xcdatamodeld */,
@@ -217,28 +229,18 @@
 		D8B6C92C25E3BCC300324227 /* Question */ = {
 			isa = PBXGroup;
 			children = (
+				D83749C826678AF200ECF98D /* SecondaryViews */,
 				D8689AF225E403BE00201574 /* QuestionView.swift */,
-				D84630142661A1E600149807 /* ProgressBarView.swift */,
-				D85D59112636F92A0020DBC4 /* CardView.swift */,
-				D88BC305266577B800DCBAB3 /* AnswersView.swift */,
 				D88BC3002665548200DCBAB3 /* QuestionModel.swift */,
 			);
 			path = Question;
-			sourceTree = "<group>";
-		};
-		D8B6C92D25E3BCCB00324227 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				D8689AF525E40DD300201574 /* TestView.swift */,
-				D86C7E402661528400CE9E9C /* TestModel.swift */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 		D8B6C93025E3BCE400324227 /* Score */ = {
 			isa = PBXGroup;
 			children = (
 				D8689AFE25E414FD00201574 /* ScoreView.swift */,
+				D83749C626678A7D00ECF98D /* ScoreModel.swift */,
 			);
 			path = Score;
 			sourceTree = "<group>";
@@ -320,7 +322,7 @@
 				D8689AE125E3D36E00201574 /* ChooseModeView.swift in Sources */,
 				D8689AED25E3DB8400201574 /* ChoosePlayerView.swift in Sources */,
 				D8B6C93625E3CAC100324227 /* Game.swift in Sources */,
-				D86C7E412661528400CE9E9C /* TestModel.swift in Sources */,
+				D86C7E412661528400CE9E9C /* CorrectAndTestModel.swift in Sources */,
 				D84630152661A1E600149807 /* ProgressBarView.swift in Sources */,
 				D8689AF025E3E11500201574 /* PlayerReadyView.swift in Sources */,
 				D8D84E0D2660383000EDDD43 /* ChooseModeModel.swift in Sources */,
@@ -336,9 +338,9 @@
 				D8689AF325E403BE00201574 /* QuestionView.swift in Sources */,
 				D88BC306266577B800DCBAB3 /* AnswersView.swift in Sources */,
 				D88BC3012665548200DCBAB3 /* QuestionModel.swift in Sources */,
+				D83749C726678A7D00ECF98D /* ScoreModel.swift in Sources */,
 				D8B6C91025E3BB7800324227 /* SplashView.swift in Sources */,
 				D8B6C90E25E3BB7800324227 /* FreakQuizApp.swift in Sources */,
-				D8B6C94325E3CB3F00324227 /* sampleData.json in Sources */,
 				D8689AF625E40DD300201574 /* TestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
