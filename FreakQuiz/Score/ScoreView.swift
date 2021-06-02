@@ -61,8 +61,9 @@ struct ScoreView: View {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .offset(x: 5,y: -30)
+                            .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
                             .padding()
+                            .offset(x: 7,y: -30)
                         
                     }
                     
