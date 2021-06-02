@@ -11,6 +11,8 @@ struct TestView: View {
     
     let viewModel = QuestionsAndTestSample()
     
+    let testModel =  TestModel()
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -20,7 +22,8 @@ struct TestView: View {
                 
                 VStack{
                     
-                    Spacer(minLength: 60)
+                    Spacer(minLength: 50)
+                    
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                         .textCase(.uppercase)
@@ -31,8 +34,8 @@ struct TestView: View {
                                     .padding())
                         .foregroundColor(.red)
                     
-                    Spacer(minLength: 155)
-                    
+                    Spacer(minLength: 25)
+
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
                         .textCase(.uppercase)
@@ -43,22 +46,43 @@ struct TestView: View {
                                     .multilineTextAlignment(.center)
                                     .padding())
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                        .offset(y: -55)
+                        .offset(y: -10)
                     
+                    Spacer(minLength: 50)
+
+                    HStack {
+                        
+                        Spacer()
+                        NavigationLink(destination: ChoosePlayerView()) {
+                            Image(testModel.addPlayerImageMode())
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100, alignment: .center)
+                        }
+                        Spacer()
+
+                        NavigationLink(destination: ScoreView()) {
+                            Image(testModel.scoreImageMode())
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100, alignment: .center)
+                        }
+                        Spacer()
+                    }.offset(y: -25)
                     
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding(25)
-                    }.offset(x:5)
+                            .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
+                            .padding(30)
+                    }.offset(x:5, y: -30)
                     
+                    Spacer(minLength: 80)
+
                     NavigationLink(destination: EmptyView()) {
                         EmptyView()
                     }
-                    
-                    Spacer(minLength: 70)
-                    
                 }
             }.edgesIgnoringSafeArea(.all)
         }

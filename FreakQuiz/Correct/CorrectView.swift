@@ -19,7 +19,8 @@ struct CorrectView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack{
-                    Spacer(minLength: 60)
+              
+                    Spacer(minLength: 50)
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                         .textCase(.uppercase)
@@ -30,8 +31,7 @@ struct CorrectView: View {
                                     .padding())
                         .foregroundColor(.green)
                     
-                    Spacer(minLength: 130)
-                    
+                    Spacer(minLength: 25)
                     RoundedRectangle(cornerRadius: 30)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
                         .textCase(.uppercase)
@@ -42,18 +42,37 @@ struct CorrectView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .padding())
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                        .offset(y: -45)
-                      
+                        .offset(y: -10)
+                    Spacer(minLength: 50)
+                    HStack {
+                        
+                        Spacer()
+                        NavigationLink(destination: ChoosePlayerView()) {
+                            Image(viewModel.addPlayerImageMode())
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100, alignment: .center)
+                        }
+                        Spacer()
+
+                        NavigationLink(destination: ScoreView()) {
+                            Image(viewModel.scoreImageMode())
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100, alignment: .center)
+                        }
+                        Spacer()
+                    }.offset(y: -30)
                                 
                     NavigationLink(destination: PlayerReadyView()) {
                         Image("pressStart")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding(20)
-                    }.offset(x:5, y: 35)
+                            .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
+                            .padding(25)
+                    }.offset(x:5, y: -35)
                     
-                    Spacer(minLength: 130)
-                    
+                    Spacer(minLength: 80)
                     NavigationLink(destination: EmptyView()) {
                         EmptyView()
                     }

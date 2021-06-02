@@ -29,31 +29,31 @@ class Game {
     var test: String {
         return tests?.randomElement() ?? "Do nothing"
     }
-
+    
     // MARK: Lista de jugadores
     var players: [String] = []
     
     // MARK: Configurar color de las views según modo
     var colorMode: Color = .yellow
     func modeSelectedBackgroundColor() -> Color {
-         if Game.shared.mode == .hard {
+        if Game.shared.mode == .hard {
             colorMode = .red
             return colorMode
         } else if Game.shared.mode == .fast {
             colorMode = .blue
             return colorMode
-
+            
         }
         return colorMode
     }
-
-        
+    
+    
     var scoreAndPlayers: [Player] = [Player(user: Player.Characters.Batman, score: 0),
                                      Player(user: Player.Characters.Superman, score: 0),
                                      Player(user: Player.Characters.Spiderman, score: 0),
-                                  
+                                     
                                      Player(user: Player.Characters.Girl, score: 0),
-                                    
+                                     
                                      Player(user: Player.Characters.Deadpool, score: 0),
                                      Player(user: Player.Characters.Doctor, score: 0),
                                      Player(user: Player.Characters.Devil, score: 0),
@@ -66,32 +66,32 @@ class Game {
     
     // MARK: Preguntas según modo escogido
     /*var questionsEasy: [Question] {
-        return questions?.filter{ $0.mode == .easy} ?? []
-    }
-    var questionsHard: [Question] {
-        return questions?.filter{ $0.mode == .hard} ?? []
-    }
-    
-    var questionsFast: [Question] {
-        return questions?.filter{ $0.mode == .fast} ?? []
-
-    }*/
+     return questions?.filter{ $0.mode == .easy} ?? []
+     }
+     var questionsHard: [Question] {
+     return questions?.filter{ $0.mode == .hard} ?? []
+     }
+     
+     var questionsFast: [Question] {
+     return questions?.filter{ $0.mode == .fast} ?? []
+     
+     }*/
     
     
     // MARK: Función questions al azar según modo
     /*var randomQuestion: String? {
-        if Game.shared.mode == .easy {
-            return Game.shared.questionsEasy.randomElement()?.question
-            
-        } else if Game.shared.mode == .hard {
-            return Game.shared.questionsHard.randomElement()?.question
-            
-        } else if Game.shared.mode == .fast {
-            return Game.shared.questionsFast.randomElement()?.question
-
-        }
-
-        return "No questions found"
-    }*/
+     if Game.shared.mode == .easy {
+     return Game.shared.questionsEasy.randomElement()?.question
+     
+     } else if Game.shared.mode == .hard {
+     return Game.shared.questionsHard.randomElement()?.question
+     
+     } else if Game.shared.mode == .fast {
+     return Game.shared.questionsFast.randomElement()?.question
+     
+     }
+     
+     return "No questions found"
+     }*/
 }
 
