@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CorrectView: View {
     
-    let viewModel = CorrectAndTestModel()
+    let correctModel = CorrectAndTestModel()
     
     var body: some View {
         NavigationView {
@@ -48,7 +48,7 @@ struct CorrectView: View {
                         
                         Spacer()
                         NavigationLink(destination: ChoosePlayerView()) {
-                            Image(viewModel.addPlayerImageMode())
+                            Image(correctModel.addPlayerImageMode())
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 100, height: 100, alignment: .center)
@@ -56,7 +56,7 @@ struct CorrectView: View {
                         Spacer()
 
                         NavigationLink(destination: ScoreView()) {
-                            Image(viewModel.scoreImageMode())
+                            Image(correctModel.scoreImageMode())
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 100, height: 100, alignment: .center)
