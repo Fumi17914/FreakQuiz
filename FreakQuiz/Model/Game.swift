@@ -32,6 +32,7 @@ class Game {
     
     // MARK: Lista de jugadores
     var players: [String] = []
+    var selectedPlayer: String? = nil
     
     // MARK: Configurar color de las views según modo
     var colorMode: Color = .yellow

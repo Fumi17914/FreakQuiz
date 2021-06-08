@@ -36,6 +36,7 @@
 		D8B6C93A25E3CAEC00324227 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93925E3CAEC00324227 /* GameData.swift */; };
 		D8B6C93D25E3CB0200324227 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93C25E3CB0200324227 /* Player.swift */; };
 		D8B6C94025E3CB2100324227 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C93F25E3CB2100324227 /* Question.swift */; };
+		D8C2363F266D636A00A6FD2E /* PlayerReadyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2363E266D636A00A6FD2E /* PlayerReadyModel.swift */; };
 		D8D84E0D2660383000EDDD43 /* ChooseModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D84E0C2660383000EDDD43 /* ChooseModeModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		D8B6C93C25E3CB0200324227 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D8B6C93F25E3CB2100324227 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D8B6C94225E3CB3F00324227 /* sampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleData.json; sourceTree = "<group>"; };
+		D8C2363E266D636A00A6FD2E /* PlayerReadyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerReadyModel.swift; sourceTree = "<group>"; };
 		D8D84E0C2660383000EDDD43 /* ChooseModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseModeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				D8689AEF25E3E11500201574 /* PlayerReadyView.swift */,
+				D8C2363E266D636A00A6FD2E /* PlayerReadyModel.swift */,
 			);
 			path = PlayerReady;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				D8689AED25E3DB8400201574 /* ChoosePlayerView.swift in Sources */,
 				D8B6C93625E3CAC100324227 /* Game.swift in Sources */,
 				D86C7E412661528400CE9E9C /* CorrectAndTestModel.swift in Sources */,
+				D8C2363F266D636A00A6FD2E /* PlayerReadyModel.swift in Sources */,
 				D84630152661A1E600149807 /* ProgressBarView.swift in Sources */,
 				D8689AF025E3E11500201574 /* PlayerReadyView.swift in Sources */,
 				D8D84E0D2660383000EDDD43 /* ChooseModeModel.swift in Sources */,

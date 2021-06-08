@@ -9,7 +9,10 @@ import SwiftUI
 
 struct PlayerReadyView: View {
     
-    var randomPlayer = Game.shared.players.randomElement()
+    private func randomPlayer() -> String {
+        Game.shared.selectedPlayer = Game.shared.players.randomElement()
+        return Game.shared.selectedPlayer ?? "No player"
+    }
     
     var body: some View {
         NavigationView{
@@ -25,7 +28,7 @@ struct PlayerReadyView: View {
                         .foregroundColor(.white)
                     Spacer()
                                         
-                    Image(randomPlayer ?? "Batman")
+                    Image(randomPlayer())
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(50)
@@ -36,7 +39,7 @@ struct PlayerReadyView: View {
                         .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                         .opacity(0.8)
                         .textCase(.uppercase)
-                        .overlay(Text(randomPlayer ?? "batman")
+                        .overlay(Text(Game.shared.selectedPlayer ?? "No player")
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/45))
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center))

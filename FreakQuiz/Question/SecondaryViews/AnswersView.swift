@@ -11,12 +11,22 @@ struct AnswersView: View {
     
     var viewModel = QuestionModel()
     
+    private func updatingPlayerScore(playerSelected: String) {
+        for player in Game.shared.scoreAndPlayers {
+            if player.user.rawValue == playerSelected {
+                player.updateScore(1)
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
             ScrollView{
                 
                 if Game.shared.correctAnswer == 0 {
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectView().onAppear {
+                        updatingPlayerScore(playerSelected: Game.shared.selectedPlayer ?? "No player")
+                    }) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)
                             .foregroundColor(.white)
@@ -25,6 +35,7 @@ struct AnswersView: View {
                                         .foregroundColor(.black))
                             .multilineTextAlignment(.center)
                     }
+                    
                     
                 } else {
                     NavigationLink(destination: TestView()) {
@@ -39,7 +50,9 @@ struct AnswersView: View {
                 }
                 
                 if Game.shared.correctAnswer == 1 {
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectView().onAppear {
+                        updatingPlayerScore(playerSelected: Game.shared.selectedPlayer ?? "No player")
+                    }) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)
                             .foregroundColor(.white)
@@ -63,7 +76,9 @@ struct AnswersView: View {
                 
                 
                 if Game.shared.correctAnswer == 2 {
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectView().onAppear {
+                        updatingPlayerScore(playerSelected: Game.shared.selectedPlayer ?? "No player")
+                    }) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)
                             .foregroundColor(.white)
@@ -85,7 +100,9 @@ struct AnswersView: View {
                 }
                 
                 if Game.shared.correctAnswer == 3 {
-                    NavigationLink(destination: CorrectView()) {
+                    NavigationLink(destination: CorrectView().onAppear {
+                        updatingPlayerScore(playerSelected: Game.shared.selectedPlayer ?? "No player")
+                    }) {
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)
                             .foregroundColor(.white)
