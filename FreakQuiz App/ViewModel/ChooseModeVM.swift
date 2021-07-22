@@ -24,4 +24,9 @@ class ChooseModeVM {
         Game.shared.mode = .fast
     }
     
+    func thanosMode() {
+        print ("Thanos Mode Selected")
+        Game.shared.mode = .thanos
+    }
+    
 }

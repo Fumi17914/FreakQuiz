@@ -33,6 +33,7 @@
 		D875E96026A9865C0034A014 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95F26A9865C0034A014 /* ProgressBarView.swift */; };
 		D875E96226A986710034A014 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96126A986710034A014 /* CardView.swift */; };
 		D875E96426A986880034A014 /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96326A986880034A014 /* AnswersView.swift */; };
+		D875E96A26A98DAB0034A014 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D875E96626A98DAB0034A014 /* Pixel.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		D875E95F26A9865C0034A014 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		D875E96126A986710034A014 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D875E96326A986880034A014 /* AnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
+		D875E96626A98DAB0034A014 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		D875E96526A986C60034A014 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D875E96626A98DAB0034A014 /* Pixel.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D875E96A26A98DAB0034A014 /* Pixel.ttf in Resources */,
 				D875E92826A982050034A014 /* Preview Assets.xcassets in Resources */,
 				D875E92526A982050034A014 /* Assets.xcassets in Resources */,
 			);
