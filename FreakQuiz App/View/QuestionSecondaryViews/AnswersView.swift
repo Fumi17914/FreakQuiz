@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AnswersView: View {
     
-    var viewModel = QuestionModel()
+    var viewModel = QuestionVM()
     
     @State private var isSelected: Bool = false
     

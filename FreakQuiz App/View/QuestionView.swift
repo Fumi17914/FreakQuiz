@@ -10,7 +10,7 @@ import SwiftUI
 struct QuestionView: View {
     
     var startTimer = ProgressBarView()
-    var viewModel = QuestionModel()
+    var viewModel = QuestionVM()
         
     var body: some View {
         ZStack {

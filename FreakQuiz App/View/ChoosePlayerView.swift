@@ -300,7 +300,7 @@ struct ChoosePlayerView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding(25)
                         }).alert(isPresented: $showingAlert) {
-                            Alert(title: Text(""), message: Text("Escoge mínimo un jugador"), dismissButton: .default(Text("Entendido")))
+                            Alert(title: Text(""), message: Text("Escoge mínimo un jugador"), dismissButton: .default(Text("OK!")))
                         }
                     })
     

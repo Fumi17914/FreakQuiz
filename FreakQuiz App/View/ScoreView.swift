@@ -14,7 +14,7 @@ struct ScoreView: View {
         UITableViewCell.appearance().backgroundColor = .clear
     }
     
-    let scoreModel = ScoreModel()
+    let viewModel = ScoreVM()
     
     var body: some View {
         ZStack {
@@ -34,7 +34,7 @@ struct ScoreView: View {
                     .foregroundColor(.white)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(0..<scoreModel.getFinalPlayers().count) { player in
+                    ForEach(0..<viewModel.getFinalPlayers().count) { player in
                         
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
@@ -42,13 +42,13 @@ struct ScoreView: View {
                             .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                             .overlay(
                                 HStack {
-                                    Image(scoreModel.getFinalPlayers()[player].user.rawValue)
+                                    Image(viewModel.getFinalPlayers()[player].user.rawValue)
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 50, height: 50, alignment: .center)
                                         .offset(x: 10)
                                     Spacer()
-                                    Text("\(scoreModel.getFinalPlayers()[player].score)")
+                                    Text("\(viewModel.getFinalPlayers()[player].score)")
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                                         .foregroundColor(.white)
                                         .padding()

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class QuestionModel {
+class QuestionVM {
     
     var myData = QuestionsAndTestSample()
     
@@ -25,6 +25,10 @@ class QuestionModel {
         } else if Game.shared.mode == .fast {
             Game.shared.question = getFastQuestion().randomElement()
             return Game.shared.question ?? "No fast question"
+            
+        } else if Game.shared.mode == .thanos {
+            Game.shared.question = getThanosQuestion().randomElement()
+
         }
         
         return "No questions"
@@ -79,6 +83,16 @@ class QuestionModel {
         }
         return allQuestions
         
+    }
+    
+    private func getThanosQuestion() -> [String] {
+        for questions in myData.questions {
+            if questions.mode == .thanos {
+                allQuestions.append(questions.question)
+               
+            }
+        }
+        return allQuestions
     }
     
     func updatingPlayerScore(playerSelected: String) {
