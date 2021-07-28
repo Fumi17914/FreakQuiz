@@ -1,5 +1,5 @@
 //
-//  CardView.swift
+//  CardContent.swift
 //  FreakQuiz App
 //
 //  Created by Jose Fumanal Quintana on 22/7/21.
@@ -38,6 +38,8 @@ struct CardView: ViewModifier {
     @State private var dragging = false
     @GestureState private var dragTracker: CGSize = CGSize.zero
     @State private var position: CGFloat = UIScreen.main.bounds.height - 50
+    
+    @State private var currentProgress: CGFloat = 0.0
         
     func body(content: Content) -> some View {
         ZStack(alignment: .top) {
@@ -64,9 +66,8 @@ struct CardView: ViewModifier {
                     .onChanged {_ in  dragging = true }
                     .onEnded(onDragEnded))
         .onAppear {
-            position = UIScreen.main.bounds.height / 2.1
+           position = UIScreen.main.bounds.height / 2.1
         }
-        
     }
     
     private func onDragEnded(drag: DragGesture.Value) {

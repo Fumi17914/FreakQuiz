@@ -11,8 +11,13 @@ struct AnswersView: View {
     
     var viewModel = QuestionVM()
     
-    @State private var isSelected: Bool = false
+   /* @State var isSelected_one = false
+    @State var isSelected_two = false
+    @State var isSelected_three = false
+    @State var isSelected_four = false */
     
+
+        
     @ViewBuilder
     private func destinationView(_ answer: Int) -> some View {
         if Game.shared.correctAnswer == answer {
@@ -24,12 +29,14 @@ struct AnswersView: View {
         }
     }
     var body: some View {
+        // let listSelected: [Binding] = [$isSelected_one, $isSelected_two, $isSelected_three, $isSelected_four]
         VStack {
             ScrollView(.vertical, showsIndicators: false){
                 ForEach (0..<viewModel.getAnswersForQuestion().count) { answer in
                     NavigationLink(
                         destination:
                             destinationView(answer),
+                       // isActive: listSelected[answer],
                         label: {
                             RoundedRectangle(cornerRadius: 30)
                                 .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)

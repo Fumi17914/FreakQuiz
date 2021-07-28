@@ -39,11 +39,11 @@ class Game {
     func modeSelectedBackgroundColor() -> Color {
         if Game.shared.mode == .hard {
             colorMode = .red
-            return colorMode
         } else if Game.shared.mode == .fast {
             colorMode = .blue
-            return colorMode
             
+        } else if Game.shared.mode == .thanos {
+            colorMode = .purple
         }
         return colorMode
     }

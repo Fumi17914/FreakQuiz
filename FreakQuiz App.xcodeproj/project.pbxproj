@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8242D4126B13CC70012FE30 /* PurpleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8242D4026B13CC70012FE30 /* PurpleCardView.swift */; };
 		D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */; };
 		D875E92326A982040034A014 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E92226A982040034A014 /* SplashView.swift */; };
 		D875E92526A982050034A014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D875E92426A982050034A014 /* Assets.xcassets */; };
@@ -30,12 +31,13 @@
 		D875E95B26A985C30034A014 /* CorrectAndTestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95A26A985C30034A014 /* CorrectAndTestVM.swift */; };
 		D875E95D26A985CF0034A014 /* ScoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95C26A985CF0034A014 /* ScoreVM.swift */; };
 		D875E96026A9865C0034A014 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95F26A9865C0034A014 /* ProgressBarView.swift */; };
-		D875E96226A986710034A014 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96126A986710034A014 /* CardView.swift */; };
+		D875E96226A986710034A014 /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96126A986710034A014 /* CardContent.swift */; };
 		D875E96426A986880034A014 /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96326A986880034A014 /* AnswersView.swift */; };
 		D875E96A26A98DAB0034A014 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D875E96626A98DAB0034A014 /* Pixel.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8242D4026B13CC70012FE30 /* PurpleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleCardView.swift; sourceTree = "<group>"; };
 		D875E91D26A982040034A014 /* FreakQuiz App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreakQuiz App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakQuiz_AppApp.swift; sourceTree = "<group>"; };
 		D875E92226A982040034A014 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		D875E95A26A985C30034A014 /* CorrectAndTestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAndTestVM.swift; sourceTree = "<group>"; };
 		D875E95C26A985CF0034A014 /* ScoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreVM.swift; sourceTree = "<group>"; };
 		D875E95F26A9865C0034A014 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
-		D875E96126A986710034A014 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D875E96126A986710034A014 /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
 		D875E96326A986880034A014 /* AnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
 		D875E96626A98DAB0034A014 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,7 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				D875E95F26A9865C0034A014 /* ProgressBarView.swift */,
-				D875E96126A986710034A014 /* CardView.swift */,
+				D875E96126A986710034A014 /* CardContent.swift */,
+				D8242D4026B13CC70012FE30 /* PurpleCardView.swift */,
 				D875E96326A986880034A014 /* AnswersView.swift */,
 			);
 			path = QuestionSecondaryViews;
@@ -257,6 +260,7 @@
 				D875E93C26A982AC0034A014 /* QuestionView.swift in Sources */,
 				D875E95126A984490034A014 /* Question.swift in Sources */,
 				D875E95D26A985CF0034A014 /* ScoreVM.swift in Sources */,
+				D8242D4126B13CC70012FE30 /* PurpleCardView.swift in Sources */,
 				D875E92D26A982050034A014 /* FreakQuiz_App.xcdatamodeld in Sources */,
 				D875E92A26A982050034A014 /* Persistence.swift in Sources */,
 				D875E94B26A984170034A014 /* Game.swift in Sources */,
@@ -274,7 +278,7 @@
 				D875E94F26A9843E0034A014 /* Player.swift in Sources */,
 				D875E95B26A985C30034A014 /* CorrectAndTestVM.swift in Sources */,
 				D875E95926A985A90034A014 /* QuestionVM.swift in Sources */,
-				D875E96226A986710034A014 /* CardView.swift in Sources */,
+				D875E96226A986710034A014 /* CardContent.swift in Sources */,
 				D875E93E26A982C30034A014 /* CorrectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

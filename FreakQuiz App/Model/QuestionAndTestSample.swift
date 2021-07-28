@@ -181,23 +181,23 @@ class QuestionsAndTestSample {
      
         Question(id: 54, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Dónde tuvo lugar la escena más romántica de Titanic, donde los protagonistas se aman por primera vez?", options: ["En el restaurante", "En un coche de época", "En la habitación de Rose", "En popa"], answer: 1),
      
-        Question(id: 55, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Cuántos años está por cumplir Rose cuando cuenta la historia?", options: ["100", "99", "101", "107"], answer: 2),
+        Question(id: 55, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Cuántos años está por cumplir Rose cuando cuenta la historia?", options: ["100", "99", "101", "107"], answer: 2),
      
-        Question(id: 56, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Cómo se llama la marca de cigarrillos que siempre aparece en las películas de Tarantino?", options: ["Blue Jasper", "Green Acre", "Yellow Mist", "Red Apple"], answer: 3),
+        Question(id: 56, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Cómo se llama la marca de cigarrillos que siempre aparece en las películas de Tarantino?", options: ["Blue Jasper", "Green Acre", "Yellow Mist", "Red Apple"], answer: 3),
      
-        Question(id: 57, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Cómo se llamaba el cine de Shosanna Dreyfus, donde quema a los nazis en Malditos Bastardos?", options: ["Le Gamaar", "Le Figaro", "Le Parisien", "Les Mièles"], answer: 0),
+        Question(id: 57, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Cómo se llamaba el cine de Shosanna Dreyfus, donde quema a los nazis en Malditos Bastardos?", options: ["Le Gamaar", "Le Figaro", "Le Parisien", "Les Mièles"], answer: 0),
      
-        Question(id: 58, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿En qué año salió Action Comics?", options: ["1939", "1938", "1941", "1940"], answer: 1),
+        Question(id: 58, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿En qué año salió Action Comics?", options: ["1939", "1938", "1941", "1940"], answer: 1),
      
-        Question(id: 59, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿En qué año salió Detective Comics?", options: ["1938", "1940", "1937", "1941"], answer: 2),
+        Question(id: 59, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿En qué año salió Detective Comics?", options: ["1938", "1940", "1937", "1941"], answer: 2),
      
-        Question(id: 60, mode: Question.Mode(rawValue: 2) ?? .fast, question: "Cuál es el verdadero nombre de Once", options: ["Millie", "Dana", "Mary", "Jane"], answer: 3),
+        Question(id: 60, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "Cuál es el verdadero nombre de Once", options: ["Millie", "Dana", "Mary", "Jane"], answer: 3),
      
-        Question(id: 61, mode: Question.Mode(rawValue: 2) ?? .fast, question: "En Flashpoint, ¿quiénes son Batman y Joker?", options: ["Thomas Wayne y Martha Wayne", "Jason Todd y Edward Nashton", "Comisario Gordon y Jack Napier", "Comisario Gordon y Barbara Gordon"], answer: 0),
+        Question(id: 61, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "En Flashpoint, ¿quiénes son Batman y Joker?", options: ["Thomas Wayne y Martha Wayne", "Jason Todd y Edward Nashton", "Comisario Gordon y Jack Napier", "Comisario Gordon y Barbara Gordon"], answer: 0),
      
-        Question(id: 62, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Quién fue el primer Batman de la historia?", options: ["Cesar Romero", "Lewis Wilson", "Adam West", "Burt Ward"], answer: 1),
+        Question(id: 62, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Quién fue el primer Batman de la historia?", options: ["Cesar Romero", "Lewis Wilson", "Adam West", "Burt Ward"], answer: 1),
      
-        Question(id: 63, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Qué escritor/es creó al personaje de Harley Quinn?", options: ["Paul Dini", "Frank Miller", "Jeph Loeb y Tim Sale", "Paul Dini y Bruce Timm"], answer: 3)
+        Question(id: 63, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Qué escritor/es creó al personaje de Harley Quinn?", options: ["Paul Dini", "Frank Miller", "Jeph Loeb y Tim Sale", "Paul Dini y Bruce Timm"], answer: 3)
      
     ]
     

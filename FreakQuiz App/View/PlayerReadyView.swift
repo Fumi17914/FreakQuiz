@@ -22,9 +22,18 @@ struct PlayerReadyView: View {
             
             VStack {
                 Spacer()
-                Text("es tu turno")
-                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                    .foregroundColor(.white)
+                if Game.shared.mode == .thanos {
+                    Text("Pásale el móvil a")
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                        .foregroundColor(.white)
+                        .offset(y: -20)
+                } else {
+                    Text("es tu turno")
+                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                        .foregroundColor(.white)
+                        .offset(y: -20)
+
+                }
                 Spacer()
                 
                 Image(randomPlayer())

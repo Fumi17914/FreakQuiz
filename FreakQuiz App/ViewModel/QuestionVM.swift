@@ -28,6 +28,7 @@ class QuestionVM {
             
         } else if Game.shared.mode == .thanos {
             Game.shared.question = getThanosQuestion().randomElement()
+            return Game.shared.question ?? "No thanos question"
 
         }
         

@@ -12,14 +12,19 @@ struct ProgressBarView: View {
     @State private var currentProgress: CGFloat = 0.0
     @State private var shouldNavigate = false
     
+    @State var new: Timer?
+    
     func startLoading() {
-        _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+        new = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             withAnimation() {
                 if Game.shared.mode == .fast {
                     self.currentProgress += 0.015
-                } else {
+                } else if Game.shared.mode == .easy || Game.shared.mode == .fast {
                     self.currentProgress += 0.01
+                } else if Game.shared.mode == .thanos {
+                    self.currentProgress += 0.008
                 }
+                
                 if self.currentProgress >= UIScreen.main.bounds.width/308 {
                     timer.invalidate()
                     self.shouldNavigate = true
@@ -34,7 +39,7 @@ struct ProgressBarView: View {
                 .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                 .frame(width: 300*currentProgress, height: 20)
             
-            NavigationLink(
+           NavigationLink(
                 destination: TestView(),
                 isActive: $shouldNavigate,
                 label: {
@@ -43,6 +48,9 @@ struct ProgressBarView: View {
 
         }.onAppear {
             self.startLoading()
+        }
+        .onDisappear {
+            new?.invalidate()
         }
     }
 }
