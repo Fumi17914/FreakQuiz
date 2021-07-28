@@ -39,7 +39,7 @@ struct CardPurple: ViewModifier {
     @State private var position: CGFloat = UIScreen.main.bounds.height - 50
     @State var offset: CGSize = .zero
     let timer = Timer.publish(
-        every: 0.75,       // Second
+        every: 0.66,       // Second
             tolerance: 0.1, // Gives tolerance so that SwiftUI makes optimization
             on: .main,      // Main Thread
             in: .common     // Common Loop

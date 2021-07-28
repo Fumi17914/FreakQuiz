@@ -22,7 +22,7 @@ struct ProgressBarView: View {
                 } else if Game.shared.mode == .easy || Game.shared.mode == .fast {
                     self.currentProgress += 0.01
                 } else if Game.shared.mode == .thanos {
-                    self.currentProgress += 0.008
+                    self.currentProgress += 0.007
                 }
                 
                 if self.currentProgress >= UIScreen.main.bounds.width/308 {
