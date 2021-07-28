@@ -31,22 +31,20 @@ struct AnswersView: View {
     var body: some View {
         // let listSelected: [Binding] = [$isSelected_one, $isSelected_two, $isSelected_three, $isSelected_four]
         VStack {
-            ScrollView(.vertical, showsIndicators: false){
-                ForEach (0..<viewModel.getAnswersForQuestion().count) { answer in
-                    NavigationLink(
-                        destination:
-                            destinationView(answer),
-                       // isActive: listSelected[answer],
-                        label: {
-                            RoundedRectangle(cornerRadius: 30)
-                                .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)
-                                .foregroundColor(.white)
-                                .overlay(Text(viewModel.getAnswersForQuestion()[answer] ?? "0")
-                                            .font(Font.custom("PixelEmulator", size: 18))
-                                            .foregroundColor(.black))
-                                .multilineTextAlignment(.center)
-                        })
-                }
+            ForEach (0..<viewModel.getAnswersForQuestion().count) { answer in
+                NavigationLink(
+                    destination:
+                        destinationView(answer),
+                    // isActive: listSelected[answer],
+                    label: {
+                        RoundedRectangle(cornerRadius: 30)
+                            .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)
+                            .foregroundColor(.white)
+                            .overlay(Text(viewModel.getAnswersForQuestion()[answer] ?? "0")
+                                        .font(Font.custom("PixelEmulator", size: 18))
+                                        .foregroundColor(.black))
+                            .multilineTextAlignment(.center)
+                    })
             }
         }
         .offset(y: 60)
