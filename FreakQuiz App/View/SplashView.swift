@@ -10,6 +10,7 @@ import SwiftUI
 struct SplashView: View {
     
     @State private var isShowingDetailView = false
+  
     
     var body: some View {
         NavigationView {
@@ -19,10 +20,20 @@ struct SplashView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Image("logo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding(25)
+                    Spacer(minLength: 50)
+                    HStack {
+                        Image("textLogo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 250, height: 50, alignment: .center)
+                        Image("logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100, height: 100, alignment: .center)
+                        
+                    }.offset(x: 10)
+                    
+                    Spacer(minLength: 200)
                     
                     NavigationLink(
                         destination: ChooseModeView(),
@@ -32,20 +43,50 @@ struct SplashView: View {
                                 Image("play")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .padding()
                             }
                         })
                     
-                    Image("textLogo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding(40)
+                    Spacer(minLength: 200)
+                    
+                    HStack {
+                        NavigationLink(
+                            destination: AtributionsView(),
+                            label: {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .frame(width: UIScreen.main.bounds.width - 230, height: UIScreen.main.bounds.height/15, alignment: .center)
+                                    .textCase(.uppercase)
+                                    .overlay(Text("Atributtions")
+                                                .multilineTextAlignment(.center)
+                                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/70))
+                                                .foregroundColor(.black)
+                                                .offset(x: 2)
+                                                .padding())
+                                    .foregroundColor(.red)
+                            })
+                        
+                        NavigationLink(
+                            destination: TutorialView(),
+                            label: {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .frame(width: UIScreen.main.bounds.width - 230, height: UIScreen.main.bounds.height/15, alignment: .center)
+                                    .textCase(.uppercase)
+                                    .opacity(0.9)
+                                    .overlay(Text("Tutorial")
+                                                .multilineTextAlignment(.center)
+                                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/70))
+                                                .foregroundColor(.black)
+                                                .offset(x: 2)
+                                                .padding())
+                                    .foregroundColor(.yellow)
+                                
+                            })
+                    }     
                 }
             }
             .edgesIgnoringSafeArea(.top)
-        }.navigationViewStyle(StackNavigationViewStyle())
+        }.navigationViewStyle(StackNavigationViewStyle()).accentColor(.white)
     }
-
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

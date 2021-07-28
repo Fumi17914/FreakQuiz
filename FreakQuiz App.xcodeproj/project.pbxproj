@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D800DD7B26B1778C002D91D0 /* AppAtributtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */; };
+		D800DD7F26B1826B002D91D0 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800DD7E26B1826B002D91D0 /* TutorialView.swift */; };
 		D8242D4126B13CC70012FE30 /* PurpleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8242D4026B13CC70012FE30 /* PurpleCardView.swift */; };
 		D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */; };
 		D875E92326A982040034A014 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E92226A982040034A014 /* SplashView.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAtributtions.swift; sourceTree = "<group>"; };
+		D800DD7E26B1826B002D91D0 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		D8242D4026B13CC70012FE30 /* PurpleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleCardView.swift; sourceTree = "<group>"; };
 		D875E91D26A982040034A014 /* FreakQuiz App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreakQuiz App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreakQuiz_AppApp.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				D875E92226A982040034A014 /* SplashView.swift */,
+				D800DD7E26B1826B002D91D0 /* TutorialView.swift */,
 				D875E93526A9827A0034A014 /* ChooseModeView.swift */,
 				D875E93726A9828C0034A014 /* ChoosePlayerView.swift */,
 				D875E93926A982A00034A014 /* PlayerReadyView.swift */,
@@ -152,6 +157,7 @@
 				D875E94E26A9843E0034A014 /* Player.swift */,
 				D875E95026A984490034A014 /* Question.swift */,
 				D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */,
+				D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,8 +276,10 @@
 				D875E93626A9827A0034A014 /* ChooseModeView.swift in Sources */,
 				D875E94026A982D40034A014 /* TestView.swift in Sources */,
 				D875E94226A982E20034A014 /* ScoreView.swift in Sources */,
+				D800DD7F26B1826B002D91D0 /* TutorialView.swift in Sources */,
 				D875E92326A982040034A014 /* SplashView.swift in Sources */,
 				D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */,
+				D800DD7B26B1778C002D91D0 /* AppAtributtions.swift in Sources */,
 				D875E94D26A984240034A014 /* GameData.swift in Sources */,
 				D875E95326A9845F0034A014 /* QuestionAndTestSample.swift in Sources */,
 				D875E96426A986880034A014 /* AnswersView.swift in Sources */,
