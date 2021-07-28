@@ -36,6 +36,7 @@
 		D875E96226A986710034A014 /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96126A986710034A014 /* CardContent.swift */; };
 		D875E96426A986880034A014 /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96326A986880034A014 /* AnswersView.swift */; };
 		D875E96A26A98DAB0034A014 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D875E96626A98DAB0034A014 /* Pixel.ttf */; };
+		D8D7800C26B1C2BA00C45CA6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7800B26B1C2BA00C45CA6 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		D875E96126A986710034A014 /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
 		D875E96326A986880034A014 /* AnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
 		D875E96626A98DAB0034A014 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
+		D8D7800B26B1C2BA00C45CA6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		D875E94426A982FA0034A014 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D8D7800A26B1C2A100C45CA6 /* Extensions */,
 				D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */,
 				D875E92926A982050034A014 /* Persistence.swift */,
 			);
@@ -190,6 +193,14 @@
 				D875E96626A98DAB0034A014 /* Pixel.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D8D7800A26B1C2A100C45CA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7800B26B1C2BA00C45CA6 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 				D875E94226A982E20034A014 /* ScoreView.swift in Sources */,
 				D800DD7F26B1826B002D91D0 /* TutorialView.swift in Sources */,
 				D875E92326A982040034A014 /* SplashView.swift in Sources */,
+				D8D7800C26B1C2BA00C45CA6 /* UIViewExtensions.swift in Sources */,
 				D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */,
 				D800DD7B26B1778C002D91D0 /* AppAtributtions.swift in Sources */,
 				D875E94D26A984240034A014 /* GameData.swift in Sources */,
