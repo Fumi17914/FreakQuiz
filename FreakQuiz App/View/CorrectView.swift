@@ -65,6 +65,7 @@ struct CorrectView: View {
                             .frame(width: 100, height: 100, alignment: .center)
                     })
                     Spacer()
+                    
                 }.offset(y: -30)
                 
                 NavigationLink(destination: PlayerReadyView(), isActive: $isPressStartSelected, label: {

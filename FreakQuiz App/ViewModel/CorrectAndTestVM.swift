@@ -19,6 +19,8 @@ class CorrectAndTestModel {
             scoreImage = "scoreBlue"
         } else if Game.shared.mode == .thanos {
             scoreImage = "scorePurple"
+        } else if Game.shared.mode == .freak {
+            scoreImage = "scoreOrange"
         }
         
         return scoreImage
@@ -29,8 +31,10 @@ class CorrectAndTestModel {
             addPlayer = "addRed"
         } else if Game.shared.mode == .fast {
             addPlayer = "addBlue"
-        }else if Game.shared.mode == .thanos {
+        } else if Game.shared.mode == .thanos {
             addPlayer = "addPurple"
+        } else if Game.shared.mode == .freak {
+            addPlayer = "addOrange"
         }
         
         return addPlayer

@@ -18,9 +18,10 @@ struct AtributionsView: View {
 
     var atributtions = [
         AppAtributtions(name: "Made by Those Icons", image: "easyMode"),
+        AppAtributtions(name: "Made by Freepik", image: "difficultMode"),
         AppAtributtions(name: "Made by Smashicons", image: "fastMode"),
         AppAtributtions(name: "Made by Darius Dan", image: "hardcoreMode"),
-        AppAtributtions(name: "Made by Freepik", image: "difficultMode")
+        AppAtributtions(name: "Made by Freepik", image: "sword")
     ]
     
     var body: some View {
@@ -59,17 +60,13 @@ struct AtributionsView: View {
                     }
                 }
                 
-                HStack {
-                    Image("textLogo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 250, height: 50, alignment: .center)
-                    Image("logo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100, height: 100, alignment: .center)
-                    
-                }.offset(x: 10)
+                Image("textLogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height / 10, alignment: .center)
+                
+                
+                
             }
         }
         .navigationBarTitle("App Atributtions")

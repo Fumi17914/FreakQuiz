@@ -19,5 +19,6 @@ struct Question: Codable {
         case hard
         case fast
         case thanos
+        case freak
     }
 }

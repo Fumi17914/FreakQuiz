@@ -175,11 +175,11 @@ class QuestionsAndTestSample {
      
         Question(id: 51, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Cuál es el verdadero nombre de Nathan Drake?", options: ["Nathan Sullivan", "Nathan Morris", "Nathan Morgan", "Nunca se dice"], answer: 2),
      
-        Question(id: 52, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿En qué año se hundió el Titanic?", options: ["1911", "1910", "1908", "1912"], answer: 3),
+        Question(id: 52, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿En qué año se hundió el Titanic?", options: ["1911", "1910", "1908", "1912"], answer: 3),
      
-        Question(id: 53, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿De que ciudad inglesa zarpa el Titanic hacia América", options: ["Southampton", "Liverpool", "Manchester", "Brighton"], answer: 0),
+        Question(id: 53, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿De que ciudad inglesa zarpa el Titanic hacia América", options: ["Southampton", "Liverpool", "Manchester", "Brighton"], answer: 0),
      
-        Question(id: 54, mode: Question.Mode(rawValue: 2) ?? .fast, question: "¿Dónde tuvo lugar la escena más romántica de Titanic, donde los protagonistas se aman por primera vez?", options: ["En el restaurante", "En un coche de época", "En la habitación de Rose", "En popa"], answer: 1),
+        Question(id: 54, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Dónde tuvo lugar la escena más romántica de Titanic, donde los protagonistas se aman por primera vez?", options: ["En el restaurante", "En un coche de época", "En la habitación de Rose", "En popa"], answer: 1),
      
         Question(id: 55, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Cuántos años está por cumplir Rose cuando cuenta la historia?", options: ["100", "99", "101", "107"], answer: 2),
      
@@ -191,13 +191,13 @@ class QuestionsAndTestSample {
      
         Question(id: 59, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿En qué año salió Detective Comics?", options: ["1938", "1940", "1937", "1941"], answer: 2),
      
-        Question(id: 60, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "Cuál es el verdadero nombre de Once", options: ["Millie", "Dana", "Mary", "Jane"], answer: 3),
+        Question(id: 60, mode: Question.Mode(rawValue: 4) ?? .freak, question: "Cuál es el verdadero nombre de Once", options: ["Millie", "Dana", "Mary", "Jane"], answer: 3),
      
-        Question(id: 61, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "En Flashpoint, ¿quiénes son Batman y Joker?", options: ["Thomas Wayne y Martha Wayne", "Jason Todd y Edward Nashton", "Comisario Gordon y Jack Napier", "Comisario Gordon y Barbara Gordon"], answer: 0),
+        Question(id: 61, mode: Question.Mode(rawValue: 4) ?? .freak, question: "En Flashpoint, ¿quiénes son Batman y Joker?", options: ["Thomas Wayne y Martha Wayne", "Jason Todd y Edward Nashton", "Comisario Gordon y Jack Napier", "Comisario Gordon y Barbara Gordon"], answer: 0),
      
-        Question(id: 62, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Quién fue el primer Batman de la historia?", options: ["Cesar Romero", "Lewis Wilson", "Adam West", "Burt Ward"], answer: 1),
+        Question(id: 62, mode: Question.Mode(rawValue: 4) ?? .freak, question: "¿Quién fue el primer Batman de la historia?", options: ["Cesar Romero", "Lewis Wilson", "Adam West", "Burt Ward"], answer: 1),
      
-        Question(id: 63, mode: Question.Mode(rawValue: 3) ?? .thanos, question: "¿Qué escritor/es creó al personaje de Harley Quinn?", options: ["Paul Dini", "Frank Miller", "Jeph Loeb y Tim Sale", "Paul Dini y Bruce Timm"], answer: 3)
+        Question(id: 63, mode: Question.Mode(rawValue: 4) ?? .freak, question: "¿Qué escritor/es creó al personaje de Harley Quinn?", options: ["Paul Dini", "Frank Miller", "Jeph Loeb y Tim Sale", "Paul Dini y Bruce Timm"], answer: 3)
      
     ]
     

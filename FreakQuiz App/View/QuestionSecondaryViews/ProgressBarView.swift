@@ -19,10 +19,12 @@ struct ProgressBarView: View {
             withAnimation() {
                 if Game.shared.mode == .fast {
                     self.currentProgress += 0.015
-                } else if Game.shared.mode == .easy || Game.shared.mode == .fast {
+                } else if Game.shared.mode == .easy || Game.shared.mode == .hard {
                     self.currentProgress += 0.01
                 } else if Game.shared.mode == .thanos {
                     self.currentProgress += 0.007
+                } else if Game.shared.mode == .freak {
+                    self.currentProgress += 0.015
                 }
                 
                 if self.currentProgress >= UIScreen.main.bounds.width/308 {

@@ -27,15 +27,10 @@ struct TutorialView: View {
                             VStack {
                                 VStack {
                                     Spacer()
-                                    
                                     Image("textLogo")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(width: 290, height: 50, alignment: .center)
-                                    Image("logo")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 120, height: 120, alignment: .center)
+                                        .frame(width: UIScreen.main.bounds.width - 75, height: UIScreen.main.bounds.height / 10, alignment: .center)
 
                                     Spacer()
 
@@ -57,7 +52,7 @@ struct TutorialView: View {
                     
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
-                        .foregroundColor(.orange)
+                        .foregroundColor(.init(hex: "FF6F95"))
                         .overlay(
                             VStack {
                                 VStack {
@@ -110,7 +105,7 @@ struct TutorialView: View {
                                     .foregroundColor(.black)
                                 
                                 Spacer()
-                                NavigationLink(
+                                /*NavigationLink(
                                     destination: ChoosePlayerView().onAppear {self.viewModel.easyMode()},
                                     label: {
                                         Image("pressStart")
@@ -120,7 +115,7 @@ struct TutorialView: View {
                                             
                     
                                             
-                                    })
+                                    })*/
                                 Spacer()
                         
                             }.padding()
@@ -149,7 +144,7 @@ struct TutorialView: View {
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                                     .foregroundColor(.black)
                                 Spacer()
-                                NavigationLink(
+                                /*NavigationLink(
                                     destination: ChoosePlayerView().onAppear {self.viewModel.hardMode()},
                                     label: {
                                         Image("pressStart")
@@ -159,7 +154,7 @@ struct TutorialView: View {
                                             
                     
                                             
-                                    })
+                                    })*/
                                 Spacer()
                         
                             }.padding()
@@ -188,7 +183,7 @@ struct TutorialView: View {
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                                     .foregroundColor(.black)
                                 Spacer()
-                                NavigationLink(
+                                /*NavigationLink(
                                     destination: ChoosePlayerView().onAppear {self.viewModel.fastMode()},
                                     label: {
                                         Image("pressStart")
@@ -198,7 +193,7 @@ struct TutorialView: View {
                                             
                     
                                             
-                                    })
+                                    })*/
                                 Spacer()
                         
                             }.padding()
@@ -226,7 +221,7 @@ struct TutorialView: View {
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                                     .foregroundColor(.black)
                                 Spacer()
-                                NavigationLink(
+                                /*NavigationLink(
                                     destination: ChoosePlayerView().onAppear {self.viewModel.thanosMode()},
                                     label: {
                                         Image("pressStart")
@@ -236,7 +231,7 @@ struct TutorialView: View {
                                             
                     
                                             
-                                    })
+                                    })*/
                                 Spacer()
                         
                             }.padding()

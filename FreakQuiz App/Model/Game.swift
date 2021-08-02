@@ -44,6 +44,9 @@ class Game {
             
         } else if Game.shared.mode == .thanos {
             colorMode = .purple
+            
+        } else if Game.shared.mode == .freak {
+            colorMode = .orange
         }
         return colorMode
     }
@@ -63,10 +66,12 @@ class Game {
                                      Player(user: Player.Characters.Lobezno, score: 0)]
     
     
-    //var questions: Questions? = nil
+    /*
+     
+     var questions: Questions? = nil
     
     // MARK: Preguntas según modo escogido
-    /*var questionsEasy: [Question] {
+    var questionsEasy: [Question] {
      return questions?.filter{ $0.mode == .easy} ?? []
      }
      var questionsHard: [Question] {
@@ -76,11 +81,11 @@ class Game {
      var questionsFast: [Question] {
      return questions?.filter{ $0.mode == .fast} ?? []
      
-     }*/
+     }
     
-    
-    // MARK: Función questions al azar según modo
-    /*var randomQuestion: String? {
+     
+     // MARK: Función questions al azar según modo
+     var randomQuestion: String? {
      if Game.shared.mode == .easy {
      return Game.shared.questionsEasy.randomElement()?.question
      
@@ -93,6 +98,8 @@ class Game {
      }
      
      return "No questions found"
-     }*/
+     }
+     
+     */
 }
 

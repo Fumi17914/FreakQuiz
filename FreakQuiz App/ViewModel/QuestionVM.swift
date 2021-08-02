@@ -29,6 +29,10 @@ class QuestionVM {
         } else if Game.shared.mode == .thanos {
             Game.shared.question = getThanosQuestion().randomElement()
             return Game.shared.question ?? "No thanos question"
+            
+        } else if Game.shared.mode == .freak {
+            Game.shared.question = getFreakQuestion().randomElement()
+            return Game.shared.question ?? "No freak question"
 
         }
         
@@ -89,6 +93,16 @@ class QuestionVM {
     private func getThanosQuestion() -> [String] {
         for questions in myData.questions {
             if questions.mode == .thanos {
+                allQuestions.append(questions.question)
+               
+            }
+        }
+        return allQuestions
+    }
+    
+    private func getFreakQuestion() -> [String] {
+        for questions in myData.questions {
+            if questions.mode == .freak {
                 allQuestions.append(questions.question)
                
             }

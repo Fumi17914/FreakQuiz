@@ -29,4 +29,9 @@ class ChooseModeVM {
         Game.shared.mode = .thanos
     }
     
+    func freakMode() {
+        print ("Master Freakverse Mode Selected")
+        Game.shared.mode = .freak
+    }
+    
 }

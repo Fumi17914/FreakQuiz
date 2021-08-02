@@ -24,18 +24,21 @@ struct ScoreView: View {
             
             VStack {
                 Spacer(minLength: 50)
-                RoundedRectangle(cornerRadius: 30)
-                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
-                    .textCase(.uppercase)
-                    .overlay(Text("Puntuaciones")
-                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                .foregroundColor(.black)
-                                .padding())
-                    .foregroundColor(.white)
+                HStack {
+                    RoundedRectangle(cornerRadius: 30)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
+                        .textCase(.uppercase)
+                        .overlay(Text("Puntuaciones")
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                    .foregroundColor(.black)
+                                    .padding())
+                        .foregroundColor(.white)
+                    
+                    
+                }
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(0..<viewModel.getFinalPlayers().count) { player in
-                        
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                             .textCase(.uppercase)

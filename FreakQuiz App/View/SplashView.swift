@@ -25,13 +25,9 @@ struct SplashView: View {
                         Image("textLogo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 250, height: 50, alignment: .center)
-                        Image("logo")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 100, height: 100, alignment: .center)
+                            .frame(width: UIScreen.main.bounds.width - 35, height: UIScreen.main.bounds.height / 10, alignment: .center)
                         
-                    }.offset(x: 10)
+                    }
                     
                     Spacer(minLength: 200)
                     
@@ -53,7 +49,7 @@ struct SplashView: View {
                             destination: AtributionsView(),
                             label: {
                                 RoundedRectangle(cornerRadius: 20)
-                                    .frame(width: UIScreen.main.bounds.width - 230, height: UIScreen.main.bounds.height/15, alignment: .center)
+                                    .frame(width: UIScreen.main.bounds.width / 2 - 20, height: UIScreen.main.bounds.height/15, alignment: .center)
                                     .textCase(.uppercase)
                                     .overlay(Text("Atributtions")
                                                 .multilineTextAlignment(.center)
@@ -68,7 +64,7 @@ struct SplashView: View {
                             destination: TutorialView(),
                             label: {
                                 RoundedRectangle(cornerRadius: 20)
-                                    .frame(width: UIScreen.main.bounds.width - 230, height: UIScreen.main.bounds.height/15, alignment: .center)
+                                    .frame(width: UIScreen.main.bounds.width / 2 - 20, height: UIScreen.main.bounds.height/15, alignment: .center)
                                     .textCase(.uppercase)
                                     .opacity(0.9)
                                     .overlay(Text("Tutorial")
@@ -80,7 +76,9 @@ struct SplashView: View {
                                     .foregroundColor(.yellow)
                                 
                             })
-                    }     
+                    }
+                    
+                    Spacer(minLength: 10)
                 }
             }
             .edgesIgnoringSafeArea(.top)
