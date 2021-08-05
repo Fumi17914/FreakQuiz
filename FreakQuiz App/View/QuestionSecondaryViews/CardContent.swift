@@ -47,6 +47,7 @@ struct CardView: ViewModifier {
                 RoundedRectangle(cornerRadius: 2.5)
                     .frame(width: 40, height: 5.0)
                     .foregroundColor(Color.white)
+                    .addBorder(Color.black, width: 0.75, cornerRadius: 2.5)
                     .padding(10)
                 content.padding(.top, 30)
                                 
@@ -56,6 +57,8 @@ struct CardView: ViewModifier {
             .scaleEffect(x: 1, y: 1, anchor: .center)
             .background(Game.shared.modeSelectedBackgroundColor())
             .cornerRadius(15)
+            .addBorder(Color.black, width: 2, cornerRadius: 15)
+
         }
         .offset(y:  max(0, position + self.dragTracker.height))
         .animation(dragging ? nil : {

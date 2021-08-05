@@ -36,6 +36,8 @@ struct TestView: View {
                                 .foregroundColor(.white)
                                 .padding())
                     .foregroundColor(.red)
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)
+
                 
                 Spacer(minLength: 25)
                 
@@ -49,6 +51,7 @@ struct TestView: View {
                                 .multilineTextAlignment(.center)
                                 .padding())
                     .foregroundColor(Game.shared.modeSelectedBackgroundColor())
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)
                     .offset(y: -10)
                 
                 Spacer(minLength: 50)

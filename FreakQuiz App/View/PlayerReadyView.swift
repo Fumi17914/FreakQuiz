@@ -22,18 +22,17 @@ struct PlayerReadyView: View {
             
             VStack {
                 Spacer()
-                if Game.shared.mode == .thanos {
-                    Text("Pásale el móvil a")
-                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                        .foregroundColor(.white)
-                        .offset(y: -20)
-                } else {
-                    Text("es tu turno")
-                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                        .foregroundColor(.white)
-                        .offset(y: -20)
+                RoundedRectangle(cornerRadius: 30)
+                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
+                    .textCase(.uppercase)
+                    .overlay(Text(Game.shared.mode == .thanos ? "Pásale el móvil a" : "Es tu turno")
+                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                .foregroundColor(.black)
+                                .padding())
+                    .foregroundColor(.white)
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)
 
-                }
+                
                 Spacer()
                 
                 Image(randomPlayer())
@@ -51,8 +50,9 @@ struct PlayerReadyView: View {
                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/45))
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center))
-                    
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)
                     .offset(y: -45)
+
                 
                 Spacer()
                 
@@ -61,7 +61,7 @@ struct PlayerReadyView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(25)
-                        .offset(x:5, y:30)
+                        .offset(x:5, y:20)
                 }
                 Spacer()
                 

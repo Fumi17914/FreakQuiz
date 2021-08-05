@@ -51,6 +51,7 @@ struct CardPurple: ViewModifier {
                 RoundedRectangle(cornerRadius: 2.5)
                     .frame(width: 40, height: 5.0)
                     .foregroundColor(Color.white)
+                    .addBorder(Color.black, width: 0.75, cornerRadius: 2.5)
                     .padding(10)
                 content.padding(.top, 30)              
                 AnswersView()
@@ -59,6 +60,8 @@ struct CardPurple: ViewModifier {
             .scaleEffect(x: 1, y: 1, anchor: .center)
             .background(Color.purple)
             .cornerRadius(15)
+            .addBorder(Color.black, width: 2, cornerRadius: 15)
+
             
         }.onReceive(timer) { (_) in
             let heightBound = UIScreen.main.bounds.height / 2

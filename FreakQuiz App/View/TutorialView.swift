@@ -53,6 +53,7 @@ struct TutorialView: View {
                                 Spacer(minLength: 50)
                             }
                         )
+                        .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
                     
                     RoundedRectangle(cornerRadius: 25.0)
@@ -86,6 +87,7 @@ struct TutorialView: View {
                                 }
                             }.padding()
                         )
+                        .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
 
                     RoundedRectangle(cornerRadius: 25.0)
@@ -125,6 +127,7 @@ struct TutorialView: View {
                         
                             }.padding()
                         )
+                        .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
                        
                     RoundedRectangle(cornerRadius: 25.0)
@@ -165,6 +168,7 @@ struct TutorialView: View {
                             }.padding()
 
                         )
+                        .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
@@ -203,6 +207,7 @@ struct TutorialView: View {
                         
                             }.padding()
                         )
+                        .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
@@ -244,6 +249,7 @@ struct TutorialView: View {
                         
                             }.padding()
                         )
+                        .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
@@ -262,7 +268,7 @@ struct TutorialView: View {
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                                     .foregroundColor(.white)
                                 Spacer()
-                                Text("Tendrás que responder a las preguntas, sin opciones, y hacer la prueba. Todo a la vez!")
+                                Text("Tendrás que responder a las preguntas y hacer la prueba. Todo a la vez!")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                                     .foregroundColor(.white)
@@ -281,6 +287,7 @@ struct TutorialView: View {
                                 Spacer()
                             }.padding()
                         )
+                        .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
     
                 }.tabViewStyle(PageTabViewStyle())

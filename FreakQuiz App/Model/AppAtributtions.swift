@@ -21,7 +21,9 @@ struct AtributionsView: View {
         AppAtributtions(name: "Made by Freepik", image: "difficultMode"),
         AppAtributtions(name: "Made by Smashicons", image: "fastMode"),
         AppAtributtions(name: "Made by Darius Dan", image: "hardcoreMode"),
-        AppAtributtions(name: "Made by Freepik", image: "sword")
+        AppAtributtions(name: "Made by Freepik", image: "sword"),
+        AppAtributtions(name: "Made by Freepik", image: "gamer"),
+        AppAtributtions(name: "Made by Freepik", image: "arcade")
     ]
     
     var body: some View {
@@ -64,9 +66,6 @@ struct AtributionsView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height / 10, alignment: .center)
-                
-                
-                
             }
         }
         .navigationBarTitle("App Atributtions")

@@ -33,6 +33,8 @@ struct CorrectView: View {
                                 .foregroundColor(.white)
                                 .padding())
                     .foregroundColor(.green)
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)
+
                 
                 Spacer(minLength: 25)
                 RoundedRectangle(cornerRadius: 30)
@@ -45,6 +47,7 @@ struct CorrectView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding())
                     .foregroundColor(Game.shared.modeSelectedBackgroundColor())
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)
                     .offset(y: -10)
                 Spacer(minLength: 50)
                 HStack {
@@ -55,6 +58,7 @@ struct CorrectView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 100, height: 100, alignment: .center)
+
                     })
                     Spacer()
                     

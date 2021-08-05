@@ -60,6 +60,8 @@ class QuestionVM {
     
     private func getEasyQuestion() -> [String] {
         
+        allQuestions.removeAll()
+
         for questions in myData.questions {
             if questions.mode == .easy {
                 allQuestions.append(questions.question)
@@ -70,6 +72,8 @@ class QuestionVM {
     
     private func getHardQuestion() -> [String] {
         
+        allQuestions.removeAll()
+        
         for questions in myData.questions {
             if questions.mode == .hard {
                 allQuestions.append(questions.question)
@@ -79,6 +83,8 @@ class QuestionVM {
     }
     
     private func getFastQuestion() -> [String] {
+        
+        allQuestions.removeAll()
         
         for questions in myData.questions {
             if questions.mode == .fast {
@@ -91,6 +97,9 @@ class QuestionVM {
     }
     
     private func getThanosQuestion() -> [String] {
+        
+        allQuestions.removeAll()
+
         for questions in myData.questions {
             if questions.mode == .thanos {
                 allQuestions.append(questions.question)
@@ -101,6 +110,9 @@ class QuestionVM {
     }
     
     private func getFreakQuestion() -> [String] {
+        
+        allQuestions.removeAll()
+
         for questions in myData.questions {
             if questions.mode == .freak {
                 allQuestions.append(questions.question)

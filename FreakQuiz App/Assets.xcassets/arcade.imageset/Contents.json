@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "newLogo.png",
+      "filename" : "arcade.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "newLogo-1.png",
+      "filename" : "arcade-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "newLogo-2.png",
+      "filename" : "arcade-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

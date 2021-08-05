@@ -44,6 +44,6 @@
     </scenes>
     <resources>
         <image name="Background" width="621" height="1344"/>
-        <image name="logo" width="256" height="256"/>
+        <image name="logo" width="537" height="679.5"/>
     </resources>
 </document>

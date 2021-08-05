@@ -58,6 +58,8 @@ struct SplashView: View {
                                                 .offset(x: 2)
                                                 .padding())
                                     .foregroundColor(.red)
+                                    .addBorder(Color.black, width: 2, cornerRadius: 20)
+
                             })
                         
                         NavigationLink(
@@ -74,6 +76,8 @@ struct SplashView: View {
                                                 .offset(x: 2)
                                                 .padding())
                                     .foregroundColor(.yellow)
+                                    .addBorder(Color.black, width: 2, cornerRadius: 20)
+                                    
                                 
                             })
                     }

@@ -29,6 +29,7 @@ struct QuestionView: View {
                                     .foregroundColor(.black)
                                     .padding()
                                     .multilineTextAlignment(.center))
+                        .addBorder(Color.black, width: 2, cornerRadius: 30)
                         .offset(y: 70)
                     ProgressBarView().onAppear {
                         self.startTimer.startLoading()

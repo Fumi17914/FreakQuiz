@@ -33,6 +33,7 @@ struct ScoreView: View {
                                     .foregroundColor(.black)
                                     .padding())
                         .foregroundColor(.white)
+                        .addBorder(Color.black, width: 2, cornerRadius: 30)
                     
                     
                 }
@@ -57,6 +58,8 @@ struct ScoreView: View {
                                         .padding()
                                         .multilineTextAlignment(.center)
                                 })
+                            .addBorder(Color.black, width: 2, cornerRadius: 30)
+
                     }
                 }
                 

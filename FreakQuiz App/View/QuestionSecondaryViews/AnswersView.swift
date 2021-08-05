@@ -44,6 +44,8 @@ struct AnswersView: View {
                                         .font(Font.custom("PixelEmulator", size: 18))
                                         .foregroundColor(.black))
                             .multilineTextAlignment(.center)
+                            .addBorder(Color.black, width: 2, cornerRadius: 30)
+
                     })
             }
         }
