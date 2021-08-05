@@ -107,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D875E92426A982050034A014 /* Assets.xcassets */,
+				D8E4C0B626B7F26800790071 /* Launch Screen.storyboard */,
 				D875E94426A982FA0034A014 /* App */,
 				D875E96526A986C60034A014 /* Fonts */,
 				D875E94526A983080034A014 /* Model */,
@@ -115,7 +116,6 @@
 				D875E92E26A982050034A014 /* Info.plist */,
 				D875E92B26A982050034A014 /* FreakQuiz_App.xcdatamodeld */,
 				D875E92626A982050034A014 /* Preview Content */,
-				D8E4C0B626B7F26800790071 /* Launch Screen.storyboard */,
 			);
 			path = "FreakQuiz App";
 			sourceTree = "<group>";

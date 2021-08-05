@@ -20,7 +20,7 @@ class QuestionVM {
             
         } else if Game.shared.mode == .hard {
             Game.shared.question = getHardQuestion().randomElement()
-            return Game.shared.question ?? "No hard question"
+            return Game.shared.question ?? "No difficult question"
             
         } else if Game.shared.mode == .fast {
             Game.shared.question = getFastQuestion().randomElement()
@@ -28,7 +28,7 @@ class QuestionVM {
             
         } else if Game.shared.mode == .thanos {
             Game.shared.question = getThanosQuestion().randomElement()
-            return Game.shared.question ?? "No thanos question"
+            return Game.shared.question ?? "No hardcore question"
             
         } else if Game.shared.mode == .freak {
             Game.shared.question = getFreakQuestion().randomElement()

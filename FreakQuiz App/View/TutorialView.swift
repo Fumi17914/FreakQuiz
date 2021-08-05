@@ -21,7 +21,7 @@ struct TutorialView: View {
                 TabView {
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.init(hex: "17181F"))
                         .overlay(
                             
                             VStack {
@@ -30,19 +30,24 @@ struct TutorialView: View {
                                     Image("textLogo")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(width: UIScreen.main.bounds.width - 75, height: UIScreen.main.bounds.height / 10, alignment: .center)
+                                        .frame(width: UIScreen.main.bounds.width - 95, height: UIScreen.main.bounds.height / 10, alignment: .center)
 
-                                    Spacer()
+                                    Spacer(minLength: 10)
 
                                     Text("Un juego de preguntas frikis")
                                         .multilineTextAlignment(.leading)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.white)
                                     Spacer()
-                                    Text("Si fallas, deberás realizar un prueba como penitencia")
+                                    Text("Intenta responder antes de que se te acabe el tiempo")
                                         .multilineTextAlignment(.leading)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.white)
+                                    Spacer()
+                                    Text("Si fallas o el tiempo se acaba, deberás realizar un prueba como penitencia")
+                                        .multilineTextAlignment(.leading)
+                                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                        .foregroundColor(.white)
                                     Spacer()
                                 }.padding()
                                 Spacer(minLength: 50)
@@ -65,7 +70,7 @@ struct TutorialView: View {
                                     Text("Botón para añadir jugadores en medio de la partida")
                                         .multilineTextAlignment(.center)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.white)
                                 }
                                 Spacer(minLength: 50)
                                 VStack {
@@ -76,7 +81,7 @@ struct TutorialView: View {
                                     Text("Botón para mirar vuestras puntuaciones")
                                         .multilineTextAlignment(.center)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.white)
                                     Spacer()
                                 }
                             }.padding()
@@ -85,7 +90,7 @@ struct TutorialView: View {
 
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
-                        .foregroundColor(.yellow)
+                        .foregroundColor(.yellow.opacity(0.85))
                         .overlay(
                             VStack {
                                 Spacer()
@@ -97,12 +102,12 @@ struct TutorialView: View {
                                 Text("Este es el modo más sencillo")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 Text("Os encontraréis preguntas de cultura general sobre el mundo friki")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 
                                 Spacer()
                                 /*NavigationLink(
@@ -137,12 +142,12 @@ struct TutorialView: View {
                                 Text("Bienvenid@s al modo difícil, un desafío")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 Text("Si crees que eres buen@, aquí podrás demostrarlo")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 /*NavigationLink(
                                     destination: ChoosePlayerView().onAppear {self.viewModel.hardMode()},
@@ -173,15 +178,15 @@ struct TutorialView: View {
                                     .frame(width: 100, height: 100, alignment: .center)
                                 Spacer()
                                 
-                                Text("Ahora os presentamos el modo rápido, con otro tipo de preguntas")
+                                Text("El modo rápido, con  menos tiempo y preguntas de todos las dificultades")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 Text("Antes sólo teníais que ser buen@s. Ahora también rápid@s")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 /*NavigationLink(
                                     destination: ChoosePlayerView().onAppear {self.viewModel.fastMode()},
@@ -211,15 +216,15 @@ struct TutorialView: View {
                                     .frame(width: 100, height: 100, alignment: .center)
                                 Spacer()
                                 
-                                Text("Y por último, el modo hardcore, El tritura mentes friki")
+                                Text("A continuación, modo hardcore, El tritura mentes friki")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 Text("Las preguntas son muy rebuscadas y... las respuestas también habrá que rebuscarlas...")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 /*NavigationLink(
                                     destination: ChoosePlayerView().onAppear {self.viewModel.thanosMode()},
@@ -233,7 +238,47 @@ struct TutorialView: View {
                                             
                                     })*/
                                 Spacer()
+                                
+                                
+                                
                         
+                            }.padding()
+                        )
+                        .offset(y: -25)
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
+                        .foregroundColor(.orange)
+                        .overlay(
+                            VStack {
+                                Spacer()
+                                Image("sword")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 100, height: 100, alignment: .center)
+                                Spacer()
+                                
+                                Text("Y por último, el modo Masters Freakverse")
+                                    .multilineTextAlignment(.leading)
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                    .foregroundColor(.white)
+                                Spacer()
+                                Text("Tendrás que responder a las preguntas, sin opciones, y hacer la prueba. Todo a la vez!")
+                                    .multilineTextAlignment(.leading)
+                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                    .foregroundColor(.white)
+                                Spacer()
+                                /*NavigationLink(
+                                    destination: ChoosePlayerView().onAppear {self.viewModel.freakMode()},
+                                    label: {
+                                        Image("pressStart")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .padding()
+                                            
+                    
+                                            
+                                    })*/
+                                Spacer()
                             }.padding()
                         )
                         .offset(y: -25)
