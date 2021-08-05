@@ -40,6 +40,8 @@ struct CardView: ViewModifier {
     @State private var position: CGFloat = UIScreen.main.bounds.height - 50
     
     @State private var currentProgress: CGFloat = 0.0
+    
+    let myDataModel = QuestionsAndTestSample()
         
     func body(content: Content) -> some View {
         ZStack(alignment: .top) {
@@ -50,8 +52,9 @@ struct CardView: ViewModifier {
                     .addBorder(Color.black, width: 0.75, cornerRadius: 2.5)
                     .padding(10)
                 content.padding(.top, 30)
-                                
+                
                 AnswersView()
+                
             }
             .frame(minWidth: UIScreen.main.bounds.width)
             .scaleEffect(x: 1, y: 1, anchor: .center)

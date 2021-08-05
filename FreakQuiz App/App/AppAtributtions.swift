@@ -32,7 +32,7 @@ struct AtributionsView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                ScrollView {
+                ScrollView(.vertical, showsIndicators: false) {
                     ForEach( 0..<atributtions.count ) { atribution in
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.height/10, alignment: .center)
@@ -59,6 +59,8 @@ struct AtributionsView: View {
                                         .font(Font.custom("", size: UIScreen.main.bounds.height/65))
                                     
                                 })
+                            .addBorder(Color.black, width: 2, cornerRadius: 30)
+
                     }
                 }
                 

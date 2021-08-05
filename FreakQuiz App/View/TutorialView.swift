@@ -68,7 +68,7 @@ struct TutorialView: View {
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 100, height: 100, alignment: .center)
                                     
-                                    Text("Botón para añadir jugadores en medio de la partida")
+                                    Text("Botón para añadir jugadores")
                                         .multilineTextAlignment(.center)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)

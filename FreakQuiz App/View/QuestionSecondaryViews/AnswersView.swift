@@ -16,8 +16,6 @@ struct AnswersView: View {
     @State var isSelected_three = false
     @State var isSelected_four = false */
     
-
-        
     @ViewBuilder
     private func destinationView(_ answer: Int) -> some View {
         if Game.shared.correctAnswer == answer {

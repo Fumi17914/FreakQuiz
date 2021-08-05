@@ -151,6 +151,7 @@
 				D8D7800A26B1C2A100C45CA6 /* Extensions */,
 				D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */,
 				D875E92926A982050034A014 /* Persistence.swift */,
+				D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -163,7 +164,6 @@
 				D875E94E26A9843E0034A014 /* Player.swift */,
 				D875E95026A984490034A014 /* Question.swift */,
 				D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */,
-				D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
