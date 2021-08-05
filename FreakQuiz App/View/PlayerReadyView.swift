@@ -26,7 +26,7 @@ struct PlayerReadyView: View {
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                     .textCase(.uppercase)
                     .overlay(Text(Game.shared.mode == .thanos ? "Pásale el móvil a" : "Es tu turno")
-                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                .font(Font.custom("PixelEmulator", size: Game.shared.mode == .thanos ? UIScreen.main.bounds.height/38 : UIScreen.main.bounds.height/33 ))
                                 .foregroundColor(.black)
                                 .padding())
                     .foregroundColor(.white)

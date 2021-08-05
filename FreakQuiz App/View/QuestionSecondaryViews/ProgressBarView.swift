@@ -39,6 +39,7 @@ struct ProgressBarView: View {
         VStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(Game.shared.modeSelectedBackgroundColor())
+                .addBorder(Color.black, width: 2, cornerRadius: 20)
                 .frame(width: 300*currentProgress, height: 20)
             
            NavigationLink(
