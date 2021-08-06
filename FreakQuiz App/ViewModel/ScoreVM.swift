@@ -12,7 +12,7 @@ class ScoreVM {
     var playersScoreList: [Player] = []
     var finalPlayersAndScore = Game.shared.scoreAndPlayers.sorted(by: {$0.score > $1.score})
 
-    func getFinalPlayers() -> [Player] {
+    var getFinalPlayers: [Player]  {
         for player in finalPlayersAndScore {
             for selectedPlayer in Game.shared.players {
                 if selectedPlayer == player.user.rawValue {

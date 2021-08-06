@@ -44,7 +44,7 @@ struct PlayerReadyView: View {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: 235, height: 80, alignment: .center)
                     .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                    .opacity(0.8)
+                    .opacity(0.9)
                     .textCase(.uppercase)
                     .overlay(Text(Game.shared.selectedPlayer ?? "No player")
                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/45))

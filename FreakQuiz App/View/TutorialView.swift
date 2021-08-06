@@ -61,6 +61,7 @@ struct TutorialView: View {
                         .foregroundColor(.init(hex: "FF6F95"))
                         .overlay(
                             VStack {
+                                Spacer(minLength: 20)
                                 VStack {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 98, height: 80, alignment: .center)
@@ -80,6 +81,7 @@ struct TutorialView: View {
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
                                 }
+                                Spacer(minLength: 20)
                                 VStack {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 98, height: 80, alignment: .center)
@@ -99,6 +101,7 @@ struct TutorialView: View {
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
                                 }
+                                Spacer(minLength: 20)
                                 VStack {
                                     RoundedRectangle(cornerRadius: 15)
                                         .frame(width: 98, height: 80, alignment: .center)
@@ -112,11 +115,13 @@ struct TutorialView: View {
                                                 .frame(width: 70, height: 70, alignment: .center)
                         
                                         )
-                                    Text("Botón para mirar vuestras puntuaciones")
+                                    Text("Botón para mirar las puntuaciones")
                                         .multilineTextAlignment(.leading)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
                                 }
+                                Spacer(minLength: 20)
+
                             }.padding()
                         )
                         .addBorder(Color.black, width: 2, cornerRadius: 20)

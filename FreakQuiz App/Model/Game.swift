@@ -37,8 +37,12 @@ class Game {
     // MARK: Configurar color de las views según modo
     var colorMode: Color = .yellow
     func modeSelectedBackgroundColor() -> Color {
-        if Game.shared.mode == .hard {
+        if Game.shared.mode == .easy {
+            colorMode = .yellow
+            
+        } else if Game.shared.mode == .hard {
             colorMode = .red
+            
         } else if Game.shared.mode == .fast {
             colorMode = .blue
             

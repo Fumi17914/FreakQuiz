@@ -24,35 +24,32 @@ struct ScoreView: View {
             
             VStack {
                 Spacer(minLength: 50)
-                HStack {
-                    RoundedRectangle(cornerRadius: 30)
-                        .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
-                        .textCase(.uppercase)
-                        .overlay(Text("Puntuaciones")
-                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                    .foregroundColor(.black)
-                                    .padding())
-                        .foregroundColor(.white)
-                        .addBorder(Color.black, width: 2, cornerRadius: 30)
-                    
-                    
-                }
+                
+                RoundedRectangle(cornerRadius: 30)
+                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
+                    .textCase(.uppercase)
+                    .overlay(Text("Puntuaciones")
+                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                .foregroundColor(.black)
+                                .padding())
+                    .foregroundColor(.white)
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(0..<viewModel.getFinalPlayers().count) { player in
+                    ForEach(0..<viewModel.getFinalPlayers.count) { player in
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                             .textCase(.uppercase)
                             .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                             .overlay(
                                 HStack {
-                                    Image(viewModel.getFinalPlayers()[player].user.rawValue)
+                                    Image(viewModel.getFinalPlayers[player].user.rawValue)
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 50, height: 50, alignment: .center)
                                         .offset(x: 10)
                                     Spacer()
-                                    Text("\(viewModel.getFinalPlayers()[player].score)")
+                                    Text("\(viewModel.getFinalPlayers[player].score)")
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                                         .foregroundColor(.white)
                                         .padding()
@@ -80,6 +77,9 @@ struct ScoreView: View {
         .edgesIgnoringSafeArea(.all).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("")
+        .onAppear {
+            viewModel.getFinalPlayers.sorted(by: {$0.score > $1.score})
+        }
     }
 }
 
