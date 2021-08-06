@@ -64,7 +64,7 @@ struct TutorialView: View {
                         
                                         )
                                     
-                                    Text("Botón para añadir jugadores")
+                                    Text("añadir jugadores")
                                         .multilineTextAlignment(.leading)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
@@ -84,8 +84,8 @@ struct TutorialView: View {
                         
                                         )
                                     
-                                    Text("Botón para cambiar el modo de juego")
-                                        .multilineTextAlignment(.leading)
+                                    Text("cambiar modo de juego")
+                                        .multilineTextAlignment(.center)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
                                 }
@@ -103,8 +103,8 @@ struct TutorialView: View {
                                                 .frame(width: 70, height: 70, alignment: .center)
                         
                                         )
-                                    Text("Botón para mirar las puntuaciones")
-                                        .multilineTextAlignment(.leading)
+                                    Text("puntuaciones")
+                                        .multilineTextAlignment(.center)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
                                 }
@@ -126,7 +126,7 @@ struct TutorialView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 100, height: 100, alignment: .center)
                                 Spacer()
-                                Text("Este es el modo más sencillo\n\nOs encontraréis preguntas de cultura general sobre el mundo friki")
+                                Text("Este es el modo más sencillo, el modo fácil\n\nOs encontraréis preguntas de cultura general sobre el mundo friki")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
                                     .foregroundColor(.white).padding()
@@ -152,7 +152,7 @@ struct TutorialView: View {
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
                                     .foregroundColor(.white).padding()
                                 Spacer()
-                            }
+                            }.padding()
 
                         )
                         .addBorder(Color.black, width: 2, cornerRadius: 20)
@@ -169,13 +169,13 @@ struct TutorialView: View {
                                     .frame(width: 100, height: 100, alignment: .center)
                                 Spacer()
                                 
-                                Text("El Modo rápido, menos tiempo para responder \n\nAntes sólo teníais que ser buen@s. Ahora también rápid@s")
+                                Text("Este es el Modo rápido, menos tiempo para responder \n\nAntes sólo teníais que ser buen@s. Ahora también rápid@s")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
                                     .foregroundColor(.white).padding()
                                 Spacer()
 
-                            }
+                            }.padding()
                         )
                         .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
@@ -191,12 +191,12 @@ struct TutorialView: View {
                                     .frame(width: 100, height: 100, alignment: .center)
                                 Spacer()
                                 
-                                Text("El modo hardcore, El tritura mentes friki\n\nPreguntas muy rebuscadas... y las respuestas también... ")
+                                Text("Os presentamos el modo hardcore, El tritura mentes friki\n\nPreguntas muy rebuscadas... y las respuestas también... ")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
                                     .foregroundColor(.white).padding()
                                 Spacer()
-                            }
+                            }.padding()
                         )
                         .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
@@ -217,7 +217,7 @@ struct TutorialView: View {
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
                                     .foregroundColor(.white).padding()
                                 Spacer()
-                            }
+                            }.padding()
                         )
                         .addBorder(Color.black, width: 2, cornerRadius: 20)
                         .offset(y: -25)
