@@ -62,28 +62,60 @@ struct TutorialView: View {
                         .overlay(
                             VStack {
                                 VStack {
-                                    Spacer()
-                                    Image("addRed")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 100, height: 100, alignment: .center)
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: 98, height: 80, alignment: .center)
+                                        .foregroundColor(.orange).opacity(0.95)
+                                        .addBorder(Color.black, width: 2, cornerRadius: 15)
+                                        .overlay(
+                                            
+                                            Image("gamingController")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(width: 70, height: 70, alignment: .center)
+                        
+                                        )
                                     
                                     Text("Botón para añadir jugadores")
-                                        .multilineTextAlignment(.center)
+                                        .multilineTextAlignment(.leading)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
                                 }
-                                Spacer(minLength: 50)
                                 VStack {
-                                    Image("scorePurple")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 100, height: 100, alignment: .center)
-                                    Text("Botón para mirar vuestras puntuaciones")
-                                        .multilineTextAlignment(.center)
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: 98, height: 80, alignment: .center)
+                                        .foregroundColor(.yellow).opacity(0.95)
+                                        .addBorder(Color.black, width: 2, cornerRadius: 15)
+                                        .overlay(
+                                            
+                                            Image("gamingChair")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(width: 70, height: 70, alignment: .center)
+                        
+                                        )
+                                    
+                                    Text("Botón para cambiar el modo de juego")
+                                        .multilineTextAlignment(.leading)
                                         .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
                                         .foregroundColor(.white)
-                                    Spacer()
+                                }
+                                VStack {
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: 98, height: 80, alignment: .center)
+                                        .foregroundColor(.blue).opacity(0.95)
+                                        .addBorder(Color.black, width: 2, cornerRadius: 15)
+                                        .overlay(
+                                            
+                                            Image("gamingTrophy")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(width: 70, height: 70, alignment: .center)
+                        
+                                        )
+                                    Text("Botón para mirar vuestras puntuaciones")
+                                        .multilineTextAlignment(.leading)
+                                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
+                                        .foregroundColor(.white)
                                 }
                             }.padding()
                         )
@@ -92,7 +124,7 @@ struct TutorialView: View {
 
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
-                        .foregroundColor(.yellow.opacity(0.85))
+                        .foregroundColor(.yellow.opacity(0.95))
                         .overlay(
                             VStack {
                                 Spacer()
@@ -132,7 +164,7 @@ struct TutorialView: View {
                        
                     RoundedRectangle(cornerRadius: 25.0)
                         .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 250, alignment: .center)
-                        .foregroundColor(.red).opacity(0.85)
+                        .foregroundColor(.red).opacity(0.95)
                         .overlay(
                             VStack {
                                 Spacer()

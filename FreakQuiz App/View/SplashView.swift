@@ -10,8 +10,9 @@ import SwiftUI
 struct SplashView: View {
     
     @State private var isShowingDetailView = false
-  
-    
+    @State private var isShowingTutorialView = false
+    @State private var isShowingAttributionsView = false
+
     var body: some View {
         NavigationView {
             ZStack{
@@ -47,6 +48,7 @@ struct SplashView: View {
                     HStack {
                         NavigationLink(
                             destination: AtributionsView(),
+                            isActive: $isShowingAttributionsView,
                             label: {
                                 RoundedRectangle(cornerRadius: 20)
                                     .frame(width: UIScreen.main.bounds.width / 2 - 20, height: UIScreen.main.bounds.height/15, alignment: .center)
@@ -54,16 +56,17 @@ struct SplashView: View {
                                     .overlay(Text("Atributtions")
                                                 .multilineTextAlignment(.center)
                                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/70))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                                 .offset(x: 2)
                                                 .padding())
-                                    .foregroundColor(.red)
+                                    .foregroundColor(.red).opacity(0.95)
                                     .addBorder(Color.black, width: 2, cornerRadius: 20)
 
                             })
                         
                         NavigationLink(
                             destination: TutorialView(),
+                            isActive: $isShowingTutorialView,
                             label: {
                                 RoundedRectangle(cornerRadius: 20)
                                     .frame(width: UIScreen.main.bounds.width / 2 - 20, height: UIScreen.main.bounds.height/15, alignment: .center)
@@ -72,10 +75,10 @@ struct SplashView: View {
                                     .overlay(Text("Tutorial")
                                                 .multilineTextAlignment(.center)
                                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/70))
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                                 .offset(x: 2)
                                                 .padding())
-                                    .foregroundColor(.yellow)
+                                    .foregroundColor(.yellow).opacity(0.95)
                                     .addBorder(Color.black, width: 2, cornerRadius: 20)
                                     
                                 

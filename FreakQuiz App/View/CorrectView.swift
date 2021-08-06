@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct CorrectView: View {
-    
-    let correctModel = CorrectAndTestModel()
-    
+        
     @State private var isScoreSelected: Bool = false
     @State private var isPlayerSelected: Bool = false
+    @State private var isModeSelected: Bool = false
     @State private var isPressStartSelected: Bool = false
     
     var body: some View {
@@ -27,7 +26,7 @@ struct CorrectView: View {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                     .textCase(.uppercase)
-                    .opacity(0.8)
+                    .opacity(0.9)
                     .overlay(Text("correcto")
                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                                 .foregroundColor(.white)
@@ -40,7 +39,7 @@ struct CorrectView: View {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
                     .textCase(.uppercase)
-                    .opacity(0.8)
+                    .opacity(0.95)
                     .overlay(Image("correct")
                                 .resizable()
                                 .offset(x: -10)
@@ -48,37 +47,71 @@ struct CorrectView: View {
                                 .padding())
                     .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                     .addBorder(Color.black, width: 2, cornerRadius: 30)
-                    .offset(y: -10)
+                    .offset(y: -15)
                 Spacer(minLength: 50)
                 HStack {
                     
                     Spacer()
+                    NavigationLink(destination: ChooseModeView(), isActive: $isModeSelected, label: {
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 98, height: 80, alignment: .center)
+                            .foregroundColor(Game.shared.modeSelectedBackgroundColor()).opacity(0.95)
+                            .addBorder(Color.black, width: 2, cornerRadius: 15)
+                            .overlay(
+                                
+                                Image("gamingChair")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 70, height: 70, alignment: .center)
+                            )
+                    
+                    })
+                    Spacer()
                     NavigationLink(destination: ChoosePlayerView(), isActive: $isPlayerSelected, label: {
-                        Image(correctModel.addPlayerImageMode())
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 100, height: 100, alignment: .center)
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 98, height: 80, alignment: .center)
+                            .foregroundColor(Game.shared.modeSelectedBackgroundColor()).opacity(0.95)
+                            .addBorder(Color.black, width: 2, cornerRadius: 15)
+                            .overlay(
+                                
+                                Image("gamingController")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 70, height: 70, alignment: .center)
+            
+                            )
 
                     })
                     Spacer()
                     
                     NavigationLink(destination: ScoreView(), isActive: $isScoreSelected, label: {
-                        Image(correctModel.scoreImageMode())
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 100, height: 100, alignment: .center)
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 98, height: 80, alignment: .center)
+                            .foregroundColor(Game.shared.modeSelectedBackgroundColor()).opacity(0.95)
+                            .addBorder(Color.black, width: 2, cornerRadius: 15)
+                            .overlay(
+                                
+                                Image("gamingTrophy")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 70, height: 70, alignment: .center)
+                                
+                            )
+                    
                     })
                     Spacer()
                     
-                }.offset(y: -30)
+                    
+                    
+                }.offset(y: -32)
                 
                 NavigationLink(destination: PlayerReadyView(), isActive: $isPressStartSelected, label: {
                     Image("pressStart")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
-                        .padding(30)
-                }).offset(x:5, y: -30)
+                        .padding(28)
+                }).offset(x:5, y: -28)
                 
                 
             }

@@ -30,7 +30,6 @@
 		D875E95326A9845F0034A014 /* QuestionAndTestSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */; };
 		D875E95526A985800034A014 /* ChooseModeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95426A985800034A014 /* ChooseModeVM.swift */; };
 		D875E95926A985A90034A014 /* QuestionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95826A985A90034A014 /* QuestionVM.swift */; };
-		D875E95B26A985C30034A014 /* CorrectAndTestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95A26A985C30034A014 /* CorrectAndTestVM.swift */; };
 		D875E95D26A985CF0034A014 /* ScoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95C26A985CF0034A014 /* ScoreVM.swift */; };
 		D875E96026A9865C0034A014 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95F26A9865C0034A014 /* ProgressBarView.swift */; };
 		D875E96226A986710034A014 /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96126A986710034A014 /* CardContent.swift */; };
@@ -66,7 +65,6 @@
 		D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAndTestSample.swift; sourceTree = "<group>"; };
 		D875E95426A985800034A014 /* ChooseModeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseModeVM.swift; sourceTree = "<group>"; };
 		D875E95826A985A90034A014 /* QuestionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVM.swift; sourceTree = "<group>"; };
-		D875E95A26A985C30034A014 /* CorrectAndTestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAndTestVM.swift; sourceTree = "<group>"; };
 		D875E95C26A985CF0034A014 /* ScoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreVM.swift; sourceTree = "<group>"; };
 		D875E95F26A9865C0034A014 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		D875E96126A986710034A014 /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			children = (
 				D875E95426A985800034A014 /* ChooseModeVM.swift */,
 				D875E95826A985A90034A014 /* QuestionVM.swift */,
-				D875E95A26A985C30034A014 /* CorrectAndTestVM.swift */,
 				D875E95C26A985CF0034A014 /* ScoreVM.swift */,
 			);
 			path = ViewModel;
@@ -300,7 +297,6 @@
 				D875E95326A9845F0034A014 /* QuestionAndTestSample.swift in Sources */,
 				D875E96426A986880034A014 /* AnswersView.swift in Sources */,
 				D875E94F26A9843E0034A014 /* Player.swift in Sources */,
-				D875E95B26A985C30034A014 /* CorrectAndTestVM.swift in Sources */,
 				D875E95926A985A90034A014 /* QuestionVM.swift in Sources */,
 				D875E96226A986710034A014 /* CardContent.swift in Sources */,
 				D875E93E26A982C30034A014 /* CorrectView.swift in Sources */,

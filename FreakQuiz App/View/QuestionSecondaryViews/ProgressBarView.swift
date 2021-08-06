@@ -42,12 +42,12 @@ struct ProgressBarView: View {
                 .addBorder(Color.black, width: 2, cornerRadius: 20)
                 .frame(width: 300*currentProgress, height: 20)
             
-           NavigationLink(
+           /*NavigationLink(
                 destination: TestView(),
                 isActive: $shouldNavigate,
                 label: {
                     EmptyView()
-                })
+                })*/
 
         }.onAppear {
             self.startLoading()

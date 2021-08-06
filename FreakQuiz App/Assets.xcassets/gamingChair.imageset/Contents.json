@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "scoreBlue.png",
+      "filename" : "gaming-chair.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "scoreBlue-1.png",
+      "filename" : "gaming-chair-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "scoreBlue-2.png",
+      "filename" : "gaming-chair-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

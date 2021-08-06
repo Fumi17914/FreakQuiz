@@ -23,7 +23,10 @@ struct AtributionsView: View {
         AppAtributtions(name: "Made by Darius Dan", image: "hardcoreMode"),
         AppAtributtions(name: "Made by Freepik", image: "sword"),
         AppAtributtions(name: "Made by Freepik", image: "gamer"),
-        AppAtributtions(name: "Made by Freepik", image: "arcade")
+        AppAtributtions(name: "Made by Freepik", image: "arcade"),
+        AppAtributtions(name: "Made by Freepik", image: "gamingChair"),
+        AppAtributtions(name: "Made by Smash icons", image: "gamingController"),
+        AppAtributtions(name: "Made by Freepik", image: "gamingTrophy")
     ]
     
     var body: some View {

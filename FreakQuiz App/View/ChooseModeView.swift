@@ -38,7 +38,7 @@ struct ChooseModeView: View {
                             RoundedRectangle(cornerRadius: 25.0)
                                 .foregroundColor(.yellow)
                                 .frame(width: UIScreen.main.bounds.width - 35, height: 200)
-                                .opacity(0.9)
+                                .opacity(0.95)
                                 .overlay(
                                     HStack {
                                         Image("easyMode")
