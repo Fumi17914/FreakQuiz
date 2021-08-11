@@ -45,7 +45,7 @@ struct ChooseModeView: View {
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
                                             .padding(25)
-                                        Text("MODO FÁCIL")
+                                        Text("MODO  FÁCIL")
                                             .multilineTextAlignment(.center)
                                             .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
                                             .foregroundColor(.white)
