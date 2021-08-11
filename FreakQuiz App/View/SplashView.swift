@@ -53,7 +53,7 @@ struct SplashView: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .frame(width: UIScreen.main.bounds.width / 2 - 20, height: UIScreen.main.bounds.height/15, alignment: .center)
                                     .textCase(.uppercase)
-                                    .overlay(Text("Atributtions")
+                                    .overlay(Text("Atribuciones")
                                                 .multilineTextAlignment(.center)
                                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/70))
                                                 .foregroundColor(.white)
@@ -91,7 +91,6 @@ struct SplashView: View {
             .edgesIgnoringSafeArea(.top)
         }.navigationViewStyle(StackNavigationViewStyle()).accentColor(.white)
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

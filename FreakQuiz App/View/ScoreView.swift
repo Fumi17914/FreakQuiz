@@ -68,8 +68,8 @@ struct ScoreView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
-                        .padding()
-                        .offset(x: 7,y: -30)
+                        .padding(6)
+                        .offset(x: 5,y: -35)
                     
                 }
             }.padding()
@@ -77,9 +77,6 @@ struct ScoreView: View {
         .edgesIgnoringSafeArea(.all).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("")
-        .onAppear {
-            viewModel.getFinalPlayers.sorted(by: {$0.score > $1.score})
-        }
     }
 }
 

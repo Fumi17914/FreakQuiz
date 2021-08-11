@@ -73,6 +73,6 @@ struct AtributionsView: View {
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height / 10, alignment: .center)
             }
         }
-        .navigationBarTitle("App Atributtions")
+        .navigationBarTitle("Atribuciones")
     }
 }
