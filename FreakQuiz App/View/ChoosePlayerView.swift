@@ -59,7 +59,7 @@ struct ChoosePlayerView: View {
             VStack {
                 Spacer(minLength: 50)
                 
-                RoundedRectangle(cornerRadius: 30)
+                /*RoundedRectangle(cornerRadius: 30)
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                     .textCase(.uppercase)
                     .overlay(Text("Elige jugadores")
@@ -67,7 +67,12 @@ struct ChoosePlayerView: View {
                                 .foregroundColor(.black)
                                 .padding())
                     .foregroundColor(.white)
-                    .addBorder(Color.black, width: 2, cornerRadius: 30)
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)*/
+                
+                Text("Elige jugadores")
+                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                            .foregroundColor(.white)
+                            .padding()
 
                 
                 VStack{

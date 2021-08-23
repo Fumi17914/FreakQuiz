@@ -22,7 +22,7 @@ struct CorrectView: View {
             
             VStack{
                 
-                Spacer(minLength: 50)
+                Spacer(minLength: 40)
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                     .textCase(.uppercase)
@@ -103,15 +103,17 @@ struct CorrectView: View {
                     
                     
                     
-                }.offset(y: -32)
+                }.offset(y: -25)
                 
                 NavigationLink(destination: PlayerReadyView(), isActive: $isPressStartSelected, label: {
                     Image("pressStart")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
-                        .padding(28)
-                }).offset(x:5, y: -28)
+                        .padding()
+                }).offset(x: 5)
+                
+                Spacer()
                 
                 
             }

@@ -38,11 +38,7 @@ struct QuestionView: View {
                 }
                 Spacer()
             }
-            if Game.shared.mode == .thanos {
-                PurpleCardView()
-            } else {
-                CardContent()
-            }
+            CardContent()
         }
         .edgesIgnoringSafeArea(.all)
         .navigationBarHidden(true)

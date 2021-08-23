@@ -23,7 +23,7 @@ struct ScoreView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Spacer(minLength: 50)
+                Spacer(minLength: 40)
                 
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
@@ -60,7 +60,6 @@ struct ScoreView: View {
                     }
                 }
                 
-                Spacer(minLength: 20)
                 
                 
                 NavigationLink(destination: PlayerReadyView()) {
@@ -68,10 +67,12 @@ struct ScoreView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
-                        .padding(6)
-                        .offset(x: 5,y: -35)
+                        .padding()
+                        .offset(x: 5)
                     
                 }
+                
+                Spacer(minLength: 30)
             }.padding()
         }
         .edgesIgnoringSafeArea(.all).navigationBarHidden(true)

@@ -19,7 +19,7 @@ struct ChooseModeView: View {
             
             VStack() {
                 
-                RoundedRectangle(cornerRadius: 30)
+                /*RoundedRectangle(cornerRadius: 30)
                     .frame(width: UIScreen.main.bounds.width - 35, height: UIScreen.main.bounds.height/10, alignment: .center)
                     .textCase(.uppercase)
                     .overlay(Text("Elije modo")
@@ -27,7 +27,12 @@ struct ChooseModeView: View {
                                 .foregroundColor(.black)
                                 .padding())
                     .foregroundColor(.white)
-                    .addBorder(Color.black, width: 2, cornerRadius: 30)
+                    .addBorder(Color.black, width: 2, cornerRadius: 30)*/
+                Text("Elije modo")
+                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                            .foregroundColor(.white)
+                            .padding()
+                
                 
                 Spacer(minLength: 50)
                 
