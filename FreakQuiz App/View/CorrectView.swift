@@ -19,6 +19,8 @@ struct CorrectView: View {
             Image ("Background")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
+                .aspectRatio(contentMode: .fill)
+
             
             VStack{
                 
@@ -45,10 +47,11 @@ struct CorrectView: View {
                                 .offset(x: -10)
                                 .aspectRatio(contentMode: .fit)
                                 .padding())
-                    .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                    .addBorder(Color.black, width: 2, cornerRadius: 30)
+                    .foregroundColor(.clear)
+                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
                     .offset(y: -15)
-                Spacer(minLength: 50)
+                
+                Spacer(minLength: 70)
                 HStack {
                     
                     Spacer()

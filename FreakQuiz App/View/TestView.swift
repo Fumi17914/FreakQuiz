@@ -20,6 +20,7 @@ struct TestView: View {
         ZStack{
             Image ("Background")
                 .resizable()
+                .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
             
             VStack{
@@ -49,11 +50,11 @@ struct TestView: View {
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .padding())
-                    .foregroundColor(Game.shared.modeSelectedBackgroundColor())
-                    .addBorder(Color.black, width: 2, cornerRadius: 30)
+                    .foregroundColor(.clear)
+                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
                     .offset(y: -15)
                 
-                Spacer(minLength: 50)
+                Spacer(minLength: 70)
                 
                 HStack {
                     
@@ -118,7 +119,8 @@ struct TestView: View {
                 }).offset(x:5)
                 Spacer()
             }
-        }.edgesIgnoringSafeArea(.all).navigationBarHidden(true)
+        }.edgesIgnoringSafeArea(.all)
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("")
     }

@@ -147,7 +147,7 @@ struct TutorialView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 100, height: 100, alignment: .center)
                                 Spacer()
-                                Text("El Modo difícil es un auténtico desafío\n\nSi crees que eres buen@, aquí podrás demostrarlo con tus habilidades")
+                                Text("El Modo difícil es un auténtico desafío\n\nSi crees que eres buen@, aquí podrás demostrarlo con tus conocimientos")
                                     .multilineTextAlignment(.leading)
                                     .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
                                     .foregroundColor(.white).padding()

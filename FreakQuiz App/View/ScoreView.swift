@@ -20,6 +20,7 @@ struct ScoreView: View {
         ZStack {
             Image("Background")
                 .resizable()
+                .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
@@ -30,10 +31,11 @@ struct ScoreView: View {
                     .textCase(.uppercase)
                     .overlay(Text("Puntuaciones")
                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
+                                .shadow(color: .black, radius: 10, x: 3, y: 5)
                                 .padding())
-                    .foregroundColor(.white)
-                    .addBorder(Color.black, width: 2, cornerRadius: 30)
+                    .foregroundColor(.clear)
+                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(0..<viewModel.getFinalPlayers.count) { player in
@@ -60,8 +62,6 @@ struct ScoreView: View {
                     }
                 }
                 
-                
-                
                 NavigationLink(destination: PlayerReadyView()) {
                     Image("pressStart")
                         .resizable()
@@ -72,7 +72,7 @@ struct ScoreView: View {
                     
                 }
                 
-                Spacer(minLength: 30)
+                Spacer(minLength: 40)
             }.padding()
         }
         .edgesIgnoringSafeArea(.all).navigationBarHidden(true)

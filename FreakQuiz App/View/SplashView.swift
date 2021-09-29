@@ -20,12 +20,14 @@ struct SplashView: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 
+                
                 VStack {
                     Spacer(minLength: 50)
                     HStack {
                         Image("textLogo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .shadow(color: .black, radius: 10, x: 3, y: 5)
                             .frame(width: UIScreen.main.bounds.width - 35, height: UIScreen.main.bounds.height / 10, alignment: .center)
                         
                     }
@@ -40,6 +42,7 @@ struct SplashView: View {
                                 Image("play")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
+                                    .shadow(color: .black, radius: 10, x: 3, y: 5)
                             }
                         })
                     
@@ -71,7 +74,7 @@ struct SplashView: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .frame(width: UIScreen.main.bounds.width / 2 - 20, height: UIScreen.main.bounds.height/15, alignment: .center)
                                     .textCase(.uppercase)
-                                    .opacity(0.9)
+                                    .opacity(0.95)
                                     .overlay(Text("Tutorial")
                                                 .multilineTextAlignment(.center)
                                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/70))

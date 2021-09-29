@@ -22,22 +22,17 @@ struct PlayerReadyView: View {
             
             VStack {
                 Spacer()
-                /*RoundedRectangle(cornerRadius: 30)
+                RoundedRectangle(cornerRadius: 30)
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
                     .textCase(.uppercase)
                     .overlay(Text(Game.shared.mode == .thanos ? "Pásale el móvil a" : "Es tu turno")
                                 .font(Font.custom("PixelEmulator", size: Game.shared.mode == .thanos ? UIScreen.main.bounds.height/38 : UIScreen.main.bounds.height/33 ))
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
+                                .shadow(color: .black, radius: 10, x: 3, y: 5)
                                 .padding())
-                    .foregroundColor(.white)
-                    .addBorder(Color.black, width: 2, cornerRadius: 30)*/
-                
-                Text(Game.shared.mode == .thanos ? "Pásale el móvil a" : "Es tu turno")
-                            .font(Font.custom("PixelEmulator", size: Game.shared.mode == .thanos ? UIScreen.main.bounds.height/38 : UIScreen.main.bounds.height/33 ))
-                            .foregroundColor(.white)
-                            .padding()
+                    .foregroundColor(.clear)
+                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
 
-                
                 Spacer()
                 
                 Image(randomPlayer())
@@ -46,7 +41,7 @@ struct PlayerReadyView: View {
                     .padding(50)
                 
                 
-                /*RoundedRectangle(cornerRadius: 30)
+                RoundedRectangle(cornerRadius: 30)
                     .frame(width: 235, height: 80, alignment: .center)
                     .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                     .opacity(0.9)
@@ -56,22 +51,16 @@ struct PlayerReadyView: View {
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center))
                     .addBorder(Color.black, width: 2, cornerRadius: 30)
-                    .offset(y: -45)*/
-                
-                /*Text(Game.shared.selectedPlayer ?? "No player")
-                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/45))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)*/
-
-                
-                Spacer(minLength: 140)
+                    .offset(y: -45)
+    
+                Spacer(minLength: 90)
                 
                 NavigationLink(destination: QuestionView()) {
                     Image("pressStart")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .padding(20)
-                        .offset(x:5, y:20)
+                        .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
+                        .offset(x:5)
                 }
                 Spacer()
                 
