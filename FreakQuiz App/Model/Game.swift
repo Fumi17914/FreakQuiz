@@ -49,7 +49,7 @@ class Game {
             colorMode = .purple
         case .freak:
             colorMode = .orange
-            
+             
         }
         return colorMode
     }
