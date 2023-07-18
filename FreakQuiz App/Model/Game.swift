@@ -70,7 +70,6 @@ class Game {
     
     
     /*
-     
      var questions: Questions? = nil
     
     // MARK: Preguntas según modo escogido
@@ -102,7 +101,6 @@ class Game {
      
      return "No questions found"
      }
-     
      */
 }
 
