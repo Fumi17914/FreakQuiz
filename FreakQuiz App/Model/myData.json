@@ -1,0 +1,1467 @@
+{
+    "questions": [
+        {
+            "id": 0,
+            "mode": "easy",
+            "question": "¿Cuándo salió el primer juego de The Last of Us?",
+            "options": ["2010", "2013", "2011", "2012"],
+            "answer": 1
+        },
+        {
+            "id": 1,
+            "mode": "easy",
+            "question": "¿Qué fenómeno hace que los enemigos caídos vuelvan de entre los muertos más fuertes en The Legend of Zelda: Breath of the Wild?",
+            "options": ["Luna carmesí", "Eclipse de los muertos", "Luna de sangre", "Resurrección lunar"],
+            "answer": 0
+        },
+        {
+            "id": 2,
+            "mode": "easy",
+            "question": "¿Cómo se llama el hijo de Kratos?",
+            "options": ["Baldur", "Floki", "Atreus", "Brok"],
+            "answer": 2
+        },
+        {
+            "id": 3,
+            "mode": "easy",
+            "question": "¿Quién escribió El Código Da Vinci?",
+            "options": ["Ridley Scott", "Michael Connelly", "Dan Brown", "Jo Nesbo"],
+            "answer": 2
+        },
+        {
+            "id": 4,
+            "mode": "easy",
+            "question": "¿Qué famoso escritor afirmó no acordarse de haber escrito muchas de sus obras debido a las drogas?",
+            "options": ["Juri Adler Olsen", "Stephen King", "Neil Gaiman", "Edgar Allan Poe"],
+            "answer": 1
+        },
+        {
+            "id": 5,
+            "mode": "easy",
+            "question": "¿Cómo se llama la última parte de la Saga Crepúsculo que es narrada desde el punto de vista de Edward?",
+            "options": ["Sol de Media Noche", "Amanecer", "Eclipse", "Antes de la Tormenta"],
+            "answer": 0
+        },
+        {
+            "id": 6,
+            "mode": "easy",
+            "question": "¿Cómo le llama Ramsay a Theon?",
+            "options": ["Hodor", "Harapiento", "Eunuco", "Hediondo"],
+            "answer": 3
+        },
+        {
+            "id": 7,
+            "mode": "easy",
+            "question": "¿Cuál fue la primera película de Disney?",
+            "options": ["Pinocho", "El Rey León", "La Cenicienta", "Blancanieves"],
+            "answer": 3
+        },
+        {
+            "id": 8,
+            "mode": "easy",
+            "question": "Cómo se llama el director de la trilogía de El Señor de los Anillos?",
+            "options": ["Alfonso Cuarón", "George Lucas", "Peter Jackson", "Guillermo del Toro"],
+            "answer": 2
+        },
+        {
+            "id": 9,
+            "mode": "easy",
+            "question": "¿Cómo se llama la hermana gemela de Phoebe en Friends?",
+            "options": ["Ursula", "Janice", "Monica", "Rachel"],
+            "answer": 0
+        },
+        {
+            "id": 10,
+            "mode": "easy",
+            "question": "Cuenta con mi espada, y con mi arco...",
+            "options": ["y con mi lealtad", "y con mi lanza", "y con mi hacha", "y con mi vara"],
+            "answer": 2
+        },
+        {
+            "id": 11,
+            "mode": "easy",
+            "question": "En el Universo DC, ¿cuál es el nombre de pila del Dr. Strange?",
+            "options": ["Hugo", "Stephen", "Steve", "Bruce"],
+            "answer": 0
+        },
+        {
+            "id": 12,
+            "mode": "easy",
+            "question": "¿Cómo se llama el segundo hijo adoptivo de Bruce Wayne?",
+            "options": ["Dick Grayson", "Damian Al Ghul", "Jason Todd", "Tim Drake"],
+            "answer": 2
+        },
+        {
+            "id": 13,
+            "mode": "easy",
+            "question": "¿Qué famoso escritor creó al Detective Harry Bosch?",
+            "options": ["John Verdon", "Michael Connelly", "Dan Brown", "Jo Nesbo"],
+            "answer": 1
+        },
+        {
+            "id": 14,
+            "mode": "easy",
+            "question": "¿Cuál fue la primera novela publicada por Stephen King?",
+            "options": ["Carrie", "El resplandor", "Salem's Lot", "La zona muerta"],
+            "answer": 0
+        },
+        
+        {
+            "id": 15,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje principal en el videojuego 'The Legend of Zelda'?",
+            "options": ["Link", "Mario", "Sonic", "Master Chief"],
+            "answer": 0
+        },
+        {
+            "id": 16,
+            "mode": "easy",
+            "question": "¿Cuál es la película más taquillera de todos los tiempos?",
+            "options": ["Avengers: Endgame", "Avatar", "Titanic", "Avengers: Infinity War"],
+            "answer": 1
+        },
+        {
+            "id": 17,
+            "mode": "easy",
+            "question": "¿Quién es el autor de la serie de libros 'Harry Potter'?",
+            "options": ["J.K. Rowling", "Stephen King", "George R.R. Martin", "J.R.R. Tolkien"],
+            "answer": 0
+        },
+        {
+            "id": 18,
+            "mode": "easy",
+            "question": "¿En qué juego de video se puede construir y explorar un mundo abierto?",
+            "options": ["Minecraft", "Call of Duty", "Fortnite", "Overwatch"],
+            "answer": 0
+        },
+        {
+            "id": 19,
+            "mode": "easy",
+            "question": "¿Cuál fue la primera película de la saga 'Star Wars'?",
+            "options": ["Star Wars: Episode IV - A New Hope", "Star Wars: Episode I - The Phantom Menace", "Star Wars: Episode VI - Return of the Jedi", "Star Wars: Episode III - Revenge of the Sith"],
+            "answer": 0
+        },
+        {
+            "id": 20,
+            "mode": "easy",
+            "question": "¿Cuál es el primer libro de la trilogía 'El Señor de los Anillos'?",
+            "options": ["El Hobbit", "Las Dos Torres", "El Retorno del Rey", "La Comunidad del Anillo"],
+            "answer": 3
+        },
+        {
+            "id": 21,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del fontanero que es el personaje principal de muchos juegos de Nintendo?",
+            "options": ["Luigi", "Wario", "Mario", "Yoshi"],
+            "answer": 2
+        },
+        {
+            "id": 22,
+            "mode": "easy",
+            "question": "¿Cuál es la película animada con mayor recaudación de la historia?",
+            "options": ["Frozen II", "El Rey León (2019)", "Los Increíbles 2", "Frozen"],
+            "answer": 2
+        },
+        {
+            "id": 23,
+            "mode": "easy",
+            "question": "¿Quién es el autor de la serie de libros 'Canción de Hielo y Fuego'?",
+            "options": ["J.K. Rowling", "Stephen King", "George R.R. Martin", "J.R.R. Tolkien"],
+            "answer": 2
+        },
+        {
+            "id": 24,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje principal en el videojuego 'Super Mario Bros'?",
+            "options": ["Luigi", "Toad", "Bowser", "Mario"],
+            "answer": 3
+        },
+        
+        {
+            "id": 25,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del protagonista en la saga de películas 'The Matrix'?",
+            "options": ["Trinity", "Morpheus", "Neo", "Cypher"],
+            "answer": 2
+        },
+        {
+            "id": 26,
+            "mode": "easy",
+            "question": "¿Cuál es el libro más vendido de todos los tiempos?",
+            "options": ["Don Quijote de la Mancha", "El Principito", "Cien años de soledad", "La Biblia"],
+            "answer": 3
+        },
+        {
+            "id": 27,
+            "mode": "easy",
+            "question": "¿En qué juego de video los jugadores controlan a un fontanero que lucha contra criaturas para salvar a la princesa Peach?",
+            "options": ["Super Mario Bros", "The Legend of Zelda", "Sonic the Hedgehog", "Donkey Kong"],
+            "answer": 0
+        },
+        {
+            "id": 28,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso detective ficticio creado por Sir Arthur Conan Doyle?",
+            "options": ["Sherlock Holmes", "Hercule Poirot", "Miss Marple", "Sam Spade"],
+            "answer": 0
+        },
+        {
+            "id": 29,
+            "mode": "easy",
+            "question": "¿En qué película de Disney aparecen los personajes Simba y Mufasa?",
+            "options": ["Aladdín", "La Bella y la Bestia", "El Rey León", "Pinocho"],
+            "answer": 2
+        },
+        {
+            "id": 30,
+            "mode": "easy",
+            "question": "¿Cuál es el famoso videojuego donde el objetivo principal es capturar criaturas llamadas Pokémon?",
+            "options": ["Super Mario Odyssey", "The Legend of Zelda: Breath of the Wild", "Pokémon GO", "Minecraft"],
+            "answer": 2
+        },
+        {
+            "id": 31,
+            "mode": "easy",
+            "question": "¿En qué ciudad ficticia se desarrolla la mayor parte de la trilogía cinematográfica 'El Señor de los Anillos'?",
+            "options": ["Gotham City", "Ciudad Gótica", "Hogwarts", "Gondor"],
+            "answer": 3
+        },
+        {
+            "id": 32,
+            "mode": "easy",
+            "question": "¿Cómo se llama el protagonista de la serie de libros y películas 'Las Crónicas de Narnia'?",
+            "options": ["Caspian", "Edmund", "Eustace", "Lucy"],
+            "answer": 3
+        },
+        {
+            "id": 33,
+            "mode": "easy",
+            "question": "¿Cuál es el videojuego más vendido de la historia?",
+            "options": ["Tetris", "Minecraft", "Grand Theft Auto V", "Wii Sports"],
+            "answer": 1
+        },
+        {
+            "id": 34,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso villano en la franquicia de Star Wars?",
+            "options": ["Darth Vader", "Emperor Palpatine", "Kylo Ren", "Darth Maul"],
+            "answer": 0
+        },
+        
+        {
+            "id": 35,
+            "mode": "easy",
+            "question": "¿Cuál es el famoso detective creado por Agatha Christie, conocido por su astucia y bigote?",
+            "options": ["Sherlock Holmes", "Hércules Poirot", "Miss Marple", "Sam Spade"],
+            "answer": 1
+        },
+        {
+            "id": 36,
+            "mode": "easy",
+            "question": "¿Cuál es la primera película de la saga 'Star Wars' en orden cronológico?",
+            "options": ["La Amenaza Fantasma", "El Imperio Contraataca", "Una Nueva Esperanza", "El Retorno del Jedi"],
+            "answer": 0
+        },
+        {
+            "id": 37,
+            "mode": "easy",
+            "question": "¿En qué película el personaje de Tom Hanks dice la famosa frase 'La vida es como una caja de chocolates'?",
+            "options": ["Forrest Gump", "El Código Da Vinci", "Náufrago", "Sleepless in Seattle"],
+            "answer": 0
+        },
+        {
+            "id": 38,
+            "mode": "easy",
+            "question": "¿Cuál es el famoso videojuego en el que construyes y exploras un mundo de bloques?",
+            "options": ["Minecraft", "Fortnite", "Call of Duty", "FIFA"],
+            "answer": 0
+        },
+        {
+            "id": 39,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del protagonista en la saga de libros 'Harry Potter'?",
+            "options": ["Ron Weasley", "Draco Malfoy", "Hermione Granger", "Harry Potter"],
+            "answer": 3
+        },
+        {
+            "id": 40,
+            "mode": "easy",
+            "question": "¿En qué película el personaje de Jack Nicholson dice 'Heeere's Johnny!'?",
+            "options": ["El Resplandor", "Psicosis", "Tiburón", "Los Bingueros"],
+            "answer": 0
+        },
+        {
+            "id": 41,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje principal de la saga de películas 'Rocky'?",
+            "options": ["Iván Drago", "Apollo Creed", "Rocky Balboa", "Clubber Lang"],
+            "answer": 2
+        },
+        {
+            "id": 42,
+            "mode": "easy",
+            "question": "¿En qué novela clásica de Jane Austen se encuentra el famoso Sr. Darcy?",
+            "options": ["Emma", "Mansfield Park", "Orgullo y Prejuicio", "Sentido y Sensibilidad"],
+            "answer": 2
+        },
+        {
+            "id": 43,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso espía británico creado por Ian Fleming?",
+            "options": ["James Bond", "Ethan Hunt", "Jason Bourne", "Jack Ryan"],
+            "answer": 0
+        },
+        {
+            "id": 44,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje interpretado por Keanu Reeves en la saga de películas de acción 'John Wick'?",
+            "options": ["John Wick", "Jack Reacher", "John Rambo", "Jason Bourne"],
+            "answer": 0
+        },
+        {
+            "id": 45,
+            "mode": "easy",
+            "question": "¿Qué famosa saga de películas tiene como personajes principales a Bella, Edward y Jacob?",
+            "options": ["Harry Potter", "Crepúsculo", "Los Juegos del Hambre", "El Señor de los Anillos"],
+            "answer": 1
+        },
+        {
+            "id": 46,
+            "mode": "easy",
+            "question": "¿En qué película animada de Disney la protagonista es una princesa que vive en un pantano?",
+            "options": ["La Bella Durmiente", "Mulan", "La Princesa y el Sapo", "Cenicienta"],
+            "answer": 2
+        },
+        {
+            "id": 47,
+            "mode": "easy",
+            "question": "¿Cuál es el famoso personaje de Nintendo que es fontanero y viste con peto rojo?",
+            "options": ["Sonic", "Crash Bandicoot", "Donkey Kong", "Mario"],
+            "answer": 3
+        },
+        {
+            "id": 48,
+            "mode": "easy",
+            "question": "¿En qué película animada de Pixar un viejo gruñón viaja en su casa voladora con miles de globos?",
+            "options": ["Buscando a Nemo", "Up", "Wall-E", "Toy Story"],
+            "answer": 1
+        },
+        {
+            "id": 49,
+            "mode": "easy",
+            "question": "¿Cuál es la primera película de la saga 'El Señor de los Anillos'?",
+            "options": ["La Comunidad del Anillo", "Las Dos Torres", "El Retorno del Rey", "Las Aventuras de Tom Bombadil"],
+            "answer": 0
+        },
+        {
+            "id": 50,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del director de la trilogía de películas 'El Padrino'?",
+            "options": ["Martin Scorsese", "Steven Spielberg", "Quentin Tarantino", "Francis Ford Coppola"],
+            "answer": 3
+        },
+        {
+            "id": 51,
+            "mode": "easy",
+            "question": "¿En qué libro de J.K. Rowling se encuentra la Piedra Filosofal?",
+            "options": ["Harry Potter y la Orden del Fénix", "Harry Potter y el Cáliz de Fuego", "Harry Potter y la Piedra Filosofal", "Harry Potter y el Prisionero de Azkaban"],
+            "answer": 2
+        },
+        {
+            "id": 52,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del planeta natal de Superman?",
+            "options": ["Krypton", "Tatooine", "Alderaan", "Marte"],
+            "answer": 0
+        },
+        {
+            "id": 53,
+            "mode": "easy",
+            "question": "¿En qué videojuego el personaje principal debe rescatar a la princesa Zelda?",
+            "options": ["Super Mario Bros.", "The Legend of Zelda", "Sonic the Hedgehog", "Final Fantasy"],
+            "answer": 1
+        },
+        {
+            "id": 54,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje interpretado por Johnny Depp en la saga de películas 'Piratas del Caribe'?",
+            "options": ["Will Turner", "Davy Jones", "Hector Barbossa", "Jack Sparrow"],
+            "answer": 3
+        },
+        
+        {
+            "id": 55,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del hermano de Thor en el Universo Cinematográfico de Marvel?",
+            "options": ["Loki", "Odin", "Thanos", "Hulk"],
+            "answer": 0
+        },
+        {
+            "id": 56,
+            "mode": "easy",
+            "question": "¿En qué película animada de Disney una joven india se enamora de un capitán inglés?",
+            "options": ["Pocahontas", "Mulan", "Blancanieves y los Siete Enanitos", "Frozen"],
+            "answer": 0
+        },
+        {
+            "id": 57,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso fontanero de videojuegos de Nintendo?",
+            "options": ["Luigi", "Sonic", "Mario", "Pac-Man"],
+            "answer": 2
+        },
+        {
+            "id": 58,
+            "mode": "easy",
+            "question": "¿En qué película animada de Pixar una niña se muda a una nueva ciudad y sus emociones son representadas por personajes?",
+            "options": ["Inside Out", "Up", "Finding Nemo", "The Incredibles"],
+            "answer": 0
+        },
+        {
+            "id": 59,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso mago y protagonista de la serie de libros 'Harry Potter'?",
+            "options": ["Severus Snape", "Hermione Granger", "Ron Weasley", "Harry Potter"],
+            "answer": 3
+        },
+        {
+            "id": 60,
+            "mode": "easy",
+            "question": "¿Quién dirigió la película 'Jurassic Park' de 1993?",
+            "options": ["James Cameron", "Christopher Nolan", "Steven Spielberg", "Quentin Tarantino"],
+            "answer": 2
+        },
+        {
+            "id": 61,
+            "mode": "easy",
+            "question": "¿En qué libro de J.R.R. Tolkien el personaje principal debe destruir un Anillo?",
+            "options": ["El Hobbit", "El Silmarillion", "Los Hijos de Húrin", "El Señor de los Anillos"],
+            "answer": 3
+        },
+        {
+            "id": 62,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del enemigo principal de la saga de películas 'Star Wars'?",
+            "options": ["Darth Vader", "Luke Skywalker", "Han Solo", "Darth Sidious"],
+            "answer": 3
+        },
+        {
+            "id": 63,
+            "mode": "easy",
+            "question": "¿En qué videojuego un erizo azul debe enfrentar al malvado Dr. Robotnik?",
+            "options": ["Pac-Man", "Sonic the Hedgehog", "Super Mario Bros.", "The Legend of Zelda"],
+            "answer": 1
+        },
+        {
+            "id": 64,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del capitán pirata interpretado por Johnny Depp en la saga 'Piratas del Caribe'?",
+            "options": ["Hector Barbossa", "Davy Jones", "Will Turner", "Jack Sparrow"],
+            "answer": 3
+        },
+        {
+            "id": 65,
+            "mode": "easy",
+            "question": "¿Cómo se llama la protagonista femenina de la saga de libros y películas 'The Twilight Saga'?",
+            "options": ["Bella Swan", "Hermione Granger", "Tris Prior", "Katniss Everdeen"],
+            "answer": 0
+        },
+        {
+            "id": 66,
+            "mode": "easy",
+            "question": "¿En qué película animada de Disney una joven se convierte en guerrera para proteger a su país de la invasión huno?",
+            "options": ["Mulan", "Pocahontas", "The Little Mermaid", "Beauty and the Beast"],
+            "answer": 0
+        },
+        {
+            "id": 67,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje principal en la saga de videojuegos 'The Legend of Zelda'?",
+            "options": ["Link", "Zelda", "Ganondorf", "Ganon"],
+            "answer": 0
+        },
+        {
+            "id": 68,
+            "mode": "easy",
+            "question": "¿En qué película animada de Pixar un robot explorador viaja al espacio para encontrar una nueva vida?",
+            "options": ["Ratatouille", "Wall-E", "Finding Nemo", "Toy Story"],
+            "answer": 1
+        },
+        {
+            "id": 69,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del archienemigo de Harry Potter?",
+            "options": ["Lucius Malfoy", "Draco Malfoy", "Severus Snape", "Lord Voldemort"],
+            "answer": 3
+        },
+        {
+            "id": 70,
+            "mode": "easy",
+            "question": "¿Quién dirigió la película 'The Godfather' de 1972?",
+            "options": ["Quentin Tarantino", "Martin Scorsese", "Francis Ford Coppola", "Steven Spielberg"],
+            "answer": 2
+        },
+        {
+            "id": 71,
+            "mode": "easy",
+            "question": "¿En qué libro de J.K. Rowling Harry Potter se entera de que es un mago?",
+            "options": ["Harry Potter y la Orden del Fénix", "Harry Potter y la Piedra Filosofal", "Harry Potter y el Prisionero de Azkaban", "Harry Potter y el Cáliz de Fuego"],
+            "answer": 1
+        },
+        {
+            "id": 72,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del planeta natal de Han Solo en la saga de películas 'Star Wars'?",
+            "options": ["Tatooine", "Hoth", "Endor", "Corellia"],
+            "answer": 3
+        },
+        {
+            "id": 73,
+            "mode": "easy",
+            "question": "¿En qué videojuego el personaje principal debe rescatar a la princesa Zelda de Ganondorf?",
+            "options": ["Super Mario Bros.", "The Legend of Zelda", "Final Fantasy", "Metroid"],
+            "answer": 1
+        },
+        {
+            "id": 74,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje principal en la saga de películas 'Piratas del Caribe'?",
+            "options": ["Jack Sparrow", "Will Turner", "Davy Jones", "Hector Barbossa"],
+            "answer": 0
+        },
+        {
+            "id": 75,
+            "mode": "easy",
+            "question": "¿Cómo se llama el protagonista de la saga de libros y películas 'The Hunger Games'?",
+            "options": ["Katniss Everdeen", "Hermione Granger", "Bella Swan", "Tris Prior"],
+            "answer": 0
+        },
+        {
+            "id": 76,
+            "mode": "easy",
+            "question": "¿En qué película animada de Disney la protagonista es una joven que se ve obligada a vivir en un castillo con una Bestia?",
+            "options": ["Blancanieves y los Siete Enanitos", "La Sirenita", "La Bella y la Bestia", "Frozen"],
+            "answer": 2
+        },
+        {
+            "id": 77,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso personaje de videojuegos que es un fontanero que se convierte en lobo?",
+            "options": ["Luigi", "Yoshi", "Toad", "Link"],
+            "answer": 3
+        },
+        {
+            "id": 78,
+            "mode": "easy",
+            "question": "¿En qué película animada de Pixar un robot limpia la Tierra después de que fuera abandonada por los humanos?",
+            "options": ["Ratatouille", "Cars", "Monsters, Inc.", "Wall-E"],
+            "answer": 3
+        },
+        {
+            "id": 79,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre completo del famoso mago creado por J.K. Rowling?",
+            "options": ["Harry Weasley", "Harry Potter", "Harry Malfoy", "Harry Granger"],
+            "answer": 1
+        },
+        {
+            "id": 80,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del director de la película 'Tiburón'?",
+            "options": ["Steven Spielberg", "Martin Scorsese", "Christopher Nolan", "Quentin Tarantino"],
+            "answer": 0
+        },
+        {
+            "id": 81,
+            "mode": "easy",
+            "question": "¿En qué libro de J.R.R. Tolkien los personajes buscan recuperar el tesoro guardado por Smaug?",
+            "options": ["El Silmarillion", "El Hobbit", "El Señor de los Anillos", "Los Hijos de Húrin"],
+            "answer": 1
+        },
+        {
+            "id": 82,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del planeta natal de Darth Vader?",
+            "options": ["Kamino", "Hoth", "Endor", "Tatooine"],
+            "answer": 3
+        },
+        {
+            "id": 83,
+            "mode": "easy",
+            "question": "¿En qué videojuego el personaje principal debe salvar a la princesa Peach del malvado Bowser?",
+            "options": ["Super Smash Bros.", "Metroid", "Donkey Kong", "Super Mario Bros."],
+            "answer": 3
+        },
+        {
+            "id": 84,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del capitán del barco 'El Holandés Errante' en la saga de películas 'Piratas del Caribe'?",
+            "options": ["Will Turner", "Hector Barbossa", "James Norrington", "Davy Jones"],
+            "answer": 3
+        },
+        {
+            "id": 85,
+            "mode": "easy",
+            "question": "¿Cómo se llama la protagonista femenina de la saga de libros y películas 'Divergent'?",
+            "options": ["Katniss Everdeen", "Tris Prior", "Hermione Granger", "Bella Swan"],
+            "answer": 1
+        },
+        {
+            "id": 86,
+            "mode": "easy",
+            "question": "¿En qué película animada de Disney la protagonista es una joven princesa que tiene la habilidad de comunicarse con los animales?",
+            "options": ["Mulan", "Blancanieves y los Siete Enanitos", "La Bella y la Bestia", "Pocahontas"],
+            "answer": 3
+        },
+        {
+            "id": 87,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso personaje de videojuegos que es una criatura rosa que puede aspirar a sus enemigos y copiar sus habilidades?",
+            "options": ["Pikachu", "Kirby", "Sonic", "Yoshi"],
+            "answer": 1
+        },
+        {
+            "id": 88,
+            "mode": "easy",
+            "question": "¿En qué película animada de Pixar un anciano realiza su sueño de volar a América del Sur con su casa atada a globos?",
+            "options": ["Buscando a Nemo", "Wall-E", "Up", "Los Increíbles"],
+            "answer": 2
+        },
+        {
+            "id": 89,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del archienemigo de Harry Potter?",
+            "options": ["Draco Malfoy", "Lucius Malfoy", "Severus Snape", "Lord Voldemort"],
+            "answer": 3
+        },
+        {
+            "id": 90,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del director de la película 'El Padrino'?",
+            "options": ["Martin Scorsese", "Steven Spielberg", "Quentin Tarantino", "Francis Ford Coppola"],
+            "answer": 3
+        },
+        {
+            "id": 91,
+            "mode": "easy",
+            "question": "¿En qué libro de J.K. Rowling los estudiantes asisten al Torneo de los Tres Magos?",
+            "options": ["Harry Potter y el Prisionero de Azkaban", "Harry Potter y la Piedra Filosofal", "Harry Potter y la Orden del Fénix", "Harry Potter y el Cáliz de Fuego"],
+            "answer": 3
+        },
+        {
+            "id": 92,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del planeta natal de Luke Skywalker?",
+            "options": ["Tatooine", "Alderaan", "Kamino", "Coruscant"],
+            "answer": 0
+        },
+        {
+            "id": 93,
+            "mode": "easy",
+            "question": "¿En qué videojuego el personaje principal debe rescatar a la princesa Zelda de Ganondorf?",
+            "options": ["Super Mario Bros.", "The Legend of Zelda", "Final Fantasy", "Metroid"],
+            "answer": 1
+        },
+        {
+            "id": 94,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del personaje principal en la saga de películas 'Piratas del Caribe'?",
+            "options": ["Jack Sparrow", "Will Turner", "Davy Jones", "Hector Barbossa"],
+            "answer": 0
+        },
+        {
+            "id": 95,
+            "mode": "easy",
+            "question": "¿En qué saga de libros y películas una joven debe elegir una facción a la que pertenecer?",
+            "options": ["The Hunger Games", "Harry Potter", "Divergent", "Twilight"],
+            "answer": 2
+        },
+        {
+            "id": 96,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre de la famosa detective creada por Agatha Christie?",
+            "options": ["Francess Poirot", "Katie Holmes", "Miss Marple", "Josie Lake"],
+            "answer": 2
+        },
+        {
+            "id": 97,
+            "mode": "easy",
+            "question": "¿En qué película de Quentin Tarantino aparece el personaje Jules Winnfield?",
+            "options": ["Pulp Fiction", "Reservoir Dogs", "Kill Bill", "Inglourious Basterds"],
+            "answer": 0
+        },
+        {
+            "id": 98,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del segundo libro de la saga 'Canción de hielo y fuego' de George R.R. Martin?",
+            "options": ["Juego de tronos", "Choque de reyes", "Tormenta de espadas", "Festín de cuervos"],
+            "answer": 1
+        },
+        {
+            "id": 99,
+            "mode": "easy",
+            "question": "¿Qué videojuego se considera de estilo steampunk?",
+            "options": ["The Witcher 3: Wild Hunt", "Bioshock Infinite", "Fallout 4", "The Last of Us"],
+            "answer": 1
+        },
+        {
+            "id": 100,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del protagonista de la saga de películas 'The Fast and the Furious'?",
+            "options": ["Dom Toretto", "Brian O'Conner", "Luke Hobbs", "Deckard Shaw"],
+            "answer": 0
+        },
+        {
+            "id": 101,
+            "mode": "easy",
+            "question": "¿En qué película animada un león es el heredero al trono de la sabana africana?",
+            "options": ["El Rey León", "Madagascar", "Zootopia", "Kung Fu Panda"],
+            "answer": 0
+        },
+        {
+            "id": 102,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del protagonista de la saga de videojuegos 'Metal Gear Solid'?",
+            "options": ["Solid Snake", "Liquid Snake", "Big Boss", "Raiden"],
+            "answer": 0
+        },
+        {
+            "id": 103,
+            "mode": "easy",
+            "question": "¿En qué película de Christopher Nolan los personajes deben robar información de los sueños de una persona?",
+            "options": ["Inception", "Interstellar", "Memento", "The Prestige"],
+            "answer": 0
+        },
+        {
+            "id": 104,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del o la protagonista principal de la saga de libros 'Crepúsculo' de Stephenie Meyer?",
+            "options": ["Edward Cullen", "Jacob Black", "Emmett Cullen", "Bella Swan"],
+            "answer": 3
+        },
+        {
+            "id": 105,
+            "mode": "easy",
+            "question": "¿En qué videojuego un soldado llamado Isaac Clarke debe enfrentarse a criaturas alienígenas en una nave espacial abandonada?",
+            "options": ["Dead Space", "Halo", "Resident Evil", "Doom"],
+            "answer": 0
+        },
+        {
+            "id": 106,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del mago y protagonista de la serie de libros 'The Kingkiller Chronicle' de Patrick Rothfuss?",
+            "options": ["Kvothe", "Denna", "Bast", "Elodin"],
+            "answer": 0
+        },
+        {
+            "id": 107,
+            "mode": "easy",
+            "question": "¿Qué mató al famoso personaje de literatura Moby Dick?",
+            "options": ["Un tigre blanco", "Una serpiente gigante", "Un dragón marino", "Una ballena blanca"],
+            "answer": 3
+        },
+        {
+            "id": 108,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre de la computadora que se vuelve malévola en la película 2001: A Space Odyssey?",
+            "options": ["HAL 9000", "ASIMOV 800", "COSMOS 3000", "SKYNET 100"],
+            "answer": 0
+        },
+        {
+            "id": 109,
+            "mode": "easy",
+            "question": "¿En qué novela el protagonista se convierte en un insecto gigante?",
+            "options": ["La metamorfosis", "Crimen y castigo", "1984", "Don Quijote de la Mancha"],
+            "answer": 0
+        },
+        {
+            "id": 110,
+            "mode": "hard",
+            "question": "¿Qué banda de rock británica lanzó el álbum 'The Dark Side of the Moon'?",
+            "options": ["The Rolling Stones", "The Beatles", "Led Zeppelin", "Pink Floyd"],
+            "answer": 3
+        },
+        {
+            "id": 112,
+            "mode": "easy",
+            "question": "¿Quién escribió la famosa obra de teatro 'Romeo y Julieta'?",
+            "options": ["Oscar Wilde", "William Shakespeare", "Friedrich Nietzsche", "Jane Austen"],
+            "answer": 1
+        },
+        {
+            "id": 113,
+            "mode": "hard",
+            "question": "¿En qué novela un grupo de niños queda varado en una isla desierta después de un accidente de avión?",
+            "options": ["El señor de las moscas", "El guardián entre el centeno", "Cien años de soledad", "1984"],
+            "answer": 0
+        },
+        {
+            "id": 114,
+            "mode": "hard",
+            "question": "¿Qué famoso físico desarrolló la teoría de la relatividad?",
+            "options": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Galileo Galilei"],
+            "answer": 1
+        },
+        {
+            "id": 115,
+            "mode": "easy",
+            "question": "¿En qué película de ciencia ficción un hacker llamado Neo descubre que vive en un mundo simulado por máquinas?",
+            "options": ["The Matrix", "Inception", "Blade Runner", "Tron"],
+            "answer": 0
+        },
+        {
+            "id": 116,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre del famoso detective privado que vive en Baker Street 221B?",
+            "options": ["Hercule Poirot", "Sherlock Holmes", "Philip Marlowe", "Sam Spade"],
+            "answer": 1
+        },
+        {
+            "id": 117,
+            "mode": "hard",
+            "question": "¿Qué filósofo griego es conocido por ser el maestro de Alejandro Magno?",
+            "options": ["Sócrates", "Platón", "Aristóteles", "Heráclito"],
+            "answer": 2
+        },
+        {
+            "id": 118,
+            "mode": "easy",
+            "question": "¿En qué libro el personaje principal se embarca en un viaje en barco llamado 'El Pequod' para cazar a una gran ballena blanca?",
+            "options": ["La isla del tesoro", "Moby Dick", "Robinson Crusoe", "El llamado de la selva"],
+            "answer": 1
+        },
+        {
+            "id": 119,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre del protagonista de la saga de videojuegos 'Dark Souls'?",
+            "options": ["Artorias", "Gwyn", "Solaire", "Chosen Undead"],
+            "answer": 3
+        },
+        {
+            "id": 120,
+            "mode": "hard",
+            "question": "¿En qué novela un hombre llamado Winston Smith vive en una sociedad distópica bajo el control del Gran Hermano?",
+            "options": ["1984", "Un mundo feliz", "Fahrenheit 451", "La naranja mecánica"],
+            "answer": 0
+        },
+        {
+            "id": 121,
+            "mode": "hard",
+            "question": "¿Qué pintor neerlandés es famoso por su obra 'La noche estrellada'?",
+            "options": ["Rembrandt", "Vermeer", "Van Gogh", "Mondrian"],
+            "answer": 2
+        },
+        {
+            "id": 122,
+            "mode": "easy",
+            "question": "¿En qué película un asesino en serie llamado John Doe elabora meticulosamente los asesinatos basados en los siete pecados capitales?",
+            "options": ["Seven", "El silencio de los corderos", "Psicosis", "Mystic River"],
+            "answer": 0
+        },
+        {
+            "id": 123,
+            "mode": "hard",
+            "question": "¿Qué famoso escritor inglés escribió 'Rebelión en la granja' y '1984'?",
+            "options": ["Aldous Huxley", "H.G. Wells", "J.R.R. Tolkien", "George Orwell"],
+            "answer": 3
+        },
+        {
+            "id": 124,
+            "mode": "hard",
+            "question": "¿En qué novela el personaje principal, Holden Caulfield, narra su vida en una institución psiquiátrica?",
+            "options": ["El guardián entre el centeno", "Matar a un ruiseñor", "Crimen y castigo", "El retrato de Dorian Gray"],
+            "answer": 0
+        },
+        {
+            "id": 125,
+            "mode": "hard",
+            "question": "¿Qué famoso músico murió a los 27 años y es conocido como uno de los miembros del 'Club de los 27'?",
+            "options": ["Kurt Cobain", "Jimi Hendrix", "Amy Winehouse", "Janis Joplin"],
+            "answer": 1
+        },
+        {
+            "id": 126,
+            "mode": "easy",
+            "question": "¿En qué videojuego el jugador controla a un personaje llamado Kratos, un guerrero espartano que busca venganza contra los dioses del Olimpo?",
+            "options": ["God of War", "Assassin's Creed", "Bloodborne", "Dark Souls"],
+            "answer": 0
+        },
+        {
+            "id": 127,
+            "mode": "easy",
+            "question": "¿Cuál es el nombre de la famosa espada del rey Arturo, a menudo asociada con la leyenda de la mesa redonda?",
+            "options": ["Excalibur", "Durandal", "Joyeuse", "Clarent"],
+            "answer": 0
+        },
+        {
+            "id": 128,
+            "mode": "hard",
+            "question": "¿En qué año se estrenó la primera película de 'Star Wars'?",
+            "options": ["1975", "1976", "1977", "1978"],
+            "answer": 2
+        },
+        {
+            "id": 129,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real del personaje de Marvel conocido como Deadpool?",
+            "options": ["Wade Wilson", "Jack Hammer", "Peter Parker", "Matt Murdock"],
+            "answer": 0
+        },
+        {
+            "id": 130,
+            "mode": "hard",
+            "question": "En el manga y anime 'Dragon Ball', ¿cuál es el nombre del planeta natal de Goku?",
+            "options": ["Vegeta", "Namekusei", "Planeta Tierra", "Planeta Vegeta"],
+            "answer": 3
+        },
+        {
+            "id": 131,
+            "mode": "hard",
+            "question": "En la serie de libros 'The Wheel of Time', ¿cuántos libros componen la serie completa?",
+            "options": ["7", "10", "14", "20"],
+            "answer": 2
+        },
+        {
+            "id": 132,
+            "mode": "hard",
+            "question": "En el videojuego 'The Legend of Zelda: Ocarina of Time', ¿cuál es el nombre del caballo de Link?",
+            "options": ["Epona", "Navi", "Midna", "Agitha"],
+            "answer": 0
+        },
+        {
+            "id": 133,
+            "mode": "hard",
+            "question": "¿En qué país se desarrolla la serie de televisión 'Game of Thrones'?",
+            "options": ["Westeros", "Essos", "Poniente", "Ninguno de los anteriores"],
+            "answer": 3
+        },
+        {
+            "id": 134,
+            "mode": "hard",
+            "question": "En la saga de videojuegos 'The Elder Scrolls', ¿cuál es el nombre de la provincia donde se desarrolla 'Skyrim'?",
+            "options": ["Cyrodiil", "Hammerfell", "Skyrim", "Morrowind"],
+            "answer": 2
+        },
+        {
+            "id": 135,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre del villano principal en la película 'The Dark Knight'?",
+            "options": ["The Joker", "Two-Face", "Bane", "The Riddler"],
+            "answer": 0
+        },
+        {
+            "id": 136,
+            "mode": "hard",
+            "question": "En el anime 'One Punch Man', ¿cuál es el nombre del héroe más poderoso de Clase S?",
+            "options": ["Silver Fang", "Blast", "Tornado of Terror", "Saitama"],
+            "answer": 1
+        },
+        {
+            "id": 137,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre de la nave espacial que Han Solo pilota en 'Star Wars'?",
+            "options": ["Millennium Falcon", "X-Wing", "TIE Fighter", "Star Destroyer"],
+            "answer": 0
+        },
+        {
+            "id": 138,
+            "mode": "hard",
+            "question": "En el manga y anime 'Berserk', ¿cuál es el nombre del protagonista que busca venganza contra Griffith?",
+            "options": ["Guts", "Griffith", "Casca", "Zodd"],
+            "answer": 0
+        },
+        {
+            "id": 139,
+            "mode": "hard",
+            "question": "En la saga de videojuegos 'Halo', ¿cuál es el nombre del personaje principal conocido como el Jefe Maestro?",
+            "options": ["John-117", "James-005", "Tom-292", "William-043"],
+            "answer": 0
+        },
+        {
+            "id": 140,
+            "mode": "hard",
+            "question": "En la serie de libros 'A Song of Ice and Fire', ¿cuál es el nombre completo de Daenerys Targaryen?",
+            "options": ["Daenerys Stormborn", "Daenerys Fireborn", "Daenerys Dragonborn", "Daenerys Stormfire"],
+            "answer": 0
+        },
+        {
+            "id": 141,
+            "mode": "hard",
+            "question": "¿En qué año se estrenó la película 'Blade Runner'?",
+            "options": ["1980", "1982", "1984", "1986"],
+            "answer": 1
+        },
+        {
+            "id": 142,
+            "mode": "hard",
+            "question": "En la saga de videojuegos 'Metal Gear Solid', ¿cuál es el nombre del antagonista principal conocido como el 'Hombre del brazo rojo'?",
+            "options": ["Revolver Ocelot", "Solidus Snake", "Liquid Snake", "Big Boss"],
+            "answer": 2
+        },
+        {
+            "id": 143,
+            "mode": "hard",
+            "question": "En el universo de Marvel, ¿cuál es el nombre del metal especial utilizado para hacer el escudo del Capitán América?",
+            "options": ["Adamantium", "Vibranium", "Uru", "Promethium"],
+            "answer": 1
+        },
+        {
+            "id": 144,
+            "mode": "hard",
+            "question": "En la serie de libros 'The Lord of the Rings', ¿cuál es el nombre del herrero que forjó el Anillo Único?",
+            "options": ["Sauron", "Gandalf", "Elrond", "Celebrimbor"],
+            "answer": 3
+        },
+        {
+            "id": 145,
+            "mode": "hard",
+            "question": "En el videojuego 'Dark Souls', ¿cuál es el nombre del enemigo que se conoce como 'La Cama de Caos'?",
+            "options": ["Nito, el Gran Señor Muerto", "El Árbol Demoníaco", "El Rey sin Nombre", "Ceaseless Discharge"],
+            "answer": 3
+        },
+        {
+            "id": 146,
+            "mode": "hard",
+            "question": "En la serie de películas de 'The Avengers', ¿cuál es el nombre del villano principal que reúne las Gemas del Infinito?",
+            "options": ["Loki", "Ultron", "Thanos", "Red Skull"],
+            "answer": 2
+        },
+        {
+            "id": 147,
+            "mode": "hard",
+            "question": "En el manga y anime 'Neon Genesis Evangelion', ¿cuál es el nombre de la organización secreta que lucha contra los Ángeles?",
+            "options": ["NERV", "SEELE", "WILLE", "Gehirn"],
+            "answer": 0
+        },
+        {
+            
+            "id": 148,
+            "mode": "hard",
+            "question": "En la serie de videojuegos 'Final Fantasy', ¿cuál es el nombre del personaje conocido como 'El Rey Oscuro'?",
+            "options": ["Sephiroth", "Kefka", "Exdeath", "Golbez"],
+            "answer": 2
+        },
+        {
+            "id": 149,
+            "mode": "hard",
+            "question": "En el manga y anime 'Attack on Titan', ¿cuál es el nombre de la ciudad donde se encuentra la última esperanza de la humanidad?",
+            "options": ["Shiganshina", "Trost", "Marley", "Wall Rose"],
+            "answer": 2
+        },
+        {
+            "id": 150,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre de la nave espacial que llevó a la humanidad a la luna por primera vez en 1969?",
+            "options": ["Apollo 11", "Gemini 12", "Mercury 7", "Soyuz 5"],
+            "answer": 0
+        },
+        {
+            "id": 151,
+            "mode": "hard",
+            "question": "En la serie de videojuegos 'Resident Evil', ¿cuál es el nombre del virus que provoca la transformación de personas en zombis?",
+            "options": ["T-Virus", "G-Virus", "Las Plagas", "C-Virus"],
+            "answer": 0
+        },
+        {
+            "id": 152,
+            "mode": "hard",
+            "question": "En el manga y anime 'Naruto', ¿cuál es el nombre del padre de Naruto?",
+            "options": ["Minato Namikaze", "Jiraiya", "Orochimaru", "Hiruzen Sarutobi"],
+            "answer": 0
+        },
+        {
+            "id": 153,
+            "mode": "hard",
+            "question": "En la saga de libros 'Dune', ¿cuál es el nombre del planeta desértico conocido por su especia?",
+            "options": ["Arrakis", "Tatooine", "Hoth", "Jakku"],
+            "answer": 0
+        },
+        {
+            "id": 154,
+            "mode": "hard",
+            "question": "En el anime 'Fullmetal Alchemist', ¿cuál es el nombre de la piedra filosofal que los hermanos Elric buscan?",
+            "options": ["Piedra Roja", "Piedra Filosofal", "Piedra Púrpura", "Piedra del Sol"],
+            "answer": 2
+        },
+        {
+            "id": 155,
+            "mode": "hard",
+            "question": "En la serie de libros 'The Witcher', ¿cuál es el nombre del brujo protagonista?",
+            "options": ["Geralt de Rivia", "Vesemir", "Lambert", "Eskel"],
+            "answer": 0
+        },
+        {
+            "id": 156,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre del barco capitaneado por Jack Sparrow en la película 'Pirates of the Caribbean'?",
+            "options": ["Black Pearl", "Flying Dutchman", "Queen Anne's Revenge", "Interceptor"],
+            "answer": 0
+        },
+        {
+            "id": 157,
+            "mode": "hard",
+            "question": "En el manga y anime 'One Piece', ¿cuál es el nombre de la fruta del diablo que otorga la capacidad de convertirse en piedra?",
+            "options": ["Fruta Gomu Gomu", "Fruta Bara Bara", "Fruta Hito Hito", "Fruta Supa Supa"],
+            "answer": 3
+        },
+        {
+            "id": 158,
+            "mode": "hard",
+            "question": "En el videojuego 'The Legend of Zelda: Majora's Mask', ¿cuál es el nombre de la entidad que amenaza con destruir Termina?",
+            "options": ["Majora", "Ganondorf", "Vaati", "Zant"],
+            "answer": 0
+        },
+        {
+            "id": 159,
+            "mode": "hard",
+            "question": "En la saga de libros 'Harry Potter', ¿cuál es el nombre de la casa fundada por Rowena Ravenclaw?",
+            "options": ["Hufflepuff", "Gryffindor", "Ravenclaw", "Slytherin"],
+            "answer": 2
+        },
+        {
+            "id": 160,
+            "mode": "hard",
+            "question": "En el anime 'Death Note', ¿cuál es el nombre del shinigami que deja caer el Death Note en el mundo humano?",
+            "options": ["Ryuk", "Rem", "Sidoh", "Shidoh"],
+            "answer": 0
+        },
+        {
+            "id": 161,
+            "mode": "hard",
+            "question": "En la serie de videojuegos 'Assassin's Creed', ¿cuál es el nombre del protagonista asesino que se conecta al Animus?",
+            "options": ["Ezio Auditore", "Edward Kenway", "Altair Ibn-La'Ahad", "Desmond Miles"],
+            "answer": 3
+        },
+        {
+            "id": 162,
+            "mode": "hard",
+            "question": "En la serie de películas 'The Matrix', ¿cuál es el nombre del hacker protagonista interpretado por Keanu Reeves?",
+            "options": ["Morpheus", "Neo", "Trinity", "Cypher"],
+            "answer": 1
+        },
+        {
+            "id": 163,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre de la espada legendaria portada por el rey Arturo en las leyendas medievales?",
+            "options": ["Excalibur", "Caliburn", "Arondight", "Durendal"],
+            "answer": 0
+        },
+        {
+            "id": 164,
+            "mode": "hard",
+            "question": "En la serie de videojuegos 'Mass Effect', ¿cuál es el nombre del comandante Shepard?",
+            "options": ["John Shepard", "David Shepard", "Alex Shepard", "Sarah Shepard"],
+            "answer": 0
+        },
+        {
+            "id": 165,
+            "mode": "hard",
+            "question": "En la saga de libros 'The Hitchhiker's Guide to the Galaxy', ¿cuál es la respuesta a la pregunta fundamental de la vida, el universo y todo lo demás?",
+            "options": ["42", "27", "39", "51"],
+            "answer": 0
+        },
+        {
+            "id": 166,
+            "mode": "hard",
+            "question": "En la serie de videojuegos 'Dark Souls', ¿cuál es el nombre del área donde se encuentran las cuatro Señales Primordiales?",
+            "options": ["Kiln of the First Flame", "The Abyss", "Lost Izalith", "The Duke's Archives"],
+            "answer": 0
+        },
+        {
+            "id": 167,
+            "mode": "hard",
+            "question": "En la serie de anime 'Cowboy Bebop', ¿cuál es el nombre del cazarrecompensas protagonista?",
+            "options": ["Jet Black", "Spike Spiegel", "Faye Valentine", "Edward Wong Hau Pepelu Tivrusky IV"],
+            "answer": 1
+        },
+        
+        {
+            "id": 189,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Harley Quinn?",
+            "options": ["Pamela Isley", "Selina Kyle", "Dinah Lance", "Harleen Quinzel"],
+            "answer": 3
+        },
+        {
+            "id": 190,
+            "mode": "hard",
+            "question": "¿Quién es el mayor enemigo de Batman?",
+            "options": ["El Joker", "Ra's al Ghul", "El Pingüino", "Dos Caras"],
+            "answer": 0
+        },
+        {
+            "id": 191,
+            "mode": "hard",
+            "question": "¿Qué villano rompió la columna de Batman dejándolo paralizado?",
+            "options": ["Bane", "Mr. Freeze", "Scarecrow", "Deathstroke"],
+            "answer": 0
+        },
+        {
+            "id": 192,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Wonder Woman?",
+            "options": ["Diana Prince", "Barbara Gordon", "Lois Lane", "Carol Danvers"],
+            "answer": 0
+        },
+        {
+            "id": 193,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de The Flash?",
+            "options": ["Barry Allen", "Wally West", "Jay Garrick", "Bruce Wayne"],
+            "answer": 0
+        },
+        {
+            "id": 194,
+            "mode": "hard",
+            "question": "¿Qué entidad cósmica es el enemigo jurado de Green Lantern Corps?",
+            "options": ["Thanos", "Darkseid", "Parallax", "Apocalypse"],
+            "answer": 2
+        },
+        {
+            "id": 195,
+            "mode": "hard",
+            "question": "¿Qué villano es el archienemigo de Superman y posee una armadura con una 'S' en el pecho?",
+            "options": ["Lex Luthor", "General Zod", "Doomsday", "Brainiac"],
+            "answer": 0
+        },
+        {
+            "id": 196,
+            "mode": "hard",
+            "question": "¿Cuál es el verdadero nombre de Green Arrow?",
+            "options": ["Oliver Queen", "Ted Grant", "Floyd Lawton", "Roy Harper"],
+            "answer": 0
+        },
+        {
+            "id": 197,
+            "mode": "hard",
+            "question": "¿Quién es el líder del Escuadrón Suicida?",
+            "options": ["Rick Flag", "Deadshot", "Amanda Waller", "Captain Boomerang"],
+            "answer": 2
+        },
+        {
+            "id": 198,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Nightwing?",
+            "options": ["Jason Todd", "Dick Grayson", "Tim Drake", "Damian Wayne"],
+            "answer": 1
+        },
+        {
+            "id": 199,
+            "mode": "hard",
+            "question": "¿Qué villano es conocido por su obsesión con los acertijos y las adivinanzas?",
+            "options": ["The Riddler", "The Penguin", "Black Manta", "Clayface"],
+            "answer": 0
+        },
+        {
+            "id": 200,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Cyborg?",
+            "options": ["Victor Stone", "John Stewart", "Ray Palmer", "Michael Holt"],
+            "answer": 0
+        },
+        {
+            "id": 201,
+            "mode": "hard",
+            "question": "¿Quién es el archienemigo de Aquaman, gobernante de Atlantis?",
+            "options": ["Ocean Master", "Black Adam", "Deadshot", "Sinestro"],
+            "answer": 0
+        },
+        {
+            "id": 202,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Shazam?",
+            "options": ["Billy Batson", "Freddy Freeman", "Hal Jordan", "Arthur Curry"],
+            "answer": 0
+        },
+        {
+            "id": 203,
+            "mode": "hard",
+            "question": "¿Qué entidad demoníaca es el archienemigo de John Constantine?",
+            "options": ["Mephisto", "Trigon", "Neron", "Etrigan"],
+            "answer": 1
+        },
+        {
+            "id": 204,
+            "mode": "hard",
+            "question": "¿Quién es el villano que tiene una fijación por los espejos y posee un reino llamado 'Ciudad Espejada'?",
+            "options": ["Mirror Master", "Doctor Light", "Captain Cold", "Gorilla Grodd"],
+            "answer": 0
+        },
+        {
+            "id": 205,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Martian Manhunter?",
+            "options": ["J'onn J'onzz", "Kilowog", "Guy Gardner", "Atrocitus"],
+            "answer": 0
+        },
+        {
+            "id": 206,
+            "mode": "hard",
+            "question": "¿Qué villano es un psicópata que usa gas del miedo para aterrorizar a sus víctimas?",
+            "options": ["Copperhead", "Scarecrow", "Two-Face", "Mad Hatter"],
+            "answer": 1
+        },
+        {
+            "id": 207,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Red Hood?",
+            "options": ["Tim Drake", "Dick Grayson", "Jason Todd", "Damian Wayne"],
+            "answer": 2
+        },
+        {
+            "id": 208,
+            "mode": "hard",
+            "question": "¿Qué villano es un experto luchador en artes marciales y posee una mano de metal?",
+            "options": ["Ra's al Ghul", "Deathstroke", "Solomon Grundy", "Black Mask"],
+            "answer": 1
+        },
+        {
+            "id": 209,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real del superhéroe conocido como Iron Fist?",
+            "options": ["Luke Cage", "Matt Murdock", "Danny Rand", "Wade Wilson"],
+            "answer": 2
+        },
+        {
+            "id": 210,
+            "mode": "hard",
+            "question": "¿Qué entidad cósmica es el antagonista principal en el arco argumental de la 'Guerra del Infinito' en Marvel Comics?",
+            "options": ["Galactus", "Thanos", "Darkseid", "Kang el Conquistador"],
+            "answer": 1
+        },
+        {
+            "id": 211,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre de la organización terrorista liderada por Red Skull en el Universo Marvel?",
+            "options": ["HYDRA", "AIM", "SWORD", "Wakanda"],
+            "answer": 0
+        },
+        {
+            "id": 212,
+            "mode": "hard",
+            "question": "¿Quién fue el primer portador del simbionte Venom en los cómics de Marvel?",
+            "options": ["Eddie Brock", "Flash Thompson", "Peter Parker", "Cletus Kasady"],
+            "answer": 2
+        },
+        {
+            "id": 213,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real del mutante conocido como Cable?",
+            "options": ["Nathan Summers", "Wade Wilson", "Scott Summers", "Hank McCoy"],
+            "answer": 0
+        },
+        {
+            "id": 214,
+            "mode": "hard",
+            "question": "¿En qué cómic debutó por primera vez el personaje de Groot de los Guardianes de la Galaxia?",
+            "options": ["Tales to Astonish #13", "The Amazing Spider-Man #1", "Tales of Suspense #39", "The Incredible Hulk #180"],
+            "answer": 0
+        },
+        {
+            "id": 215,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre del planeta natal de los Kree en el Universo Marvel?",
+            "options": ["Hala", "Xandar", "Skrullos", "Knowhere"],
+            "answer": 0
+        },
+        {
+            "id": 216,
+            "mode": "hard",
+            "question": "¿Qué poderes cósmicos otorgan a los portadores del Guantelete del Infinito?",
+            "options": ["Poder de la teletransportación", "Control del tiempo y espacio", "Capacidad para volar", "Regeneración rápida"],
+            "answer": 1
+        },
+        {
+            "id": 217,
+            "mode": "hard",
+            "question": "¿Quién es el archienemigo de Doctor Strange?",
+            "options": ["Barón Mordo", "Dormammu", "Kaecilius", "Mephisto"],
+            "answer": 1
+        },
+        {
+            "id": 218,
+            "mode": "hard",
+            "question": "¿En qué cómic se reveló por primera vez que Tony Stark es Iron Man?",
+            "options": ["Tales of Suspense #39", "Avengers #1", "Iron Man #1", "Tales of Suspense #50"],
+            "answer": 3
+        },
+        {
+            "id": 219,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real de Black Widow, también conocida como Viuda Negra?",
+            "options": ["Natasha Romanoff", "Wanda Maximoff", "Maria Hill", "Melina Vostokoff"],
+            "answer": 0
+        },
+        {
+            "id": 220,
+            "mode": "hard",
+            "question": "¿Qué ser de otro mundo es el padre de Peter Quill, también conocido como Star-Lord?",
+            "options": ["Yondu", "Ego", "The Collector", "Ronan"],
+            "answer": 1
+        },
+        {
+            "id": 221,
+            "mode": "hard",
+            "question": "¿Qué equipo de superhéroes reúne a personajes como Wolverine, Cyclops, Jean Grey y Storm?",
+            "options": ["The Defenders", "The X-Men", "The Inhumans", "The Fantastic Four"],
+            "answer": 1
+        },
+        {
+            "id": 222,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre real del superhéroe conocido como Deadpool?",
+            "options": ["Wade Wilson", "Frank Castle", "Matt Murdock", "Peter Parker"],
+            "answer": 0
+        },
+        {
+            "id": 223,
+            "mode": "hard",
+            "question": "¿Qué mutante es conocido por ser el hijo de Cíclope y Madelyne Pryor (un clon de Jean Grey)?",
+            "options": ["Nightcrawler", "Bishop", "Cable", "Havok"],
+            "answer": 2
+        },
+        {
+            "id": 224,
+            "mode": "hard",
+            "question": "¿Qué poderoso artefacto alienígena es buscado por los Kree y los Skrulls en el Universo Marvel?",
+            "options": ["El Cubo Cósmico", "El Guantelete del Infinito", "El Nulificador Total", "La Gema del Alma"],
+            "answer": 0
+        },
+        {
+            "id": 225,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre del villano que lleva un traje especial con tentáculos mecánicos y es enemigo de Spider-Man?",
+            "options": ["Venom", "Green Goblin", "Doctor Octopus", "Rhino"],
+            "answer": 2
+        },
+        {
+            "id": 226,
+            "mode": "hard",
+            "question": "¿Qué entidad cósmica es el ser que otorga el poder del Mjolnir a aquellos que sean dignos de levantarlo?",
+            "options": ["Ego", "Odin", "Galactus", "Uatu el Vigilante"],
+            "answer": 1
+        },
+        {
+            "id": 227,
+            "mode": "hard",
+            "question": "¿Cuál es el nombre del misterioso ser que gobernó el Reino Cuántico y ayudó a Janet van Dyne en 'Ant-Man and The Wasp'?",
+            "options": ["El Viajero del Tiempo", "Kang el Conquistador", "El Fantasma", "El Hombre Hormiga"],
+            "answer": 2
+        },
+        {
+            "id": 228,
+            "mode": "hard",
+            "question": "¿Qué ser cósmico es conocido por ser el devorador de mundos y uno de los enemigos más poderosos de los superhéroes de Marvel?",
+            "options": ["Ultron", "Dormammu", "Darkseid", "Galactus"],
+            "answer": 3
+        },
+        {
+            "id": 229,
+            "mode": "hard",
+            "question": "¿Qué villano es conocido por ser el archienemigo de los Cuatro Fantásticos?",
+            "options": ["El Dr. Muerte", "El Duende Verde", "Red Skull", "Loki"],
+            "answer": 0
+        }
+    ]
+}
+

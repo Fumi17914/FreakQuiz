@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDD7297E2A6942B200786D11 /* myData.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD7297C2A693CE700786D11 /* myData.json */; };
 		D800DD7B26B1778C002D91D0 /* AppAtributtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */; };
 		D800DD7F26B1826B002D91D0 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800DD7E26B1826B002D91D0 /* TutorialView.swift */; };
 		D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */; };
@@ -35,10 +36,10 @@
 		D875E96426A986880034A014 /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E96326A986880034A014 /* AnswersView.swift */; };
 		D875E96A26A98DAB0034A014 /* Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D875E96626A98DAB0034A014 /* Pixel.ttf */; };
 		D8D7800C26B1C2BA00C45CA6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7800B26B1C2BA00C45CA6 /* UIViewExtensions.swift */; };
-		D8E4C0B726B7F26800790071 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E4C0B626B7F26800790071 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDD7297C2A693CE700786D11 /* myData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myData.json; sourceTree = "<group>"; };
 		D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAtributtions.swift; sourceTree = "<group>"; };
 		D800DD7E26B1826B002D91D0 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		D875E91D26A982040034A014 /* FreakQuiz App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreakQuiz App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +70,6 @@
 		D875E96326A986880034A014 /* AnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
 		D875E96626A98DAB0034A014 /* Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixel.ttf; sourceTree = "<group>"; };
 		D8D7800B26B1C2BA00C45CA6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		D8E4C0B626B7F26800790071 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				D875E92426A982050034A014 /* Assets.xcassets */,
-				D8E4C0B626B7F26800790071 /* Launch Screen.storyboard */,
 				D875E94426A982FA0034A014 /* App */,
 				D875E96526A986C60034A014 /* Fonts */,
 				D875E94526A983080034A014 /* Model */,
@@ -160,6 +159,7 @@
 				D875E94E26A9843E0034A014 /* Player.swift */,
 				D875E95026A984490034A014 /* Question.swift */,
 				D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */,
+				BDD7297C2A693CE700786D11 /* myData.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			files = (
 				D875E96A26A98DAB0034A014 /* Pixel.ttf in Resources */,
 				D875E92826A982050034A014 /* Preview Assets.xcassets in Resources */,
-				D8E4C0B726B7F26800790071 /* Launch Screen.storyboard in Resources */,
 				D875E92526A982050034A014 /* Assets.xcassets in Resources */,
+				BDD7297E2A6942B200786D11 /* myData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

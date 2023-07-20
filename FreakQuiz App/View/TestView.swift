@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TestView: View {
     
-    let myDataModel = QuestionsAndTestSample()
+    let testModel = TestSample()
         
     @State private var isScoreSelected: Bool = false
     @State private var isPlayerSelected: Bool = false
@@ -45,7 +45,7 @@ struct TestView: View {
                     .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
                     .textCase(.uppercase)
                     .opacity(0.9)
-                    .overlay(Text(myDataModel.test.randomElement() ?? "no test")
+                    .overlay(Text(testModel.test.randomElement() ?? "no test")
                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)

@@ -156,7 +156,9 @@ struct ChooseModeView: View {
                 .offset(y: -15)
             }
             
-        }.edgesIgnoringSafeArea(.bottom)
+        }
+        .onDisappear(perform: viewModel.loadQuestions)
+        .edgesIgnoringSafeArea(.bottom)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("")

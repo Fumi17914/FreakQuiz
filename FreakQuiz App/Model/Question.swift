@@ -14,11 +14,11 @@ struct Question: Codable {
     let options: [String]?
     let answer: Int?
     
-    enum Mode: Int, Codable {
-        case easy
-        case hard
-        case fast
-        case thanos
-        case freak
+    enum Mode: String, Codable {
+        case easy = "easy"
+        case hard = "hard"
+        case fast = "fast"
+        case thanos = "thanos"
+        case freak = "freak"
     }
 }

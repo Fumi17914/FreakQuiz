@@ -14,6 +14,8 @@ class Game {
     // Initialization
     private init() {}
     
+    var allDataQuestions: Questions = []
+    
     var mode: Question.Mode = .easy
     var question: String?
     var tests: Tests? = nil
@@ -67,40 +69,5 @@ class Game {
                                      Player(user: Player.Characters.Indy, score: 0),
                                      Player(user: Player.Characters.Noel, score: 0),
                                      Player(user: Player.Characters.Lobezno, score: 0)]
-    
-    
-    /*
-     var questions: Questions? = nil
-    
-    // MARK: Preguntas según modo escogido
-    var questionsEasy: [Question] {
-     return questions?.filter{ $0.mode == .easy} ?? []
-     }
-     var questionsHard: [Question] {
-     return questions?.filter{ $0.mode == .hard} ?? []
-     }
-     
-     var questionsFast: [Question] {
-     return questions?.filter{ $0.mode == .fast} ?? []
-     
-     }
-    
-     
-     // MARK: Función questions al azar según modo
-     var randomQuestion: String? {
-     if Game.shared.mode == .easy {
-     return Game.shared.questionsEasy.randomElement()?.question
-     
-     } else if Game.shared.mode == .hard {
-     return Game.shared.questionsHard.randomElement()?.question
-     
-     } else if Game.shared.mode == .fast {
-     return Game.shared.questionsFast.randomElement()?.question
-     
-     }
-     
-     return "No questions found"
-     }
-     */
 }
 

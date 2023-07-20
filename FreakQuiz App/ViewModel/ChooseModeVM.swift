@@ -33,5 +33,24 @@ class ChooseModeVM {
         print ("Master Freakverse Mode Selected")
         Game.shared.mode = .freak
     }
+        
+    func loadQuestions() {
+        guard let url = Bundle.main.url(forResource: "myData", withExtension: "json") else {
+            // Manejo de errores si no se encuentra el archivo JSON
+            print("Error al encontrar el archivo JSON.")
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            let questionData = try decoder.decode(QuestionsData.self, from: data)
+            Game.shared.allDataQuestions = questionData.questions
+        } catch {
+            // Manejo de errores si hay problemas al decodificar el JSON
+            print("Error al decodificar el JSON: \(error)")
+        }
+    }
+
     
 }

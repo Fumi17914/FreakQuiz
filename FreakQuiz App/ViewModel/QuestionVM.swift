@@ -8,9 +8,7 @@
 import SwiftUI
 
 class QuestionVM {
-    
-    var myData = QuestionsAndTestSample()
-    
+        
     var allQuestions = [String]()
     
     func getFinalQuestion() -> String {
@@ -41,7 +39,7 @@ class QuestionVM {
     
     func getAnswersForQuestion() -> [String?] {
         
-        for questions in myData.questions {
+        for questions in Game.shared.allDataQuestions {
             if questions.question == Game.shared.question {
                 Game.shared.answerOne = questions.options?[0] ?? "1"
                 Game.shared.answerTwo = questions.options?[1] ?? "2"
@@ -62,7 +60,7 @@ class QuestionVM {
         
         allQuestions.removeAll()
 
-        for questions in myData.questions {
+        for questions in Game.shared.allDataQuestions {
             if questions.mode == .easy {
                 allQuestions.append(questions.question)
             }
@@ -74,7 +72,7 @@ class QuestionVM {
         
         allQuestions.removeAll()
         
-        for questions in myData.questions {
+        for questions in Game.shared.allDataQuestions {
             if questions.mode == .hard {
                 allQuestions.append(questions.question)
             }
@@ -86,7 +84,7 @@ class QuestionVM {
         
         allQuestions.removeAll()
         
-        for questions in myData.questions {
+        for questions in Game.shared.allDataQuestions {
             if questions.mode == .fast {
                 allQuestions.append(questions.question)
                
@@ -100,7 +98,7 @@ class QuestionVM {
         
         allQuestions.removeAll()
 
-        for questions in myData.questions {
+        for questions in Game.shared.allDataQuestions {
             if questions.mode == .thanos {
                 allQuestions.append(questions.question)
                
@@ -113,7 +111,7 @@ class QuestionVM {
         
         allQuestions.removeAll()
 
-        for questions in myData.questions {
+        for questions in Game.shared.allDataQuestions {
             if questions.mode == .freak {
                 allQuestions.append(questions.question)
                

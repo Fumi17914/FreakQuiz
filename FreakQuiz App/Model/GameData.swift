@@ -14,3 +14,7 @@ struct GameData: Codable {
     let questions: Questions
     let tests: Tests
 }
+
+struct QuestionsData: Codable {
+    let questions: [Question]
+}

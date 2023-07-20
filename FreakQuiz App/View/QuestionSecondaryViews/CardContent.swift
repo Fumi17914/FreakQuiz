@@ -40,9 +40,7 @@ struct CardView: ViewModifier {
     @State private var position: CGFloat = UIScreen.main.bounds.height - 50
     
     @State private var currentProgress: CGFloat = 0.0
-    
-    let myDataModel = QuestionsAndTestSample()
-        
+            
     func body(content: Content) -> some View {
         ZStack(alignment: .top) {
             ZStack(alignment: .top) {
