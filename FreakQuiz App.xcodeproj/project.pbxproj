@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BDD7297E2A6942B200786D11 /* myData.json in Resources */ = {isa = PBXBuildFile; fileRef = BDD7297C2A693CE700786D11 /* myData.json */; };
+		BDD729812A6A9F5F00786D11 /* FirstTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD729802A6A9F5F00786D11 /* FirstTutorialView.swift */; };
+		BDD729832A6A9F9800786D11 /* SecondTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD729822A6A9F9800786D11 /* SecondTutorialView.swift */; };
+		BDD729852A6A9FCC00786D11 /* EasyTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD729842A6A9FCC00786D11 /* EasyTutorialView.swift */; };
+		BDD729872A6A9FFC00786D11 /* HardTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD729862A6A9FFC00786D11 /* HardTutorialView.swift */; };
+		BDD729892A6AA04000786D11 /* FastTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD729882A6AA04000786D11 /* FastTutorialView.swift */; };
+		BDD7298B2A6AA06B00786D11 /* ThanosTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7298A2A6AA06B00786D11 /* ThanosTutorialView.swift */; };
+		BDD7298D2A6AA08E00786D11 /* MasterFreakTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7298C2A6AA08E00786D11 /* MasterFreakTutorialView.swift */; };
+		BDD729902A6AA49300786D11 /* SharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7298F2A6AA49300786D11 /* SharedViews.swift */; };
 		D800DD7B26B1778C002D91D0 /* AppAtributtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */; };
 		D800DD7F26B1826B002D91D0 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800DD7E26B1826B002D91D0 /* TutorialView.swift */; };
 		D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E92026A982040034A014 /* FreakQuiz_AppApp.swift */; };
@@ -40,6 +48,14 @@
 
 /* Begin PBXFileReference section */
 		BDD7297C2A693CE700786D11 /* myData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myData.json; sourceTree = "<group>"; };
+		BDD729802A6A9F5F00786D11 /* FirstTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialView.swift; sourceTree = "<group>"; };
+		BDD729822A6A9F9800786D11 /* SecondTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTutorialView.swift; sourceTree = "<group>"; };
+		BDD729842A6A9FCC00786D11 /* EasyTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTutorialView.swift; sourceTree = "<group>"; };
+		BDD729862A6A9FFC00786D11 /* HardTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardTutorialView.swift; sourceTree = "<group>"; };
+		BDD729882A6AA04000786D11 /* FastTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTutorialView.swift; sourceTree = "<group>"; };
+		BDD7298A2A6AA06B00786D11 /* ThanosTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanosTutorialView.swift; sourceTree = "<group>"; };
+		BDD7298C2A6AA08E00786D11 /* MasterFreakTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFreakTutorialView.swift; sourceTree = "<group>"; };
+		BDD7298F2A6AA49300786D11 /* SharedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViews.swift; sourceTree = "<group>"; };
 		D800DD7A26B1778C002D91D0 /* AppAtributtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAtributtions.swift; sourceTree = "<group>"; };
 		D800DD7E26B1826B002D91D0 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		D875E91D26A982040034A014 /* FreakQuiz App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreakQuiz App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDD7297F2A6A9F4200786D11 /* TutorialViews */ = {
+			isa = PBXGroup;
+			children = (
+				D800DD7E26B1826B002D91D0 /* TutorialView.swift */,
+				BDD729802A6A9F5F00786D11 /* FirstTutorialView.swift */,
+				BDD729822A6A9F9800786D11 /* SecondTutorialView.swift */,
+				BDD729842A6A9FCC00786D11 /* EasyTutorialView.swift */,
+				BDD729862A6A9FFC00786D11 /* HardTutorialView.swift */,
+				BDD729882A6AA04000786D11 /* FastTutorialView.swift */,
+				BDD7298A2A6AA06B00786D11 /* ThanosTutorialView.swift */,
+				BDD7298C2A6AA08E00786D11 /* MasterFreakTutorialView.swift */,
+			);
+			path = TutorialViews;
+			sourceTree = "<group>";
+		};
 		D875E91426A982040034A014 = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +157,9 @@
 		D875E94326A982E80034A014 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BDD7298F2A6AA49300786D11 /* SharedViews.swift */,
 				D875E92226A982040034A014 /* SplashView.swift */,
-				D800DD7E26B1826B002D91D0 /* TutorialView.swift */,
+				BDD7297F2A6A9F4200786D11 /* TutorialViews */,
 				D875E93526A9827A0034A014 /* ChooseModeView.swift */,
 				D875E93726A9828C0034A014 /* ChoosePlayerView.swift */,
 				D875E93926A982A00034A014 /* PlayerReadyView.swift */,
@@ -273,26 +305,34 @@
 			files = (
 				D875E95526A985800034A014 /* ChooseModeVM.swift in Sources */,
 				D875E93C26A982AC0034A014 /* QuestionView.swift in Sources */,
+				BDD729852A6A9FCC00786D11 /* EasyTutorialView.swift in Sources */,
 				D875E95126A984490034A014 /* Question.swift in Sources */,
+				BDD729812A6A9F5F00786D11 /* FirstTutorialView.swift in Sources */,
 				D875E95D26A985CF0034A014 /* ScoreVM.swift in Sources */,
 				D875E92D26A982050034A014 /* FreakQuiz_App.xcdatamodeld in Sources */,
 				D875E92A26A982050034A014 /* Persistence.swift in Sources */,
 				D875E94B26A984170034A014 /* Game.swift in Sources */,
 				D875E93826A9828C0034A014 /* ChoosePlayerView.swift in Sources */,
+				BDD7298B2A6AA06B00786D11 /* ThanosTutorialView.swift in Sources */,
 				D875E96026A9865C0034A014 /* ProgressBarView.swift in Sources */,
+				BDD729832A6A9F9800786D11 /* SecondTutorialView.swift in Sources */,
 				D875E93A26A982A00034A014 /* PlayerReadyView.swift in Sources */,
 				D875E93626A9827A0034A014 /* ChooseModeView.swift in Sources */,
+				BDD729892A6AA04000786D11 /* FastTutorialView.swift in Sources */,
 				D875E94026A982D40034A014 /* TestView.swift in Sources */,
 				D875E94226A982E20034A014 /* ScoreView.swift in Sources */,
 				D800DD7F26B1826B002D91D0 /* TutorialView.swift in Sources */,
 				D875E92326A982040034A014 /* SplashView.swift in Sources */,
 				D8D7800C26B1C2BA00C45CA6 /* UIViewExtensions.swift in Sources */,
+				BDD729872A6A9FFC00786D11 /* HardTutorialView.swift in Sources */,
 				D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */,
 				D800DD7B26B1778C002D91D0 /* AppAtributtions.swift in Sources */,
 				D875E94D26A984240034A014 /* GameData.swift in Sources */,
 				D875E95326A9845F0034A014 /* TestSample.swift in Sources */,
 				D875E96426A986880034A014 /* AnswersView.swift in Sources */,
+				BDD729902A6AA49300786D11 /* SharedViews.swift in Sources */,
 				D875E94F26A9843E0034A014 /* Player.swift in Sources */,
+				BDD7298D2A6AA08E00786D11 /* MasterFreakTutorialView.swift in Sources */,
 				D875E95926A985A90034A014 /* QuestionVM.swift in Sources */,
 				D875E96226A986710034A014 /* CardContent.swift in Sources */,
 				D875E93E26A982C30034A014 /* CorrectView.swift in Sources */,

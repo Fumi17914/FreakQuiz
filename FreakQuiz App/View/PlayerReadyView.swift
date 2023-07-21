@@ -14,24 +14,24 @@ struct PlayerReadyView: View {
         return Game.shared.selectedPlayer ?? "No player"
     }
     
+    let sharedViews = SharedViews()
+    
     var body: some View {
         ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
+            sharedViews.backgroundImage()
             
             VStack {
                 Spacer()
                 RoundedRectangle(cornerRadius: 30)
-                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
-                    .textCase(.uppercase)
+                    .frame(width: width - 50,
+                           height: height / 10,
+                           alignment: .center)
                     .overlay(Text(Game.shared.mode == .thanos ? "Pásale el móvil a" : "Es tu turno")
-                                .font(Font.custom("PixelEmulator", size: Game.shared.mode == .thanos ? UIScreen.main.bounds.height/38 : UIScreen.main.bounds.height/33 ))
+                                .font(Font.custom("PixelEmulator", size: Game.shared.mode == .thanos ? height / 38 : height / 33 ))
                                 .foregroundColor(.white)
                                 .shadow(color: .black, radius: 10, x: 3, y: 5)
                                 .padding())
                     .foregroundColor(.clear)
-                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
 
                 Spacer()
                 

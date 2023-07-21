@@ -16,12 +16,12 @@ struct TestView: View {
     @State private var isModeSelected: Bool = false
     @State private var isPressStartSelected: Bool = false
     
+    let sharedViews = SharedViews()
+    
     var body: some View {
         ZStack{
-            Image ("Background")
-                .resizable()
+            sharedViews.backgroundImage()
                 .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
             
             VStack{
                 

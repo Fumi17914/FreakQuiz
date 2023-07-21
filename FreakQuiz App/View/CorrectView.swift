@@ -14,11 +14,11 @@ struct CorrectView: View {
     @State private var isModeSelected: Bool = false
     @State private var isPressStartSelected: Bool = false
     
+    let sharedViews = SharedViews()
+    
     var body: some View {
         ZStack{
-            Image ("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
+            sharedViews.backgroundImage()
                 .aspectRatio(contentMode: .fill)
 
             
@@ -26,11 +26,12 @@ struct CorrectView: View {
                 
                 Spacer(minLength: 40)
                 RoundedRectangle(cornerRadius: 30)
-                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
-                    .textCase(.uppercase)
+                    .frame(width: width - 50,
+                           height: height / 10,
+                           alignment: .center)
                     .opacity(0.9)
                     .overlay(Text("correcto")
-                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                .font(Font.custom("PixelEmulator", size: height / 33))
                                 .foregroundColor(.white)
                                 .padding())
                     .foregroundColor(.green)
@@ -39,8 +40,9 @@ struct CorrectView: View {
                 
                 Spacer(minLength: 25)
                 RoundedRectangle(cornerRadius: 30)
-                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/2, alignment: .center)
-                    .textCase(.uppercase)
+                    .frame(width: width - 50,
+                           height: height / 2,
+                           alignment: .center)
                     .opacity(0.95)
                     .overlay(Image("correct")
                                 .resizable()
@@ -48,7 +50,6 @@ struct CorrectView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding())
                     .foregroundColor(.clear)
-                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
                     .offset(y: -15)
                 
                 Spacer(minLength: 70)
@@ -112,7 +113,9 @@ struct CorrectView: View {
                     Image("pressStart")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
+                        .frame(width: width - 50,
+                               height: 40,
+                               alignment: .center)
                         .padding()
                 }).offset(x: 5)
                 

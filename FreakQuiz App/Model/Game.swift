@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+let width =  UIScreen.main.bounds.width
+let height = UIScreen.main.bounds.height
+
 class Game {
     // MARK: - Properties
     static let shared = Game()

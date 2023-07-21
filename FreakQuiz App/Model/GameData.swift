@@ -10,11 +10,6 @@ import Foundation
 typealias Questions = [Question]
 typealias Tests = [String]
 
-struct GameData: Codable {
-    let questions: Questions
-    let tests: Tests
-}
-
 struct QuestionsData: Codable {
-    let questions: [Question]
+    let questions: Questions
 }

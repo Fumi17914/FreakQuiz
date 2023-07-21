@@ -50,25 +50,25 @@ struct ChoosePlayerView: View {
         }
     }
     
+    let sharedViews = SharedViews()
+    
     var body: some View {
         ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
+            sharedViews.backgroundImage()
             
             VStack {
                 Spacer(minLength: 50)
                 
                 RoundedRectangle(cornerRadius: 30)
-                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
-                    .textCase(.uppercase)
+                    .frame(width: width - 50,
+                           height: height / 10,
+                           alignment: .center)
                     .overlay(Text("Elige jugadores")
-                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
+                                .font(Font.custom("PixelEmulator", size: height / 33))
                                 .foregroundColor(.white)
                                 .shadow(color: .black, radius: 10, x: 3, y: 5)
                                 .padding())
                     .foregroundColor(.clear)
-                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
                 
                 Spacer(minLength: 20)
 
@@ -303,9 +303,7 @@ struct ChoosePlayerView: View {
                                 self.redButtonActive = true
                             }
                         }, label: {
-                            Image("redButton")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: "redButton")
                                 .padding(25)
                         }).alert(isPresented: $showingAlert) {
                             Alert(title: Text(""), message: Text("Escoge mínimo un jugador"), dismissButton: .default(Text("OK!")))

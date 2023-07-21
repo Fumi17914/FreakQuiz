@@ -11,21 +11,22 @@ struct QuestionView: View {
     
     var startTimer = ProgressBarView()
     var viewModel = QuestionVM()
+    
+    let sharedViews = SharedViews()
         
     var body: some View {
         ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
+            sharedViews.backgroundImage()
             
             VStack {
                 VStack {
                     RoundedRectangle(cornerRadius: 30)
-                        .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/3, alignment: .center)
+                        .frame(width: width - 40,
+                               height: height / 3,
+                               alignment: .center)
                         .foregroundColor(.white)
-                        .textCase(.uppercase)
                         .overlay(Text(viewModel.getFinalQuestion())
-                                    .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/40))
+                                    .font(Font.custom("PixelEmulator", size: height / 40))
                                     .foregroundColor(.black)
                                     .padding()
                                     .multilineTextAlignment(.center))

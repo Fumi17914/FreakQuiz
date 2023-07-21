@@ -15,13 +15,11 @@ struct ScoreView: View {
     }
     
     let viewModel = ScoreVM()
+    let sharedViews = SharedViews()
     
     var body: some View {
         ZStack {
-            Image("Background")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
+            sharedViews.backgroundImage()                .aspectRatio(contentMode: .fill)
             
             VStack {
                 Spacer(minLength: 40)
@@ -32,10 +30,11 @@ struct ScoreView: View {
                     .overlay(Text("Puntuaciones")
                                 .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
                                 .foregroundColor(.white)
-                                .shadow(color: .black, radius: 10, x: 3, y: 5)
+                                .shadow(color: .black,
+                                        radius: 10,
+                                        x: 3, y: 5)
                                 .padding())
                     .foregroundColor(.clear)
-                    //.addBorder(Color.black, width: 2, cornerRadius: 30)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(0..<viewModel.getFinalPlayers.count) { player in

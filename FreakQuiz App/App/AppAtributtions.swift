@@ -29,11 +29,11 @@ struct AtributionsView: View {
         AppAtributtions(name: "Made by Freepik", image: "gamingTrophy")
     ]
     
+    let sharedViews = SharedViews()
+    
     var body: some View {
         ZStack {
-            Image("Background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
+            sharedViews.backgroundImage()
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach( 0..<atributtions.count ) { atribution in
@@ -43,9 +43,7 @@ struct AtributionsView: View {
                             .foregroundColor(.white)
                             .overlay(
                                 HStack {
-                                    Image(atributtions[atribution].image)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
+                                    sharedViews.imageResizableFit(idText: atributtions[atribution].image)
                                         .frame(width: 50, height: 50, alignment: .center)
                                         .offset(x: 10)
                                     Spacer()
@@ -53,13 +51,13 @@ struct AtributionsView: View {
                                         .foregroundColor(.black)
                                         .padding()
                                         .multilineTextAlignment(.center)
-                                        .font(Font.custom("", size: UIScreen.main.bounds.height/65))
+                                        .font(Font.custom("", size: height/65))
                                     Spacer()
                                     Text(atributtions[atribution].url)
                                         .foregroundColor(.black)
                                         .padding()
                                         .multilineTextAlignment(.center)
-                                        .font(Font.custom("", size: UIScreen.main.bounds.height/65))
+                                        .font(Font.custom("", size: height/65))
                                     
                                 })
                             .addBorder(Color.black, width: 2, cornerRadius: 30)
@@ -67,12 +65,12 @@ struct AtributionsView: View {
                     }
                 }
                 
-                Image("textLogo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height / 10, alignment: .center)
+                sharedViews.imageResizableFit(idText: "textLogo")
+                    .frame(width: width - 50,
+                           height: height / 10,
+                           alignment: .center)
             }
         }
-        .navigationBarTitle("Atribuciones")
+        .navigationBarTitle("", displayMode: .inline)
     }
 }
