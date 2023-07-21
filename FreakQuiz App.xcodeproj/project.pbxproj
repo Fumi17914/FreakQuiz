@@ -27,7 +27,7 @@
 		D875E94D26A984240034A014 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E94C26A984240034A014 /* GameData.swift */; };
 		D875E94F26A9843E0034A014 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E94E26A9843E0034A014 /* Player.swift */; };
 		D875E95126A984490034A014 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95026A984490034A014 /* Question.swift */; };
-		D875E95326A9845F0034A014 /* QuestionAndTestSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */; };
+		D875E95326A9845F0034A014 /* TestSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95226A9845F0034A014 /* TestSample.swift */; };
 		D875E95526A985800034A014 /* ChooseModeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95426A985800034A014 /* ChooseModeVM.swift */; };
 		D875E95926A985A90034A014 /* QuestionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95826A985A90034A014 /* QuestionVM.swift */; };
 		D875E95D26A985CF0034A014 /* ScoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D875E95C26A985CF0034A014 /* ScoreVM.swift */; };
@@ -61,7 +61,7 @@
 		D875E94C26A984240034A014 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		D875E94E26A9843E0034A014 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D875E95026A984490034A014 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAndTestSample.swift; sourceTree = "<group>"; };
+		D875E95226A9845F0034A014 /* TestSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSample.swift; sourceTree = "<group>"; };
 		D875E95426A985800034A014 /* ChooseModeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseModeVM.swift; sourceTree = "<group>"; };
 		D875E95826A985A90034A014 /* QuestionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVM.swift; sourceTree = "<group>"; };
 		D875E95C26A985CF0034A014 /* ScoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreVM.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				D875E94C26A984240034A014 /* GameData.swift */,
 				D875E94E26A9843E0034A014 /* Player.swift */,
 				D875E95026A984490034A014 /* Question.swift */,
-				D875E95226A9845F0034A014 /* QuestionAndTestSample.swift */,
+				D875E95226A9845F0034A014 /* TestSample.swift */,
 				BDD7297C2A693CE700786D11 /* myData.json */,
 			);
 			path = Model;
@@ -290,7 +290,7 @@
 				D875E92126A982040034A014 /* FreakQuiz_AppApp.swift in Sources */,
 				D800DD7B26B1778C002D91D0 /* AppAtributtions.swift in Sources */,
 				D875E94D26A984240034A014 /* GameData.swift in Sources */,
-				D875E95326A9845F0034A014 /* QuestionAndTestSample.swift in Sources */,
+				D875E95326A9845F0034A014 /* TestSample.swift in Sources */,
 				D875E96426A986880034A014 /* AnswersView.swift in Sources */,
 				D875E94F26A9843E0034A014 /* Player.swift in Sources */,
 				D875E95926A985A90034A014 /* QuestionVM.swift in Sources */,
