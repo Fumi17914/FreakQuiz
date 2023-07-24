@@ -27,10 +27,9 @@ struct AnswersView: View {
                 NavigationLink(
                     destination:
                         destinationView(answer),
-                    // isActive: listSelected[answer],
                     label: {
                         RoundedRectangle(cornerRadius: 30)
-                            .frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height/11, alignment: .center)
+                            .frame(width: width - 20, height: height / 11, alignment: .center)
                             .foregroundColor(.white)
                             .overlay(Text(viewModel.getAnswersForQuestion()[answer] ?? "0")
                                         .font(Font.custom("PixelEmulator", size: 18))

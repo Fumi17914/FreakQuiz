@@ -15,7 +15,8 @@ struct EasyTutorialView: View {
     
     var body: some View {
         
-        sharedViews.returnTutorialBackgroundColor(color: .yellow).opacity(0.95)
+        sharedViews.returnTutorialBackgroundColor(color: .yellow)
+            .opacity(0.95)
             .overlay(
                 VStack {
                     Spacer()

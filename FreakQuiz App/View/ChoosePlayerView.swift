@@ -59,16 +59,10 @@ struct ChoosePlayerView: View {
             VStack {
                 Spacer(minLength: 50)
                 
-                RoundedRectangle(cornerRadius: 30)
-                    .frame(width: width - 50,
-                           height: height / 10,
-                           alignment: .center)
-                    .overlay(Text("Elige jugadores")
-                                .font(Font.custom("PixelEmulator", size: height / 33))
-                                .foregroundColor(.white)
-                                .shadow(color: .black, radius: 10, x: 3, y: 5)
-                                .padding())
-                    .foregroundColor(.clear)
+                sharedViews.titleView(width: width - 50,
+                                      height: height / 10,
+                                      text: "Elige jugadores",
+                                      textSize:  height / 33)
                 
                 Spacer(minLength: 20)
 
@@ -86,9 +80,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Batman.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Batman.rawValue)
                                 .opacity(batmanOpacity)
                         }
                         Spacer()
@@ -106,9 +98,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Superman.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Superman.rawValue)
                                 .opacity(supermanOpacity)
                         }
                         
@@ -127,9 +117,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Spiderman.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Spiderman.rawValue)
                                 .opacity(spidermanOpacity)
                         }
                     }.padding()
@@ -150,9 +138,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Girl.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Girl.rawValue)
                                 .opacity(adventuressOpacity)
                         }
                         
@@ -171,9 +157,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Doctor.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Doctor.rawValue)
                                 .opacity(meredithOpacity)
                         }
                         
@@ -195,9 +179,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Lobezno.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Lobezno.rawValue)
                                 .opacity(wolverineOpacity)
                         }
                         
@@ -216,9 +198,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Deadpool.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Deadpool.rawValue)
                                 .opacity(deadpoolOpacity)
                         }
                         
@@ -237,9 +217,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Noel.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Noel.rawValue)
                                 .opacity(santaclausOpacity)
                         }
                         
@@ -261,9 +239,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Indy.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Indy.rawValue)
                                 .opacity(indianaJonesOpacity)
                         }
                         
@@ -282,9 +258,7 @@ struct ChoosePlayerView: View {
                             }
                             
                         }) {
-                            Image(Player.Characters.Devil.rawValue)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                            sharedViews.imageResizableFit(idText: Player.Characters.Devil.rawValue)
                                 .opacity(devilOpacity)
                         }
                         

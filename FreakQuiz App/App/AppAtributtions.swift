@@ -16,7 +16,7 @@ struct AppAtributtions {
 
 struct AtributionsView: View {
 
-    var atributtions = [
+    let atributtions = [
         AppAtributtions(name: "Made by Those Icons", image: "easyMode"),
         AppAtributtions(name: "Made by Freepik", image: "difficultMode"),
         AppAtributtions(name: "Made by Smashicons", image: "fastMode"),

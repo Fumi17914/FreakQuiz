@@ -14,44 +14,35 @@ struct ScoreView: View {
         UITableViewCell.appearance().backgroundColor = .clear
     }
     
-    let viewModel = ScoreVM()
+    @StateObject var viewModel = ScoreVM()
     let sharedViews = SharedViews()
     
     var body: some View {
         ZStack {
-            sharedViews.backgroundImage()                .aspectRatio(contentMode: .fill)
+            sharedViews.backgroundImage()
+                .aspectRatio(contentMode: .fill)
             
             VStack {
                 Spacer(minLength: 40)
                 
-                RoundedRectangle(cornerRadius: 30)
-                    .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
-                    .textCase(.uppercase)
-                    .overlay(Text("Puntuaciones")
-                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/33))
-                                .foregroundColor(.white)
-                                .shadow(color: .black,
-                                        radius: 10,
-                                        x: 3, y: 5)
-                                .padding())
-                    .foregroundColor(.clear)
+                sharedViews.titleView(width: width - 50,
+                                      height: height / 10,
+                                      text: "Puntuaciones",
+                                      textSize: height / 33)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(0..<viewModel.getFinalPlayers.count) { player in
                         RoundedRectangle(cornerRadius: 30)
-                            .frame(width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height/10, alignment: .center)
-                            .textCase(.uppercase)
+                            .frame(width: width - 50, height: height / 10, alignment: .center)
                             .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                             .overlay(
                                 HStack {
-                                    Image(viewModel.getFinalPlayers[player].user.rawValue)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
+                                    sharedViews.imageResizableFit(idText: viewModel.getFinalPlayers[player].user.rawValue)
                                         .frame(width: 50, height: 50, alignment: .center)
                                         .offset(x: 10)
                                     Spacer()
                                     Text("\(viewModel.getFinalPlayers[player].score)")
-                                        .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/30))
+                                        .font(Font.custom("PixelEmulator", size: height / 30))
                                         .foregroundColor(.white)
                                         .padding()
                                         .multilineTextAlignment(.center)
@@ -61,16 +52,8 @@ struct ScoreView: View {
                     }
                 }
                 
-                NavigationLink(destination: PlayerReadyView()) {
-                    Image("pressStart")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
-                        .padding()
-                        .offset(x: 5)
-                    
-                }
-                
+                sharedViews.pressStartView(destination: PlayerReadyView())
+
                 Spacer(minLength: 40)
             }.padding()
         }

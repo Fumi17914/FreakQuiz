@@ -8,12 +8,7 @@
 import SwiftUI
 
 struct PlayerReadyView: View {
-    
-    private func randomPlayer() -> String {
-        Game.shared.selectedPlayer = Game.shared.players.randomElement()
-        return Game.shared.selectedPlayer ?? "No player"
-    }
-    
+            
     let sharedViews = SharedViews()
     
     var body: some View {
@@ -22,22 +17,14 @@ struct PlayerReadyView: View {
             
             VStack {
                 Spacer()
-                RoundedRectangle(cornerRadius: 30)
-                    .frame(width: width - 50,
-                           height: height / 10,
-                           alignment: .center)
-                    .overlay(Text(Game.shared.mode == .thanos ? "Pásale el móvil a" : "Es tu turno")
-                                .font(Font.custom("PixelEmulator", size: Game.shared.mode == .thanos ? height / 38 : height / 33 ))
-                                .foregroundColor(.white)
-                                .shadow(color: .black, radius: 10, x: 3, y: 5)
-                                .padding())
-                    .foregroundColor(.clear)
-
+                
+                sharedViews.titleView(width: width - 50,
+                                      height: height / 10,
+                                      text: "Es tu turno",
+                                      textSize:  height / 33)
                 Spacer()
                 
-                Image(randomPlayer())
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+                sharedViews.imageResizableFit(idText: Game.shared.players[Game.shared.indexPlayer])
                     .padding(50)
                 
                 
@@ -45,23 +32,19 @@ struct PlayerReadyView: View {
                     .frame(width: 235, height: 80, alignment: .center)
                     .foregroundColor(Game.shared.modeSelectedBackgroundColor())
                     .opacity(0.9)
-                    .textCase(.uppercase)
-                    .overlay(Text(Game.shared.selectedPlayer ?? "No player")
-                                .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/45))
+                    .overlay(Text(Game.shared.players[Game.shared.indexPlayer])
+                                .font(Font.custom("PixelEmulator",
+                                                  size: height / 45))
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center))
                     .addBorder(Color.black, width: 2, cornerRadius: 30)
                     .offset(y: -45)
+                    .opacity(0.9)
     
                 Spacer(minLength: 90)
                 
-                NavigationLink(destination: QuestionView()) {
-                    Image("pressStart")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: UIScreen.main.bounds.width - 50, height: 40, alignment: .center)
-                        .offset(x:5)
-                }
+                sharedViews.pressStartView(destination: QuestionView())
+                
                 Spacer()
                 
             }
@@ -70,6 +53,15 @@ struct PlayerReadyView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("")
+        .onAppear {
+            Game.shared.selectedPlayer = Game.shared.players[Game.shared.indexPlayer]
+        }
+        .onDisappear {
+            Game.shared.indexPlayer += 1
+            if Game.shared.indexPlayer == Game.shared.players.count {
+                Game.shared.indexPlayer = 0
+            }
+        }
     }
 }
 

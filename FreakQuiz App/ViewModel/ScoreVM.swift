@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ScoreVM {
+class ScoreVM: ObservableObject {
     
     var playersScoreList: [Player] = []
     var finalPlayersAndScore = Game.shared.scoreAndPlayers.sorted(by: {$0.score > $1.score})

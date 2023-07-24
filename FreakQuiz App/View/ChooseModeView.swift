@@ -18,15 +18,10 @@ struct ChooseModeView: View {
             
             VStack() {
                 
-                RoundedRectangle(cornerRadius: 30)
-                    .frame(width: UIScreen.main.bounds.width - 35, height: UIScreen.main.bounds.height/10, alignment: .center)
-                    .overlay(Text("Elije modo")
-                                .font(Font.custom("PixelEmulator",
-                                                  size: height/33))
-                                .foregroundColor(.white)
-                                .shadow(color: .black, radius: 10, x: 3, y: 5)
-                                .padding())
-                    .foregroundColor(.clear)
+                sharedViews.titleView(width: width - 35,
+                                      height: height / 10,
+                                      text: "Elije modo",
+                                      textSize: height / 33)
                 
                 Spacer(minLength: 50)
                 
@@ -34,26 +29,15 @@ struct ChooseModeView: View {
                     NavigationLink(
                         destination: ChoosePlayerView().onAppear { self.viewModel.easyMode() },
                         label: {
-                            RoundedRectangle(cornerRadius: 25.0)
-                                .foregroundColor(.yellow)
-                                .frame(width: UIScreen.main.bounds.width - 35, height: 200)
-                                .opacity(0.95)
-                                .overlay(
-                                    HStack {
-                                        Image("easyMode")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .padding(25)
-                                        Text("MODO  FÁCIL")
-                                            .multilineTextAlignment(.center)
-                                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
-                                            .foregroundColor(.white)
-                                        
-                                    }.offset(x: -12)
-                                )
-                                .addBorder(Color.black, width: 2, cornerRadius: 25)
-
                             
+                            sharedViews.chooseModeButtonNavigation(cornerRadius: 25.0,
+                                                       width: width - 35,
+                                                       height: 200,
+                                                       image: sharedViews.imageResizableFit(idText: "easyMode"),
+                                                       text: "MODO  FÁCIL",
+                                                       textSizeProportion: height / 38,
+                                                       foregroundColor: .yellow)
+                            .opacity(0.95)
                         })
                     
                     Spacer(minLength: 50)
@@ -61,46 +45,28 @@ struct ChooseModeView: View {
                     NavigationLink(
                         destination: ChoosePlayerView().onAppear { self.viewModel.hardMode() },
                         label: {
-                            RoundedRectangle(cornerRadius: 25.0)
-                                .foregroundColor(.red)
-                                .frame(width: UIScreen.main.bounds.width - 35, height: 200)
-                                .overlay(
-                                    HStack {
-                                        Image("difficultMode")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .padding(25)
-                                        Text("MODO DIFÍCIL")
-                                            .multilineTextAlignment(.center)
-                                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
-                                            .foregroundColor(.white)
-                                    }.offset(x: -12)
-                                )
-                                .addBorder(Color.black, width: 2, cornerRadius: 25)
-
+                            
+                            sharedViews.chooseModeButtonNavigation(cornerRadius: 25.0,
+                                                       width: width - 35,
+                                                       height: 200,
+                                                       image: sharedViews.imageResizableFit(idText: "difficultMode"),
+                                                       text: "MODO DIFÍCIL",
+                                                       textSizeProportion: height / 38,
+                                                       foregroundColor: .red)
                         })
                     Spacer(minLength: 50)
                     
                     NavigationLink(
                         destination: ChoosePlayerView().onAppear { self.viewModel.fastMode() },
                         label: {
-                            RoundedRectangle(cornerRadius: 25.0)
-                                .foregroundColor(.blue)
-                                .frame(width: UIScreen.main.bounds.width - 35, height: 200)
-                                .overlay(
-                                    HStack {
-                                        Image("fastMode")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .padding(25)
-                                        Text("MODO RÁPIDO")
-                                            .multilineTextAlignment(.center)
-                                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
-                                            .foregroundColor(.white)
-                                    }.offset(x: -12)
-                                )
-                                .addBorder(Color.black, width: 2, cornerRadius: 25)
-
+                            
+                            sharedViews.chooseModeButtonNavigation(cornerRadius: 25.0,
+                                                       width: width - 35,
+                                                       height: 200,
+                                                       image: sharedViews.imageResizableFit(idText: "fastMode"),
+                                                       text: "MODO RÁPIDO",
+                                                       textSizeProportion: height / 38,
+                                                       foregroundColor: .blue)
                         })
                     
                     Spacer(minLength: 50)
@@ -108,23 +74,14 @@ struct ChooseModeView: View {
                     NavigationLink(
                         destination: ChoosePlayerView().onAppear { self.viewModel.thanosMode() },
                         label: {
-                            RoundedRectangle(cornerRadius: 25.0)
-                                .foregroundColor(.purple)
-                                .frame(width: UIScreen.main.bounds.width - 35, height: 200)
-                                .overlay(
-                                    HStack {
-                                        Image("hardcoreMode")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .padding(25)
-                                        Text("MODO HARDCORE")
-                                            .multilineTextAlignment(.center)
-                                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
-                                            .foregroundColor(.white)
-                                    }.offset(x: -12)
-                                )
-                                .addBorder(Color.black, width: 2, cornerRadius: 25)
-
+                            
+                            sharedViews.chooseModeButtonNavigation(cornerRadius: 25.0,
+                                                       width: width - 35,
+                                                       height: 200,
+                                                       image: sharedViews.imageResizableFit(idText: "hardcoreMode"),
+                                                       text: "MODO HARDCORE",
+                                                       textSizeProportion: height / 38,
+                                                       foregroundColor: .purple)
                         })
                     
                     Spacer(minLength: 50)
@@ -132,23 +89,14 @@ struct ChooseModeView: View {
                     NavigationLink(
                         destination: ChoosePlayerView().onAppear { self.viewModel.freakMode() },
                         label: {
-                            RoundedRectangle(cornerRadius: 25.0)
-                                .foregroundColor(.orange)
-                                .frame(width: UIScreen.main.bounds.width - 35, height: 200)
-                                .overlay(
-                                    HStack {
-                                        Image("sword")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .padding(25)
-                                        Text("MASTER FREAKVERSE")
-                                            .multilineTextAlignment(.center)
-                                            .font(Font.custom("PixelEmulator", size: UIScreen.main.bounds.height/38))
-                                            .foregroundColor(.white)
-                                    }.offset(x: -12)
-                                )
-                                .addBorder(Color.black, width: 2, cornerRadius: 25)
-
+                            
+                            sharedViews.chooseModeButtonNavigation(cornerRadius: 25.0,
+                                                       width: width - 35,
+                                                       height: 200,
+                                                       image: sharedViews.imageResizableFit(idText: "sword"),
+                                                       text: "MASTER FREAKVERSE",
+                                                       textSizeProportion: height / 38,
+                                                       foregroundColor: .orange)
                         }).disabled(true).opacity(0.2)
                 }
                 .offset(y: -15)
