@@ -36,7 +36,7 @@ struct AtributionsView: View {
             sharedViews.backgroundImage()
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach( 0..<atributtions.count ) { atribution in
+                    ForEach( 0..<atributtions.count, id: \.self ) { atribution in
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.height/10, alignment: .center)
                             .textCase(.uppercase)

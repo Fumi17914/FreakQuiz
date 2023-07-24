@@ -31,7 +31,7 @@ struct ScoreView: View {
                                       textSize: height / 33)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(0..<viewModel.getFinalPlayers.count) { player in
+                    ForEach(0..<viewModel.getFinalPlayers.count, id: \.self) { player in
                         RoundedRectangle(cornerRadius: 30)
                             .frame(width: width - 50, height: height / 10, alignment: .center)
                             .foregroundColor(Game.shared.modeSelectedBackgroundColor())

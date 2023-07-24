@@ -23,7 +23,7 @@ struct AnswersView: View {
     }
     var body: some View {
         VStack {
-            ForEach (0..<viewModel.getAnswersForQuestion().count) { answer in
+            ForEach (0..<viewModel.getAnswersForQuestion().count, id: \.self) { answer in
                 NavigationLink(
                     destination:
                         destinationView(answer),
