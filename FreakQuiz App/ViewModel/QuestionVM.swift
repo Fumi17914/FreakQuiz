@@ -12,24 +12,24 @@ class QuestionVM {
     var allQuestions = [String]()
     
     func getFinalQuestion() -> String {
-        if Game.shared.mode == .easy {
-            Game.shared.question = getEasyQuestion().randomElement()
+        if Game.shared.mode == .easy && !getEasyQuestion().isEmpty {
+            Game.shared.question = getEasyQuestion()[Game.shared.indexEasyQuestion]
             return Game.shared.question ?? "No easy question"
             
-        } else if Game.shared.mode == .hard {
-            Game.shared.question = getHardQuestion().randomElement()
+        } else if Game.shared.mode == .hard && !getHardQuestion().isEmpty {
+            Game.shared.question = getHardQuestion()[Game.shared.indexHardQuestion]
             return Game.shared.question ?? "No difficult question"
             
-        } else if Game.shared.mode == .fast {
-            Game.shared.question = getFastQuestion().randomElement()
+        } else if Game.shared.mode == .fast && !getFastQuestion().isEmpty {
+            Game.shared.question = getFastQuestion()[Game.shared.indexFastQuestion]
             return Game.shared.question ?? "No fast question"
             
-        } else if Game.shared.mode == .thanos {
-            Game.shared.question = getThanosQuestion().randomElement()
+        } else if Game.shared.mode == .thanos && !getThanosQuestion().isEmpty {
+            Game.shared.question = getThanosQuestion()[Game.shared.indexThanosQuestion]
             return Game.shared.question ?? "No hardcore question"
             
-        } else if Game.shared.mode == .freak {
-            Game.shared.question = getFreakQuestion().randomElement()
+        } else if Game.shared.mode == .freak && !getFreakQuestion().isEmpty {
+            Game.shared.question = getFreakQuestion()[Game.shared.indexFreakQuestion]
             return Game.shared.question ?? "No freak question"
 
         }
@@ -55,6 +55,40 @@ class QuestionVM {
     }
     
   
+    func updateIndexQuestion() {
+        switch Game.shared.mode {
+        case .easy:
+            Game.shared.indexEasyQuestion += 1
+            if  Game.shared.indexEasyQuestion == getEasyQuestion().count {
+                Game.shared.indexEasyQuestion = 0
+            }
+            
+        case .hard:
+            Game.shared.indexHardQuestion += 1
+            if  Game.shared.indexHardQuestion == getHardQuestion().count {
+                Game.shared.indexHardQuestion = 0
+            }
+            
+        case.fast:
+            Game.shared.indexFastQuestion += 1
+            if  Game.shared.indexFastQuestion == getFastQuestion().count {
+                Game.shared.indexFastQuestion = 0
+            }
+            
+        case .thanos:
+            Game.shared.indexThanosQuestion += 1
+            if  Game.shared.indexThanosQuestion == getThanosQuestion().count {
+                Game.shared.indexThanosQuestion = 0
+            }
+            
+        case .freak:
+            Game.shared.indexFreakQuestion += 1
+            if  Game.shared.indexFreakQuestion == getFreakQuestion().count {
+                Game.shared.indexFreakQuestion = 0
+            }
+            
+        }
+    }
     
     private func getEasyQuestion() -> [String] {
         

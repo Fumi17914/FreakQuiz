@@ -30,6 +30,12 @@ class Game {
     var allAnswers: [String?] = []
     var correctAnswer: Int? = nil
     
+    var indexEasyQuestion = 0
+    var indexHardQuestion = 0
+    var indexFastQuestion = 0
+    var indexThanosQuestion = 0
+    var indexFreakQuestion = 0
+    
     // MARK: Prueba a realizar al azar
     var test: String {
         return tests?.randomElement() ?? "Do nothing"

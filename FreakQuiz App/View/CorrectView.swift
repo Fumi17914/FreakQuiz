@@ -36,7 +36,7 @@ struct CorrectView: View {
                     .overlay(
                         sharedViews.imageResizableFit(idText: "correct")
                             .offset(x: -10)
-                            .padding())
+                            .padding(25))
                     .foregroundColor(.clear)
                     .offset(y: -15)
                 

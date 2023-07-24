@@ -45,6 +45,9 @@ struct QuestionView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("")
+        .onDisappear {
+            viewModel.updateIndexQuestion()
+        }
     }
 }
 
